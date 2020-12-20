@@ -1,6 +1,6 @@
 # HOMEWORK WEEK13
 
-## Computer
+## 爬蟲
 * CODE
 <pre><code>
 async function getPage(url) {
@@ -81,8 +81,10 @@ async function getPage(url) {
   await craw(urlList)
   
 </code></pre>
-* 需進行多個TEST
+## 步驟講解
+* 了解網路爬蟲的定義:
+先對html有初步了解，爬蟲是一種程式用來爬取所想要的資料並將其存於電腦中
 
-* PICTURE
+* 使用正規表達式
 
 ![PICTURE1](https://github.com/brian891005/co109a/blob/master/HW/%E5%9C%96%E7%89%87/35.jpg)

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-TW" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了 - IT閱讀</title>
+<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta name="referrer" content="never">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了" />
+<meta property="og:site_name" content="IT閱讀|ITREAD01" />
+<meta property="og:image" content="https://5b0988e595225.cdn.sohucs.com/images/20190810/34e861d8517e464abc4f0a51c6c3bc85.jpeg" />
+<meta property="og:description" content="原標題：事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了 圖片來源 / 圖蟲創意 最近一期相互寶每人分攤金額增長到1.48元，引發了社會廣泛關注。這背後，是相互寶8000多萬用戶對切身利益的關切。 相互寶因為能夠滿足更" />
+<meta property="og:url" content="https://www.itread01.com/ixfeqhk.html" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='hueman-main-style-css'href='/img/css/main.min.css' type='text/css' media='all' />
+<link href="https://www.itread01.com/img/prettify.css" type="text/css" rel="stylesheet"/>
+<script src="https://www.itread01.com/img/run_prettify.js"></script>
+<style id='hueman-main-style-inline-css' type='text/css'>
+body { font-family:'Source Sans Pro', Arial, sans-serif;font-size:1.00rem }@media only screen and (min-width: 720px) {
+.nav > li { font-size:1.00rem; }
+}::selection { background-color: #fca61b; }
+::-moz-selection { background-color: #fca61b; }a,.themeform label .required,#flexslider-featured .flex-direction-nav .flex-next:hover,#flexslider-featured .flex-direction-nav .flex-prev:hover,.post-hover:hover .post-title a,.post-title a:hover,.sidebar.s1 .post-nav li a:hover i,.content .post-nav li a:hover i,.post-related a:hover,.sidebar.s1 .widget_rss ul li a,#footer .widget_rss ul li a,.sidebar.s1 .widget_calendar a,#footer .widget_calendar a,.sidebar.s1 .alx-tab .tab-item-category a,.sidebar.s1 .alx-posts .post-item-category a,.sidebar.s1 .alx-tab li:hover .tab-item-title a,.sidebar.s1 .alx-tab li:hover .tab-item-comment a,.sidebar.s1 .alx-posts li:hover .post-item-title a,#footer .alx-tab .tab-item-category a,#footer .alx-posts .post-item-category a,#footer .alx-tab li:hover .tab-item-title a,#footer .alx-tab li:hover .tab-item-comment a,#footer .alx-posts li:hover .post-item-title a,.comment-tabs li.active a,.comment-awaiting-moderation,.child-menu a:hover,.child-menu .current_page_item > a,.wp-pagenavi a{ color: #fca61b; }.themeform input[type="submit"],.themeform button[type="submit"],.sidebar.s1 .sidebar-top,.sidebar.s1 .sidebar-toggle,#flexslider-featured .flex-control-nav li a.flex-active,.post-tags a:hover,.sidebar.s1 .widget_calendar caption,#footer .widget_calendar caption,.author-bio .bio-avatar:after,.commentlist li.bypostauthor > .comment-body:after,.commentlist li.comment-author-admin > .comment-body:after{ background-color: #fca61b; }.post-format .format-container { border-color: #fca61b; }.sidebar.s1 .alx-tabs-nav li.active a,#footer .alx-tabs-nav li.active a,.comment-tabs li.active a,.wp-pagenavi a:hover,.wp-pagenavi a:active,.wp-pagenavi span.current{ border-bottom-color: #fca61b!important; }.sidebar.s2 .post-nav li a:hover i,
+.sidebar.s2 .widget_rss ul li a,
+.sidebar.s2 .widget_calendar a,
+.sidebar.s2 .alx-tab .tab-item-category a,
+.sidebar.s2 .alx-posts .post-item-category a,
+.sidebar.s2 .alx-tab li:hover .tab-item-title a,
+.sidebar.s2 .alx-tab li:hover .tab-item-comment a,
+.sidebar.s2 .alx-posts li:hover .post-item-title a { color: #3bcfe2; }
+.sidebar.s2 .sidebar-top,.sidebar.s2 .sidebar-toggle,.post-comments,.jp-play-bar,.jp-volume-bar-value,.sidebar.s2 .widget_calendar caption{ background-color: #3bcfe2; }.sidebar.s2 .alx-tabs-nav li.active a { border-bottom-color: #3bcfe2; }
+.post-comments span:before { border-right-color: #3bcfe2; }
+.search-expand,
+#nav-topbar.nav-container { background-color: #303030}@media only screen and (min-width: 720px) {
+#nav-topbar .nav ul { background-color: #303030; }
+}.is-scrolled #header .nav-container.desktop-sticky,
+.is-scrolled #header .search-expand { background-color: #303030; background-color: rgba(48,48,48,0.90) }.is-scrolled .topbar-transparent #nav-topbar.desktop-sticky .nav ul { background-color: #303030; background-color: rgba(48,48,48,0.95) }#header { background-color: #363944; }
+.entry-inner p{ text-indent:2em; }
+@media only screen and (min-width: 720px) {
+#nav-header .nav ul { background-color: #363944; }
+}
+.is-scrolled #header #nav-mobile { background-color: #454e5c; background-color: rgba(69,78,92,0.90) }body { background-color: #eaeaea; }
+.entry-inner h2, .entry-inner h3 ,.entry-inner h4{ font-size:22px; font-weight:bold;}
+ 
+</style>
+ 
+<link rel='stylesheet' id='hueman-font-awesome-css'href='/img/css/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"","inbound_paths":"","home_url":"https:\/\/www.itread01.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/frontend.min.js'></script>
+<script type='text/javascript' src='/img/css/js/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/img/css/jsjquery-migrate.min.js?ver=1.4.1'></script>
+<meta name="generator" content="WordPress 4.8.2" />
+<style data-context="foundation-flickity-css">/*! Flickity v2.0.2
+http://flickity.metafizzy.co
+---------------------------------------------- */.flickity-enabled{position:relative}.flickity-enabled:focus{outline:0}.flickity-viewport{overflow:hidden;position:relative;height:100%}.flickity-slider{position:absolute;width:100%;height:100%}.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.flickity-enabled.is-draggable .flickity-viewport{cursor:move;cursor:-webkit-grab;cursor:grab}.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down{cursor:-webkit-grabbing;cursor:grabbing}.flickity-prev-next-button{position:absolute;top:50%;width:44px;height:44px;border:none;border-radius:50%;background:#fff;background:hsla(0,0%,100%,.75);cursor:pointer;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.flickity-prev-next-button:hover{background:#fff}.flickity-prev-next-button:focus{outline:0;box-shadow:0 0 0 5px #09F}.flickity-prev-next-button:active{opacity:.6}.flickity-prev-next-button.previous{left:10px}.flickity-prev-next-button.next{right:10px}.flickity-rtl .flickity-prev-next-button.previous{left:auto;right:10px}.flickity-rtl .flickity-prev-next-button.next{right:auto;left:10px}.flickity-prev-next-button:disabled{opacity:.3;cursor:auto}.flickity-prev-next-button svg{position:absolute;left:20%;top:20%;width:60%;height:60%}.flickity-prev-next-button .arrow{fill:#333}.flickity-page-dots{position:absolute;width:100%;bottom:-25px;padding:0;margin:0;list-style:none;text-align:center;line-height:1}.flickity-rtl .flickity-page-dots{direction:rtl}.flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}.flickity-page-dots .dot.is-selected{opacity:1}</style><style data-context="foundation-slideout-css">.slideout-menu{position:fixed;left:0;top:0;bottom:0;right:auto;z-index:0;width:256px;overflow-y:auto;-webkit-overflow-scrolling:touch;display:none}.slideout-menu.pushit-right{left:auto;right:0}.slideout-panel{position:relative;z-index:1;will-change:transform}.slideout-open,.slideout-open .slideout-panel,.slideout-open body{overflow:hidden}.slideout-open .slideout-menu{display:block}.pushit{display:none} code {
+padding: 2px 4px;
+color: #d14;
+background-color: #fbfbfb;
+border: 1px solid #e1e1e8;
+white-space: nowrap;
+font-family:Monaco,Menlo,Consolas,"Courier New",monospace;
+font-size: 10px;
+border-radius: 3px;
+}</style><!--[if lt IE 9]>
+<script src="/img/css/js/html5shiv-printshiv.min.js"></script>
+<script src="/img/css/js/selectivizr.js"></script>
+<![endif]-->
+<style>.ios7.web-app-mode.has-fixed header{ background-color: rgba(45,53,63,.88);}</style></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-43193 single-format-standard wp-custom-logo col-2cl full-width topbar-enabled header-desktop-sticky header-mobile-sticky chrome">
+<div id="wrapper">
+<header id="header" class="specific-mobile-menu-on one-mobile-menu mobile_menu header-ads-desktop header-ads-mobile topbar-transparent no-header-img">
+<nav class="nav-container group mobile-menu mobile-sticky " id="nav-mobile" data-menu-id="header-1">
+<div class="mobile-title-logo-in-header"><p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" title="首頁"><img src="https://www.itread01.com/logo.png"></a></p>
+</div>
+<div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
+</div>
+</div>
+
+<div class="nav-text"></div>
+<div class="nav-wrap container">
+<ul class="nav container-inner group mobile-search">
+<li>
+<form class="searchform themeform" onSubmit="return searchKw(this)">
+<div>
+<input type="text" name="kw" class="search" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+</div>
+</form>
+<script>function searchKw(c){var b=c.getElementsByTagName("input")[0],a=b.value.replace(/^\s+|\s+$/g,"");a=a.replace(/['"]/g,"");location.href="https://www.itread01.com/search/"+encodeURIComponent(a)+"";return false};</script></li>
+</ul>
+<ul id="menu-top" class="nav container-inner group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+ 
+</ul></div>
+</nav><!--/#nav-topbar-->
+<nav class="nav-container group desktop-menu desktop-sticky " id="nav-topbar" data-menu-id="header-2">
+<div class="nav-text"></div>
+<div class="topbar-toggle-down">
+<i class="fas fa-angle-double-down" aria-hidden="true" data-toggle="down" title="展開功能表清單"></i>
+<i class="fas fa-angle-double-up" aria-hidden="true" data-toggle="up" title="折疊功能表清單"></i>
+</div>
+<div class="nav-wrap container">
+<ul id="menu-footer" class="nav container-inner group"> 
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.itread01.com/" rel="nofollow">首頁</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/study/mysql-tutorial.html">MySQL教學</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網站技巧/1/">網站技巧</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網路程式設計/1/">網路程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/軟體程式設計/1/">軟體程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/資料庫/1/">資料庫</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/作業系統/1/">作業系統</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/指令碼專欄/1/">其它</a></li>
+ 
+</ul></div>
+<div id="topbar-header-search" class="container">
+<div class="container-inner">
+<div class="toggle-search"><i class="fas fa-search"></i></div>
+<div class="search-expand">
+<div class="search-expand-inner"><form class="searchform themeform" onSubmit="return searchKw(this)">
+<div>
+<input type="text" class="search" name="kw" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+</div>
+</form></div>
+</div>
+</div><!--/.container-inner-->
+</div><!--/.container-->
+
+</nav><!--/#nav-topbar-->
+<div class="container group">
+<div class="container-inner">
+
+<div class="group pad central-header-zone">
+<div class="logo-tagline-group">
+<p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" ><img src="https://www.itread01.com/logo.png"></a></p>
+</div>
+
+<div id="header-widgets">
+<div id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- /109765683/728_Banner -->
+ </div></div></div><!--/#header-ads-->
+</div>
+<nav class="nav-container group desktop-menu " id="nav-header" data-menu-id="header-3">
+<div class="nav-text"><!-- put your mobile menu text here --></div>
+<div class="nav-wrap container">
+<ul id="menu-top-1" class="nav container-inner group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+</ul></div>
+</nav><!--/#nav-header-->
+</div><!--/.container-inner-->
+</div><!--/.container-->
+</header><!--/#header-->
+<div class="container" id="page">
+<div class="container-inner">
+<div class="main">
+<div class="main-inner group">
+
+<section class="content">
+<div class="page-title pad group">
+<ul class="meta-single group">
+<li class="category"><a href="">科技</a></li>
+</ul>
+</div><!--/.page-title-->
+<div class="pad group">
+<article class="post-43193 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-stripe tag-32305 tag-32306 tag-4550 tag-5237 tag-31545 tag-6260">
+<div class="post-inner group">
+
+<h1 class="post-title entry-title">事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了</h1>
+<p class="post-byline"><span class="vcard author">
+<span class="post-tags"><a href=/科技/>科技</a> </span>&middot;
+發表 <time class="published" >2019-08-11 07:03:59</time>
+
+</p>
+
+<div class="clear"></div>
+<div class="entry themeform share">
+<div class="entry-inner">
+<div style="font-size:14px; color:#666; margin-bottom:20px;">摘要：原標題：事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了 圖片來源 / 圖蟲創意 最近一期相互寶每人分攤金額增長到1.48元，引發了社會廣泛關注。這背後，是相互寶8000多萬用戶對切身利益的關切。 相互寶因為能夠滿足更廣泛的社會群體在健康保障上的需求而逐漸受到追捧，但亦受到一些...</div>
+
+ <p data-role="original-title" style="display:none">原標題：事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了</p> <p><img src="https://5b0988e595225.cdn.sohucs.com/images/20190810/34e861d8517e464abc4f0a51c6c3bc85.jpeg" max-width="600">圖片來源 / 圖蟲創意</p> <p>最近一期相互寶每人分攤金額增長到1.48元，引發了社會廣泛關注。這背後，是相互寶8000多萬用戶對切身利益的關切。</p> <p>相互寶因為能夠滿足更廣泛的社會群體在健康保障上的需求而逐漸受到追捧，但亦受到一些質疑，比如最近一期被幫助人數和每人分攤金額的大幅增加是否合理，如何既縮短核保調查週期又保證結果準確無誤等。</p> <p>使用者的心理是“用最少的錢獲得最好的保障”，但需要強調的是，相互寶是大病互助計劃，不是保險，強加其替代保險的使命尚不現實。</p> <p><strong>“188元紅線”</strong></p> <p><strong>按照當前的法律體系和模式本質看，網路互助不屬於保險似乎幾無爭議。</strong></p> <p>根據保險法規定，在保險人、投保人、保費繳納、保險金給付等契約主體和契約關係等顯著要件方面，網路互助與保險具有明顯差異；同時，保險運營的核心是基於剛性賠付的償付能力體系管理，而網路互助平臺運營與此具有本質區別。</p> <p>開啟相互寶，被幫助成員人數映入眼簾。目前，相互寶大病互助計劃顯示，上期分攤（2019年7月第2期），被幫助成員496人，分攤人數7562.1萬人，每人分攤1.48元。</p> <p>從2019年5月開始，相互寶被幫助成員人數開始大幅增加。2019年5月兩期，相互寶大病互助計劃被幫助成員35人；6月兩期被幫助成員250人；7月兩期被幫助成員782人；在此之前，每月被幫助成員人數基本穩定，多在5人以內。</p> <p>這樣的增長合理嗎？這些被幫助成員是否都經過了嚴格的核賠調查？</p> <p><strong>對此，螞蟻金服回覆21世紀經濟報道記者稱，這主要受兩個因素的影響：</strong></p> <p>首先，相互寶的總人數在不斷增加，患病成員人數也會相應增加。</p> <p>其次，使用者加入相互寶後有3個月的等待期。等待期內患上重疾是不符合救助規則的，所以前期的救助人數會相對較少。等待期過後，患上重疾並且符合救助規則的成員數會變多。實際上，救助人數取決於有多少成員不幸患上重疾，這一點是不受任何外力影響的。隨著成員總數的增加，大數法則開始發揮作用，相互寶成員的重疾發生率會開始接近社會平均水平。</p> <div class="lookall-box"><div class="lookall-shadow"></div><section class="lookall"><a href="javascript:;" class="show-all" id="showMore"> <em>展開全文</em> </a></section> </div> <div class="hidden-content control-hide"><p>不過，螞蟻金服認為，由於相互寶成員結構更年輕，它的重疾發病率會低於社會平均水平。</p><p>螞蟻金服強調，相互寶的每一個互助案件，都會由專業的第三方調查機構進行嚴格的實地調查。調查內容包括申請人疾病和就醫情況、申請人既往就醫記錄，確保使用者符合相互寶《健康要求》和互助條件。調查完成後，相互寶會對互助案件進行復審、終審。每月7日、21日，相互寶會公示所有符合互助條件的案件接受社會監督。此外，相互寶的所有案件稽核一直都是按照規則來進行的，不存在稽核放寬或者從嚴的情況，未來也不會。</p><p>然而，由於分攤人數的增速不及被幫助成員人數，每人分攤金額亦水漲船高。對此，螞蟻金服表示，早在去年年底，相互寶就承諾過，2019年的人均分攤總金額不會超過188元，超過部分由螞蟻金服承擔。實際上，2019年1-7月，使用者平均每人在相互寶裡分攤的總金額，還不到10元。</p><p>深圳華博精算諮詢有限公司創始合夥人王曉波接受21世紀經濟報道記者採訪時表示，從重疾發生率的角度來看，188元對大部分相互寶使用者是划算的，但只適用於2019年。2020年及以後，相互寶使用者每年支付的錢，基於實際罹患重疾情況而定，是否划算不好評價，但如果健康使用者逐步退出，費用趨勢是會上升的。</p><p>值得一提的是，相互寶收取每筆救助金8%的管理費，隨著救助金總額的增加，管理費也相應增加。螞蟻金服回覆稱，相互寶收取的8%管理費完全用於案件調查、產品運營、技術等工作，目前還無法覆蓋成本。後續，將會通過技術的運用降低執行成本。</p><p><strong>拆解兩例賠審案</strong></p><p><img src="https://5b0988e595225.cdn.sohucs.com/images/20190810/8fca5c7df5a84043b3e45739dfe631d1.jpeg" max-width="600">圖片來源 / 圖蟲創意</p><p>回顧相互寶兩例賠審案件，今年3月，相互寶的首例賠審案例上線，“皮肌炎”成為網路熱搜。</p><p>相互寶成員唐某因意外跌入洪澇溝後深度昏迷，家屬發起了互助金申請，但核保調查員在核查中發現唐某此前因皮肌炎需遵醫囑長期服用激素藥物，認為這不符合健康告知要求，所以做出了不給予互助金的初步稽核結果。但在唐某家屬看來，皮肌炎並非導致意外和昏迷的原因，連續服藥的情況也早在兩年前，並不違背健康告知要求。</p><p>今年4月，相互寶成員張某女兒的“肝炎”問題再度引發關注。張某女兒意外摔傷，導致腦部重創，當即做了開顱手術，他向相互寶發起了互助金申請，但相互寶工作人員通知，由於張某女兒病歷顯示曾於滿月時患有肝炎，不符合理賠要求，不能申請互助金。</p><p>於是，張某找到了一年前的湖北省婦幼的病歷，顯示出院記錄確實是嬰兒肝炎綜合徵。對此，他諮詢了多位兒科醫生，表示這屬於嬰兒常見病，即病理性黃疸，不至於影響保險，況且已經治癒出院，肝功能無異常。為此，湖北省婦幼還為其開具了診斷證明。</p><p>因為存在爭議，兩例案件均交給了相互寶賠審團審議。最終，前者未能獲得互助金，後者獲得了互助金。</p><p>不難發現，賠審團的作用至關重要。這兩個案件如果刨除賠審團的參與，核保調查的結果是否合理？賠審團是否真的能達到公平、公正的效果？</p><p>螞蟻金服認為，賠審團的設立，能夠讓爭議類案件被公開透明、情理兼顧地處理。審議過程中，案件的情況、規則的討論完全公開透明，各方也按照規則進行審議，最大限度地保證了結果公正。</p><p>值得一提的是，從運營至今，相互寶對健康告知也進行了相應調整。這是否與爭議案件有關？螞蟻金服指出，相關調整是經過了使用者調研、公開徵求意見，最終才調整生效的。從專業性和必要性上來說，也是科學的調整。</p></div><nav class="pagination group">
+</nav><!--/.pagination-->
+</div>
+
+
+<div class="clear"></div>
+</div><!--/.entry-->
+
+</div><!--/.post-inner-->
+</article><!--/.post-->
+
+<div class="clear"></div>
+
+<p class="post-tags"><span>來源：</span><a href="/author/%E6%9C%89%E9%81%93%E7%86%B1%E9%BB%9E/1/">有道熱點</a></p>
+
+<h4 class="heading">
+<i class="far fa-hand-point-right"></i>您可能也會喜歡…</h4>
+ <ul class="lrelated-posts group">
+<li><a href="/hklpiyhk.html">創業時是兄弟，裁員時統稱三類人？京東的最新迴應來了！</a></li>
+<li><a href="/hkieixx.html">馬雲的支付寶為什麼現在要大力推出花唄收款？當中的套路瞭解一下</a></li>
+<li><a href="/hkxcfcl.html">馬雲的支付寶“螞蟻森林”真的會在沙漠種樹嗎？</a></li>
+<li><a href="/qyiye.html">馬雲、劉強東紛紛入局，為何大佬們都愛上了養豬？</a></li>
+<li><a href="/hkicy.html">易讀|網秦董事長最新迴應:林宇在發假新聞 擾亂</a></li>
+<li><a href="/xiyxp.html">【注意】你的微訊號可能會被後臺收回，裡面的錢還不退？網友憤怒刷屏，官方迴應來了...</a></li>
+<li><a href="/hkphkxqy.html">【894闢謠】瘋傳微訊號可能會被回收，裡面的錢還不退？官方迴應來了</a></li>
+<li><a href="/hkpehkxx.html">拼多多一夜被薅羊毛千萬！最新訊息來了……</a></li>
+<li><a href="/hkhkpqxe.html">蘋果最新財報來了，遭遇滑鐵盧的庫克要如何進行下一步？</a></li>
+<li><a href="/hklpehkq.html">傳京東淘汰因家庭和身體原因不拼搏的員工 迴應來了</a></li>
+
+</ul><!--/.post-related-->
+ 
+</div><!--/.pad-->
+</section><!--/.content-->
+<div class="sidebar s1 collapsed" data-position="right" data-layout="col-2cl" data-sb-id="s1">
+
+<a class="sidebar-toggle" title="延伸側邊欄位"><i class="fas icon-sidebar-toggle"></i></a>
+
+<div class="sidebar-content">
+<div class="sidebar-top group">
+<p>贊助商廣告</p>
+
+</div>
+<div id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"> 
+</div></div>
+<ul class="post-nav group">
+
+<li class="previous"> <a href="/ixfeqp.html"><i class="fas fa-chevron-left"></i><strong>上一則</strong> <span>摩拜第一，4家企業退出或整改，北京如何給共享單車打分？</span></a>
+</li>
+ <li class="next"><a href="/ixfeqc.html"><i class="fas fa-chevron-right"></i><strong>下一則</strong> <span>董明珠不服輸，贏雷軍10億賭約，還不放棄做手機正研發5G手機</span> </a></li>
+ 
+</ul>
+ <div id="alxtabs-2" class="widget widget_hu_tabs">
+ 
+<ul class="alx-tabs-nav group tab-count-3"><li class="alx-tab tab-recent"><a href="#tab-recent-2" title="熱門文章"><i class="far fa-clock"></i></a></li><li class="alx-tab tab-tags"><a href="#tab-tags-2" title="標籤"><i class="fas fa-star"></i> </a></li></ul>
+<div class="alx-tabs-container">
+<ul id="tab-recent-2" class="alx-tab group"> 
+
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/南方都市報/1/" rel="category tag">南方都市報</a></p>
+<p class="tab-item-title"><a href="/ixfeyx.html" title="首款搭載華為鴻蒙作業系統產品釋出">首款搭載華為鴻蒙作業系統產品釋出</a></p>
+<p class="tab-item-date">2019-08-11 07:04:50</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/有道熱點/1/" rel="category tag">有道熱點</a></p>
+<p class="tab-item-title"><a href="/ixfeqp.html" title="摩拜第一，4家企業退出或整改，北京如何給共享單車打分？">摩拜第一，4家企業退出或整改，北京如何給共享單車打分？</a></p>
+<p class="tab-item-date">2019-08-11 07:04:03</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/有道熱點/1/" rel="category tag">有道熱點</a></p>
+<p class="tab-item-title"><a href="/ixfeqhk.html" title="事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了">事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了</a></p>
+<p class="tab-item-date">2019-08-11 07:03:59</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/真相君/1/" rel="category tag">真相君</a></p>
+<p class="tab-item-title"><a href="/ixfeqc.html" title="董明珠不服輸，贏雷軍10億賭約，還不放棄做手機正研發5G手機">董明珠不服輸，贏雷軍10億賭約，還不放棄做手機正研發5G手機</a></p>
+<p class="tab-item-date">2019-08-11 07:02:45</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/真相君/1/" rel="category tag">真相君</a></p>
+<p class="tab-item-title"><a href="/ixfeqe.html" title="失望於美國？華為或將放棄等待安卓，“鴻蒙”手機將於這時問世？">失望於美國？華為或將放棄等待安卓，“鴻蒙”手機將於這時問世？</a></p>
+<p class="tab-item-date">2019-08-11 07:02:31</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/每日經濟新聞/1/" rel="category tag">每日經濟新聞</a></p>
+<p class="tab-item-title"><a href="/ixfcix.html" title="重新評估網際網路巨頭：究竟是中國崛起的奠基石 還是埋藏危機的落井石？">重新評估網際網路巨頭：究竟是中國崛起的奠基石 還是埋藏危機的落井石？</a></p>
+<p class="tab-item-date">2019-08-11 06:15:59</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/千龍網/1/" rel="category tag">千龍網</a></p>
+<p class="tab-item-title"><a href="/ixeycx.html" title="首款搭載鴻蒙產品“榮耀智慧屏”釋出">首款搭載鴻蒙產品“榮耀智慧屏”釋出</a></p>
+<p class="tab-item-date">2019-08-11 01:12:27</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/參考訊息/1/" rel="category tag">參考訊息</a></p>
+<p class="tab-item-title"><a href="/ixeypx.html" title="華為告訴你，六年後我們的世界會變成什麼樣——">華為告訴你，六年後我們的世界會變成什麼樣——</a></p>
+<p class="tab-item-date">2019-08-11 00:37:23</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/搜狐焦點廣州站/1/" rel="category tag">搜狐焦點廣州站</a></p>
+<p class="tab-item-title"><a href="/ixelfx.html" title="傳郭臺銘610億增城專案將易主 當地宣傳部迴應:專案正常推進">傳郭臺銘610億增城專案將易主 當地宣傳部迴應:專案正常推進</a></p>
+<p class="tab-item-date">2019-08-11 00:03:44</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/新京報/1/" rel="category tag">新京報</a></p>
+<p class="tab-item-title"><a href="/ixpyix.html" title="鴻蒙系統面世 華為：並非做另一個安卓">鴻蒙系統面世 華為：並非做另一個安卓</a></p>
+<p class="tab-item-date">2019-08-10 00:33:30</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/新京報/1/" rel="category tag">新京報</a></p>
+<p class="tab-item-title"><a href="/ixpyxp.html" title="“鴻蒙”面世">“鴻蒙”面世</a></p>
+<p class="tab-item-date">2019-08-10 00:32:27</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/環球網/1/" rel="category tag">環球網</a></p>
+<p class="tab-item-title"><a href="/ixpyxhk.html" title="社評：鴻蒙，中國高科技突圍的英勇帶動點">社評：鴻蒙，中國高科技突圍的英勇帶動點</a></p>
+<p class="tab-item-date">2019-08-10 00:17:12</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/環球網/1/" rel="category tag">環球網</a></p>
+<p class="tab-item-title"><a href="/ixpyfx.html" title="華為開發者大會開幕：鴻蒙OS、EMUI 10.0等悉數亮相">華為開發者大會開幕：鴻蒙OS、EMUI 10.0等悉數亮相</a></p>
+<p class="tab-item-date">2019-08-10 00:10:55</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/央視財經/1/" rel="category tag">央視財經</a></p>
+<p class="tab-item-title"><a href="/ixpylp.html" title="App收集隱私將有“國標”！個人資訊有望不再“裸奔”！">App收集隱私將有“國標”！個人資訊有望不再“裸奔”！</a></p>
+<p class="tab-item-date">2019-08-10 00:10:32</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/新策展資訊圈/1/" rel="category tag">新策展資訊圈</a></p>
+<p class="tab-item-title"><a href="/ixpylhk.html" title="能源需求側綜合管理">能源需求側綜合管理</a></p>
+<p class="tab-item-date">2019-08-10 00:03:28</p>
+</div>
+</li>
+
+</ul><!--/.alx-tab-->
+<ul id="tab-tags-2" class="alx-tab group">
+<li>
+<a href="https://www.itread01.com/tags/android/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;">Android</a> 
+
+<a href="https://www.itread01.com/infolist/Web%E9%96%8B%E7%99%BC/1/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;">WEB開發</a> 
+<a href="https://www.itread01.com/infolist/%E5%85%B6%E4%BB%96/1/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;">其它</a> 
+
+</li>
+</ul><!--/.alx-tab-->
+</div>
+</div>
+</div><!--/.sidebar-content-->
+</div><!--/.sidebar-->
+</div><!--/.main-inner-->
+</div><!--/.main-->
+</div><!--/.container-inner-->
+</div><!--/.container-->
+<script type="text/javascript" src="/click.php?id=5366256"></script>
+<footer id="footer">
+<nav class="nav-container group" id="nav-footer" data-menu-id="footer-4" data-menu-scrollable="false">
+<!-- <div class="ham__navbar-toggler collapsed" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="ham-toggler-menu__span"></span>
+</div>
+</div> -->
+<div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
+</div>
+</div>
+<div class="nav-text"></div>
+<div class="nav-wrap">
+<ul id="menu-top-2" class="nav container group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/" rel="nofollow">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/study/python-tutorial.html" >Python教學</a></li>
+ 
+</ul></div>
+</nav><!--/#nav-footer-->
+
+<section class="container" id="footer-bottom">
+<div class="container-inner">
+
+<a id="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+
+<div class="pad group">
+
+<div class="grid one-half">
+
+<div id="copyright">
+<p>ITREAD01.COM &copy; 2018. 版權所有。 </p>
+</div><!--/#copyright-->
+</div>
+</div><!--/.pad-->
+
+</div><!--/.container-inner-->
+</section><!--/.container-->
+
+</footer><!--/#footer-->
+
+</div><!--/#wrapper-->
+
+<!-- Powered by WPtouch: 4.3.27 --><script type='text/javascript' src='/img/css/js/jQuerySharrre.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/img/css/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"1","extLinksTargetExt":"1","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".container .content",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":true,"mobile":false},"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"isDevMode":"","ajaxUrl":"https:\/\/www.itread01.com\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"d9125fec3b"},"userStarted":{"with":"with|3.3.27","on":{"date":"2018-03-27 03:41:18.000000","timezone_type":3,"timezone":"UTC"}},"isWelcomeNoteOn":"","welcomeContent":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/scripts.min.js?ver=3.3.27'></script>
+<script type='text/javascript' src='/img/css/js/wp-embed.min.js?ver=4.8.2'></script>
+
+<!--[if lt IE 9]>
+<script src="/img/css/js/respond.js"></script>
+<![endif]-->
+<div style="display:none"><script type='text/javascript' src='/js/c.js'></script>0.0018210411071777</div>
+</body>
+</html>

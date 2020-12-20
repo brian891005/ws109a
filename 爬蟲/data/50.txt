@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-TW" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <title>騰訊雲伺服器安裝wampserver,,電腦出現缺少vcruntime140.dll檔案問題 - IT閱讀</title>
+<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" rel="stylesheet">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta name="referrer" content="never">
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='hueman-main-style-css'  href='/img/css/main.info.css' type='text/css' media='all' />
+<link href="https://www.itread01.com/img/prettify.css" type="text/css" rel="stylesheet"/>
+<script src="https://www.itread01.com/img/run_prettify.js"></script>
+<style id='hueman-main-style-inline-css' type='text/css'>
+body { font-family:'Source Sans Pro', Arial, sans-serif;font-size:1.00rem }@media only screen and (min-width: 720px) {
+        .nav > li { font-size:1.00rem; }
+      }::selection { background-color: #fca61b; }
+::-moz-selection { background-color: #fca61b; }a,.themeform label .required,#flexslider-featured .flex-direction-nav .flex-next:hover,#flexslider-featured .flex-direction-nav .flex-prev:hover,.post-hover:hover .post-title a,.post-title a:hover,.sidebar.s1 .post-nav li a:hover i,.content .post-nav li a:hover i,.post-related a:hover,.sidebar.s1 .widget_rss ul li a,#footer .widget_rss ul li a,.sidebar.s1 .widget_calendar a,#footer .widget_calendar a,.sidebar.s1 .alx-tab .tab-item-category a,.sidebar.s1 .alx-posts .post-item-category a,.sidebar.s1 .alx-tab li:hover .tab-item-title a,.sidebar.s1 .alx-tab li:hover .tab-item-comment a,.sidebar.s1 .alx-posts li:hover .post-item-title a,#footer .alx-tab .tab-item-category a,#footer .alx-posts .post-item-category a,#footer .alx-tab li:hover .tab-item-title a,#footer .alx-tab li:hover .tab-item-comment a,#footer .alx-posts li:hover .post-item-title a,.comment-tabs li.active a,.comment-awaiting-moderation,.child-menu a:hover,.child-menu .current_page_item > a,.wp-pagenavi a{ color: #fca61b; }.themeform input[type="submit"],.themeform button[type="submit"],.sidebar.s1 .sidebar-top,.sidebar.s1 .sidebar-toggle,#flexslider-featured .flex-control-nav li a.flex-active,.post-tags a:hover,.sidebar.s1 .widget_calendar caption,#footer .widget_calendar caption,.author-bio .bio-avatar:after,.commentlist li.bypostauthor > .comment-body:after,.commentlist li.comment-author-admin > .comment-body:after{ background-color: #fca61b; }.post-format .format-container { border-color: #fca61b; }.sidebar.s1 .alx-tabs-nav li.active a,#footer .alx-tabs-nav li.active a,.comment-tabs li.active a,.wp-pagenavi a:hover,.wp-pagenavi a:active,.wp-pagenavi span.current{ border-bottom-color: #fca61b!important; }.sidebar.s2 .post-nav li a:hover i,
+.sidebar.s2 .widget_rss ul li a,
+.sidebar.s2 .widget_calendar a,
+.sidebar.s2 .alx-tab .tab-item-category a,
+.sidebar.s2 .alx-posts .post-item-category a,
+.sidebar.s2 .alx-tab li:hover .tab-item-title a,
+.sidebar.s2 .alx-tab li:hover .tab-item-comment a,
+.sidebar.s2 .alx-posts li:hover .post-item-title a { color: #3bcfe2; }
+.sidebar.s2 .sidebar-top,.sidebar.s2 .sidebar-toggle,.post-comments,.jp-play-bar,.jp-volume-bar-value,.sidebar.s2 .widget_calendar caption{ background-color: #3bcfe2; }.sidebar.s2 .alx-tabs-nav li.active a { border-bottom-color: #3bcfe2; }
+.post-comments span:before { border-right-color: #3bcfe2; }
+      .search-expand,
+              #nav-topbar.nav-container { background-color: #303030}@media only screen and (min-width: 720px) {
+                #nav-topbar .nav ul { background-color: #303030; }
+              }.is-scrolled #header .nav-container.desktop-sticky,
+              .is-scrolled #header .search-expand { background-color: #303030; background-color: rgba(48,48,48,0.90) }.is-scrolled .topbar-transparent #nav-topbar.desktop-sticky .nav ul { background-color: #303030; background-color: rgba(48,48,48,0.95) }#header { background-color: #363944; }
+@media only screen and (min-width: 720px) {
+  #nav-header .nav ul { background-color: #363944; }
+}
+        .is-scrolled #header #nav-mobile { background-color: #454e5c; background-color: rgba(69,78,92,0.90) }body { background-color: #eaeaea; }
+		.entry-inner h1{ font-size:20px; font-weight:bold;}
+		.entry-inner h2,h3,h4{ font-size:18px; font-weight:bold;}
+</style>
+ 
+
+<link rel='stylesheet' id='hueman-font-awesome-css'  href='/img/css/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"","inbound_paths":"","home_url":"https:\/\/www.itread01.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/frontend.min.js'></script>
+<script type='text/javascript' src='/img/css/js/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/img/css/jsjquery-migrate.min.js?ver=1.4.1'></script>
+<script src="/styles/highlight.js"></script>
+<link rel="stylesheet" type="text/css" href="/styles/default.css"/>
+<meta name="generator" content="WordPress 4.8.2" />
+<!--[if lt IE 9]>
+<script src="/img/css/js/html5shiv-printshiv.min.js"></script>
+<script src="/img/css/js/selectivizr.js"></script>
+<![endif]-->
+<style>.ios7.web-app-mode.has-fixed header{ background-color: rgba(45,53,63,.88);}</style></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-43193 single-format-standard wp-custom-logo col-2cl full-width topbar-enabled header-desktop-sticky header-mobile-sticky chrome">
+    <div id="wrapper">
+        <header id="header" class="specific-mobile-menu-on one-mobile-menu mobile_menu header-ads-desktop header-ads-mobile topbar-transparent no-header-img">
+        <nav class="nav-container group mobile-menu mobile-sticky " id="nav-mobile" data-menu-id="header-1">
+  <div class="mobile-title-logo-in-header"><p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" title="首頁"><img src="https://www.itread01.com/logo.png"></a></p>
+                </div>
+        <div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </div>
+        </div>
+            
+      <div class="nav-text"></div>
+      <div class="nav-wrap container">
+                  <ul class="nav container-inner group mobile-search">
+                            <li>
+                  <form class="searchform themeform" onSubmit="return searchKw(this)">
+	<div>
+		<input type="text" name="kw" class="search" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+	</div>
+</form>    
+<script>function searchKw(c){var b=c.getElementsByTagName("input")[0],a=b.value.replace(/^\s+|\s+$/g,"");a=a.replace(/['"]/g,"");location.href="https://www.itread01.com/search/"+encodeURIComponent(a)+"";return false};</script>            </li>
+                      </ul>
+                <ul id="menu-top" class="nav container-inner group">
+                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+				<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+						  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+ 
+</ul>      </div>
+</nav><!--/#nav-topbar-->  
+        <nav class="nav-container group desktop-menu desktop-sticky " id="nav-topbar" data-menu-id="header-2">
+    <div class="nav-text"></div>
+  <div class="topbar-toggle-down">
+    <i class="fas fa-angle-double-down" aria-hidden="true" data-toggle="down" title="展開功能表清單"></i>
+    <i class="fas fa-angle-double-up" aria-hidden="true" data-toggle="up" title="折疊功能表清單"></i>
+  </div>
+  <div class="nav-wrap container">
+    <ul id="menu-footer" class="nav container-inner group"> 
+    <li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.itread01.com/" rel="nofollow">首頁</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/study/mysql-tutorial.html">MySQL教學</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網站技巧/1/">網站技巧</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網路程式設計/1/">網路程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/軟體程式設計/1/">軟體程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/資料庫/1/">資料庫</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/作業系統/1/">作業系統</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/指令碼專欄/1/">其它</a></li>
+ 
+</ul>  </div>
+      <div id="topbar-header-search" class="container">
+      <div class="container-inner">
+        <div class="toggle-search"><i class="fas fa-search"></i></div>
+        <div class="search-expand">
+          <div class="search-expand-inner"><form class="searchform themeform" onSubmit="return searchKw(this)">
+	<div>
+		<input type="text" class="search" name="kw" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+	</div>
+</form></div>
+        </div>
+      </div><!--/.container-inner-->
+    </div><!--/.container-->
+  
+</nav><!--/#nav-topbar-->  
+  <div class="container group">
+        <div class="container-inner">
+
+                    <div class="group pad central-header-zone">
+                  <div class="logo-tagline-group">
+                                        <p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" ><img src="https://www.itread01.com/logo.png"  ></a></p>
+                                                        </div>
+
+                                        <div id="header-widgets">
+                          <div id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- /109765683/728_Banner -->
+ </div></div>                      </div><!--/#header-ads-->
+                                </div>
+                <nav class="nav-container group desktop-menu " id="nav-header" data-menu-id="header-3">
+    <div class="nav-text"><!-- put your mobile menu text here --></div>
+  <div class="nav-wrap container">
+        <ul id="menu-top-1" class="nav container-inner group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+</ul>  </div>
+</nav><!--/#nav-header-->      
+    </div><!--/.container-inner-->
+      </div><!--/.container-->
+</header><!--/#header-->        
+        <div class="container" id="page">
+            <div class="container-inner">
+
+                                <div class="main">
+                    <div class="main-inner group">
+                        
+              <section class="content">
+              <div class="page-title pad group">
+          	    		<ul class="meta-single group">
+    			<li class="category"><a href="/infolist/其他/1/">其他</a></li>
+    			    		</ul>
+
+    	
+    </div><!--/.page-title-->
+          <div class="pad group">
+              <article class="post-43193 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-stripe tag-32305 tag-32306 tag-4550 tag-5237 tag-31545 tag-6260">
+    <div class="post-inner group">
+
+      <h1 class="post-title entry-title">騰訊雲伺服器安裝wampserver,,電腦出現缺少vcruntime140.dll檔案問題</h1>
+<p class="post-byline"><span class="vcard author">
+     <span class="fn"><a href="/infolist/其他/1/">其他</a></span>
+   </span> &middot;
+                            發表 <time class="published" datetime="2019-02-03">2019-02-03</time>
+             
+               </p>
+               <ins id="scupio-sc-4995-17811-847678" class="scupioadslot" style="display:none;width:100%;height:100px;"
+    data-sca-pub="lRIJBAgyQA=="
+    data-sca-web="4995"
+    data-sca-category="17"
+    data-sca-cid="17811"
+    data-sca-slot-type="PRA"></ins>
+<script async src="https://img.scupio.com/js/ad.js"></script>
+<script>
+(function(s, c, u, p, i, o, a, d) {
+    'use strict';
+    var z=function(t,e,r){var a,n=document.createElement('ins'),s=n.style;for(a in n.className='scupioadslot',r&&(n.id=r),t)t.hasOwnProperty(a)&&(s[a]=t[a]);for(a in e)e.hasOwnProperty(a)&&n.setAttribute('data-sca-'+a,e[a]);return n};
+    (d = s.Scupioads = s.Scupioads || []).push({
+        id: u,
+        callback: function() {
+            p = c.getElementById(u);
+            i = p.style;
+            o = 'inline-block';
+            p.appendChild(z({
+                display: o,
+                width: '100%',
+                height: '100px',
+                margin: 'auto'
+            }, {
+                'pub': 'lRIJBAgyQA==',
+                'web': '4995',
+                'category': '17',
+                'cid': '17812',
+                'slot-type': 'STA'
+            }));
+            i.width = '100%';
+            i.height = '100px';
+            i.display = o;
+        }
+    });
+    setTimeout(function(){if(!s.Scupioads.init)for(i=d.length-1;0<=i;i--)if(d[i].id===u){d[i].callback(),d[i].callback=function(){};break}},1e3);
+})(window, document, 'scupio-sc-4995-17811-847678');
+</script>
+      
+      <div class="clear"></div>
+ 
+      <div class="entry themeform share">
+        <div class="entry-inner">
+		<div class="htmledit_views" id="content_views">
+                
+
+<p><img src="https://img-blog.csdn.net/20161102115843783?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="" referrerPolicy="no-referrer" class="img-fluid"><br></p>
+<p>下載最新的wampserver 3.0.6，進行正常的安裝，如果出現提示電腦出現缺少vcruntime140.dll，請安裝我下面的操作：</p>
+<p>1.把<span style="font-size:13.3333px;">wampserver 3.0.6<span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">進行解除安裝</span></span><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">：</span><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">開始選單-&gt;控制面板-&gt;程式/解除安裝程式，進行解除安裝，當然，你也可以使用其他類似軟體管家的工具進行解除安裝。</span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">2.<span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">這裡提供 64位的vc++2015，連結: http://pan.baidu.com/s/1pLaRTRd 密碼: un85  。<span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">32位的請自行到http://www.microsoft.com/en-us/download/details.aspx?id=30679</span></span></span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">3.把下載的<span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">vc++2015安裝，無腦式安裝，一直按next就好。</span></span></span></span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">4.把<span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">vcruntime140.dll</span></span></span></span></span><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">解壓檔案，把32位的vcruntime140.dll複製到：C:\Windows\SysWOW64裡，在把，zhuce.bat複製</span><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">C:\Windows\SysWOW64</span><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">，雙擊執行；當你看到：註冊成功的字樣，說明vrcuntime140.dll已經註冊成功了。</span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;">5.把<span style="font-size:13.3333px;">下載最新的</span><span style="font-size:13.3333px;">wampserver
+ 3.0.6重新安裝，</span></span></span></span></span></span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-size:13.3333px;">6.如果遇到<span style="font-size:13.3333px;">wampserver
+ 3.0.6的apache無法啟動，先把網站的80埠停用，再啟動apache就可以</span></span></span></span></span></span></span></p>
+
+
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-size:13.3333px;"><span style="font-size:13.3333px;"><strong><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;">找到Apache安裝目錄下conf目錄下的httpd.conf檔案</span><br></strong></span></span></span></span></span></span></span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-size:13.3333px;"><span style="font-size:13.3333px;"><strong><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><img src="http://img.my.csdn.net/uploads/201206/03/1338658242_6477.png" alt="" referrerPolicy="no-referrer" class="img-fluid"><br></span></strong></span></span></span></span></span></span></span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-size:13.3333px;"><span style="font-size:13.3333px;"><span style="font-weight:bold;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;">開啟它，找到“Listen
+ 80”和“ServerName localhost:80”，緊接著Listen的數字就是埠號，預設狀態下為“Listen 80”和“ServerName localhost:80”。修改為<span style="font-family:arial, '宋體', sans-serif;font-size:13.3333px;line-height:28px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;">Listen
+ 8080”和“ServerName localhost:8080</span></span></span><br></span></span></span></span></span></span></span></span></span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-size:13.3333px;"><span style="font-size:13.3333px;"><span style="font-weight:bold;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="font-family:arial, '宋體', sans-serif;font-size:13.3333px;line-height:28px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><img src="http://img.my.csdn.net/uploads/201206/03/1338658242_4067.png" alt="" referrerPolicy="no-referrer" class="img-fluid"><br></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-size:13.3333px;"><span style="font-size:13.3333px;"><span style="font-weight:bold;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="font-family:arial, '宋體', sans-serif;font-size:13.3333px;line-height:28px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><img src="http://img.my.csdn.net/uploads/201206/03/1338658242_6116.png" alt="" referrerPolicy="no-referrer" class="img-fluid"><br></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-size:13.3333px;"><span style="font-size:13.3333px;"><span style="font-weight:bold;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="font-family:arial, '宋體', sans-serif;font-size:13.3333px;line-height:28px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;">重啟</span><span lang="en-us" style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;" xml:lang="en-us">wamp</span><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;">，就可以生效了</span><br></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-family:arial, '宋體', sans-serif;font-size:14px;line-height:28px;"><span style="font-size:13.3333px;"><span style="font-size:13.3333px;"><span style="font-weight:bold;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="font-family:arial, '宋體', sans-serif;font-size:13.3333px;line-height:28px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><span style="color:rgb(51,51,51);font-family:Arial;font-size:14px;line-height:26px;"><img src="https://blog.csdn.net/qq_24038207/article/details/52678247" alt="" referrerPolicy="no-referrer" class="img-fluid"><br></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+            </div>
+                
+        
+	 <center><ins id="scupio-sc-4995-17522-26274" class="scupioadslot" style="display:inline-block;width:300px;height:250px;"
+    data-sca-pub="lRIJBAgyQA=="
+    data-sca-web="4995"
+    data-sca-category="17"
+    data-sca-cid="17522"
+    data-sca-slot-type="PRA"></ins>
+<script async src="https://img.scupio.com/js/ad.js"></script>
+<script>
+(function(s, c, u, p, i, o, a, d) {
+    'use strict';
+    var z=function(t,e,r){var a,n=document.createElement('ins'),s=n.style;for(a in n.className='scupioadslot',r&&(n.id=r),t)t.hasOwnProperty(a)&&(s[a]=t[a]);for(a in e)e.hasOwnProperty(a)&&n.setAttribute('data-sca-'+a,e[a]);return n};
+    (d = s.Scupioads = s.Scupioads || []).push({
+        id: u,
+        callback: function() {
+            p = c.getElementById(u);
+            i = p.style;
+            o = 'inline-block';
+            p.appendChild(z({
+                display: o,
+                width: '300px',
+                height: '250px',
+                margin: 'auto'
+            }, {
+                'pub': 'lRIJBAgyQA==',
+                'web': '4995',
+                'category': '17',
+                'cid': '17523',
+                'slot-type': 'STA'
+            }));
+            i.width = '300px';
+            i.height = '250px';
+            i.display = o;
+        }
+    });
+    setTimeout(function(){if(!s.Scupioads.init)for(i=d.length-1;0<=i;i--)if(d[i].id===u){d[i].callback(),d[i].callback=function(){};break}},1e3);
+})(window, document, 'scupio-sc-4995-17522-26274');
+</script></center>
+          <nav class="pagination group">
+                      </nav><!--/.pagination-->
+        </div>
+
+    
+        <div class="clear"></div>
+      </div><!--/.entry-->
+
+    </div><!--/.post-inner-->
+  </article><!--/.post-->
+
+<div class="clear"></div>
+
+<p class="post-tags"><span>標籤：</span>  </p>
+
+<center>
+</center>
+
+
+<h4 class="heading">
+	<i class="far fa-hand-point-right"></i>您可能也會喜歡…</h4>
+
+ <ul class="lrelated-posts group">
+		 	<li><a href="/content/1549194318.html" target="_blank">騰訊雲伺服器安裝wampserver,,電腦出現缺少vcruntime140.dll檔案問題</a> </li>
+    	<li><a href="/content/1546104006.html" target="_blank">騰訊雲伺服器安裝jdk</a> </li>
+    	<li><a href="/content/1541874603.html" target="_blank">Windows2012 (騰訊雲伺服器)安裝指南</a> </li>
+    	<li><a href="/content/1548430235.html" target="_blank">解決Win10安裝Apache缺少vcruntime140.dll檔案問題</a> </li>
+    	<li><a href="/content/1548776351.html" target="_blank">關於騰訊雲伺服器配置tomcat和釋出web專案的總結</a> </li>
+    	<li><a href="/content/1547373457.html" target="_blank">阿里雲伺服器安裝mysql，如何實現遠端連線</a> </li>
+    	<li><a href="/content/1549921528.html" target="_blank">騰訊雲伺服器（centos 7 ） 安裝 apache  https 環境</a> </li>
+    	<li><a href="/content/1549886239.html" target="_blank">阿里雲騰訊雲伺服器部署安裝 Nginx 【三部曲之三】</a> </li>
+    	<li><a href="/content/1548197860.html" target="_blank">Windows server 2012R2 版本安裝Geoserver --------基於騰訊雲伺服器搭建個人地圖網站(三)</a> </li>
+    	<li><a href="/content/1546927765.html" target="_blank">騰訊雲伺服器如何獲取root許可權，如何配置在雲伺服器上配置JDK（續）以及Tomcat的安裝啟動</a> </li>
+    	<li><a href="/content/1546782337.html" target="_blank">騰訊雲伺服器圖形介面安裝</a> </li>
+    	<li><a href="/content/1546423393.html" target="_blank">騰訊雲伺服器的配置與部署（二）：MySQL的配置安裝、雲伺服器與雲資料庫的連線</a> </li>
+    	<li><a href="/content/1546243142.html" target="_blank">ubuntu16 安裝MySQL8.0 deb包 （騰訊雲伺服器）</a> </li>
+    	<li><a href="/content/1545306484.html" target="_blank">騰訊雲伺服器 Tomcat 安裝 訪問</a> </li>
+    	<li><a href="/content/1544799975.html" target="_blank">騰訊雲伺服器Centos7上安裝JDK</a> </li>
+     
+</ul><!--/.post-related-->
+
+
+
+        </div><!--/.pad-->
+        </section><!--/.content-->
+          
+
+	<div class="sidebar s1 collapsed" data-position="right" data-layout="col-2cl" data-sb-id="s1">
+
+		<a class="sidebar-toggle" title="延伸側邊欄位"><i class="fas icon-sidebar-toggle"></i></a>
+
+		<div class="sidebar-content">
+
+			  			<div class="sidebar-top group">
+                        <p>贊助商廣告</p>
+             
+           			</div>
+		 
+				<ul class="post-nav group">
+      
+ 
+		<li class="previous"> </li>
+  
+  
+		 <li class="next">  </li>
+ 
+	</ul>
+
+<div id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- /109765683/300x250 -->
+<ins id="scupio-sc-4995-17521-400386" class="scupioadslot" style="display:inline-block;width:300px;height:250px;"
+    data-sca-pub="lRIJBAgyQA=="
+    data-sca-web="4995"
+    data-sca-category="17"
+    data-sca-cid="17521"
+    data-sca-slot-type="PRA"></ins>
+<script async src="https://img.scupio.com/js/ad.js"></script>
+<script>
+(function(s, c, u, p, i, o, a, d) {
+    'use strict';
+    var z=function(t,e,r){var a,n=document.createElement('ins'),s=n.style;for(a in n.className='scupioadslot',r&&(n.id=r),t)t.hasOwnProperty(a)&&(s[a]=t[a]);for(a in e)e.hasOwnProperty(a)&&n.setAttribute('data-sca-'+a,e[a]);return n};
+    (d = s.Scupioads = s.Scupioads || []).push({
+        id: u,
+        callback: function() {
+            p = c.getElementById(u);
+            i = p.style;
+            o = 'inline-block';
+            p.appendChild(z({
+                display: o,
+                width: '300px',
+                height: '250px',
+                margin: 'auto'
+            }, {
+                'pub': 'lRIJBAgyQA==',
+                'web': '4995',
+                'category': '17',
+                'cid': '17518',
+                'slot-type': 'STA'
+            }));
+            i.width = '300px';
+            i.height = '250px';
+            i.display = o;
+        }
+    });
+    setTimeout(function(){if(!s.Scupioads.init)for(i=d.length-1;0<=i;i--)if(d[i].id===u){d[i].callback(),d[i].callback=function(){};break}},1e3);
+})(window, document, 'scupio-sc-4995-17521-400386');
+</script>
+</div></div><div id="text-7" class="widget widget_text">			 
+		</div>
+        
+        <div id="alxtabs-2" class="widget widget_hu_tabs">
+<h3 class="widget-title"></h3>
+<ul class="alx-tabs-nav group tab-count-3"><li class="alx-tab tab-recent"><a href="#tab-recent-2" title="熱門文章"><i class="far fa-clock"></i></a></li><li class="alx-tab tab-tags"><a href="#tab-tags-2" title="標籤"><i class="fas fa-star"></i> </a></li></ul>
+	<div class="alx-tabs-container">						
+			<ul id="tab-recent-2" class="alx-tab group">
+								 
+					      
+                  <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194319.html">GD32F130FXP6學習筆記三：ARM的GPIO初識 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194322.html">SQL Server不存在或拒絕訪問故障的排除 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194323.html">Mysql 字串 操作函式 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194324.html">Entity Framework多對多關聯對映的實現 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194326.html">Redis的常用方法總結 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194328.html">176.第二高的薪水 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194329.html">Spring Boot入門教程(四十三): API介面設計之token、timestamp、sign </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194330.html">django 中 SMTP 傳送郵件配置 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194332.html">Java介面特徵與細節 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194333.html">C# Serializable(轉) ，序列化、反序列化 </a></p>
+										</div>
+				</li>
+                
+                
+  	 
+				</ul><!--/.alx-tab-->
+
+			<ul id="tab-tags-2" class="alx-tab group">
+				<li>
+					<a href="https://www.itread01.com/android/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >Android</a> 	
+					<a href="https://www.itread01.com/study/itools_download.html" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >iTools</a> 
+					<a href="https://www.itread01.com/mysql/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >Mysql</a> 
+					<a href="https://www.itread01.com/windows/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >Windows</a> 
+					<a href="https://www.3du.tw/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >三度辭典</a> 
+					 
+                   </li>
+			</ul><!--/.alx-tab-->
+
+			</div>
+</div>
+		</div><!--/.sidebar-content-->
+
+	</div><!--/.sidebar-->
+
+	
+
+        </div><!--/.main-inner-->
+      </div><!--/.main-->
+    </div><!--/.container-inner-->
+  </div><!--/.container-->
+    <footer id="footer">
+          <nav class="nav-container group" id="nav-footer" data-menu-id="footer-4" data-menu-scrollable="false">
+                      <!-- <div class="ham__navbar-toggler collapsed" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="ham-toggler-menu__span"></span>
+          </div>
+        </div> -->
+        <div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </div>
+        </div>
+                    <div class="nav-text"></div>
+        <div class="nav-wrap">
+          <ul id="menu-top-2" class="nav container group">
+           <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/" rel="nofollow">首頁</a></li>
+		   <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/study/python-tutorial.html" >Python教學</a></li>
+ 
+</ul>        </div>
+      </nav><!--/#nav-footer-->
+    
+    <section class="container" id="footer-bottom">
+      <div class="container-inner">
+
+        <a id="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+
+        <div class="pad group">
+
+          <div class="grid one-half">
+                        
+            <div id="copyright">
+                              <p>ITREAD01.COM &copy; 2018. 版權所有。 </p>
+                          </div><!--/#copyright-->
+          </div>
+        </div><!--/.pad-->
+
+      </div><!--/.container-inner-->
+    </section><!--/.container-->
+
+  </footer><!--/#footer-->
+
+</div><!--/#wrapper-->
+
+<!-- Powered by WPtouch: 4.3.27 --><script type='text/javascript' src='/img/css/js/jQuerySharrre.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/img/css/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"1","extLinksTargetExt":"1","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".container .content",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":true,"mobile":false},"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"isDevMode":"","ajaxUrl":"https:\/\/www.itread01.com\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"d9125fec3b"},"userStarted":{"with":"with|3.3.27","on":{"date":"2018-03-27 03:41:18.000000","timezone_type":3,"timezone":"UTC"}},"isWelcomeNoteOn":"","welcomeContent":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/scripts.min.js?ver=3.3.27'></script>
+<script type='text/javascript' src='/img/css/js/wp-embed.min.js?ver=4.8.2'></script>
+
+<!--[if lt IE 9]>
+<script src="/img/css/js/respond.js"></script>
+<![endif]-->
+<div style="display:none"><script type='text/javascript' src='/js/c.js'></script>0.32245707511902</div>
+</body>
+</html>    <!-- Bootstrap core JavaScript ================================================== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+function joinUrl(url, concat) {
+  var url1 = url.split('/');
+  var url2 = concat.split('/');
+  var url3 = [ ];
+  for (var i = 0, l = url1.length; i < l; i ++) {
+    if (url1[i] == '..') {
+      url3.pop();
+    } else if (url1[i] == '.') {
+      continue;
+    } else {
+      url3.push(url1[i]);
+    }
+  }
+  for (var i = 0, l = url2.length; i < l; i ++) {
+    if (url2[i] == '..') {
+      url3.pop();
+    } else if (url2[i] == '.') {
+      continue;
+    } else {
+      url3.push(url2[i]);
+    }
+  }
+  return url3.join('/');
+}
+$(document).ready(function() {
+    $('pre').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
+	var source = $('#source-url').html();
+	if(source.indexOf('segmentfault.com') > 0) {
+		var imgs = $('#main-content').find('img');
+		$.each(imgs, function(index, img) {
+			var data_src = $(img).attr('data-src');
+			data_src = 'https://segmentfault.com' + data_src;
+			console.log(data_src);
+			$(img).attr('src', data_src);
+			// $(img).attr('src', '');
+		});
+	}
+});
+</script>

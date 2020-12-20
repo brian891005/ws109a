@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-TW" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <title>Linux下system與popen函式 - IT閱讀</title>
+<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" rel="stylesheet">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta name="referrer" content="never">
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='hueman-main-style-css'  href='/img/css/main.info.css' type='text/css' media='all' />
+<link href="https://www.itread01.com/img/prettify.css" type="text/css" rel="stylesheet"/>
+<script src="https://www.itread01.com/img/run_prettify.js"></script>
+<style id='hueman-main-style-inline-css' type='text/css'>
+body { font-family:'Source Sans Pro', Arial, sans-serif;font-size:1.00rem }@media only screen and (min-width: 720px) {
+        .nav > li { font-size:1.00rem; }
+      }::selection { background-color: #fca61b; }
+::-moz-selection { background-color: #fca61b; }a,.themeform label .required,#flexslider-featured .flex-direction-nav .flex-next:hover,#flexslider-featured .flex-direction-nav .flex-prev:hover,.post-hover:hover .post-title a,.post-title a:hover,.sidebar.s1 .post-nav li a:hover i,.content .post-nav li a:hover i,.post-related a:hover,.sidebar.s1 .widget_rss ul li a,#footer .widget_rss ul li a,.sidebar.s1 .widget_calendar a,#footer .widget_calendar a,.sidebar.s1 .alx-tab .tab-item-category a,.sidebar.s1 .alx-posts .post-item-category a,.sidebar.s1 .alx-tab li:hover .tab-item-title a,.sidebar.s1 .alx-tab li:hover .tab-item-comment a,.sidebar.s1 .alx-posts li:hover .post-item-title a,#footer .alx-tab .tab-item-category a,#footer .alx-posts .post-item-category a,#footer .alx-tab li:hover .tab-item-title a,#footer .alx-tab li:hover .tab-item-comment a,#footer .alx-posts li:hover .post-item-title a,.comment-tabs li.active a,.comment-awaiting-moderation,.child-menu a:hover,.child-menu .current_page_item > a,.wp-pagenavi a{ color: #fca61b; }.themeform input[type="submit"],.themeform button[type="submit"],.sidebar.s1 .sidebar-top,.sidebar.s1 .sidebar-toggle,#flexslider-featured .flex-control-nav li a.flex-active,.post-tags a:hover,.sidebar.s1 .widget_calendar caption,#footer .widget_calendar caption,.author-bio .bio-avatar:after,.commentlist li.bypostauthor > .comment-body:after,.commentlist li.comment-author-admin > .comment-body:after{ background-color: #fca61b; }.post-format .format-container { border-color: #fca61b; }.sidebar.s1 .alx-tabs-nav li.active a,#footer .alx-tabs-nav li.active a,.comment-tabs li.active a,.wp-pagenavi a:hover,.wp-pagenavi a:active,.wp-pagenavi span.current{ border-bottom-color: #fca61b!important; }.sidebar.s2 .post-nav li a:hover i,
+.sidebar.s2 .widget_rss ul li a,
+.sidebar.s2 .widget_calendar a,
+.sidebar.s2 .alx-tab .tab-item-category a,
+.sidebar.s2 .alx-posts .post-item-category a,
+.sidebar.s2 .alx-tab li:hover .tab-item-title a,
+.sidebar.s2 .alx-tab li:hover .tab-item-comment a,
+.sidebar.s2 .alx-posts li:hover .post-item-title a { color: #3bcfe2; }
+.sidebar.s2 .sidebar-top,.sidebar.s2 .sidebar-toggle,.post-comments,.jp-play-bar,.jp-volume-bar-value,.sidebar.s2 .widget_calendar caption{ background-color: #3bcfe2; }.sidebar.s2 .alx-tabs-nav li.active a { border-bottom-color: #3bcfe2; }
+.post-comments span:before { border-right-color: #3bcfe2; }
+      .search-expand,
+              #nav-topbar.nav-container { background-color: #303030}@media only screen and (min-width: 720px) {
+                #nav-topbar .nav ul { background-color: #303030; }
+              }.is-scrolled #header .nav-container.desktop-sticky,
+              .is-scrolled #header .search-expand { background-color: #303030; background-color: rgba(48,48,48,0.90) }.is-scrolled .topbar-transparent #nav-topbar.desktop-sticky .nav ul { background-color: #303030; background-color: rgba(48,48,48,0.95) }#header { background-color: #363944; }
+@media only screen and (min-width: 720px) {
+  #nav-header .nav ul { background-color: #363944; }
+}
+        .is-scrolled #header #nav-mobile { background-color: #454e5c; background-color: rgba(69,78,92,0.90) }body { background-color: #eaeaea; }
+		.entry-inner h1{ font-size:20px; font-weight:bold;}
+		.entry-inner h2,h3,h4{ font-size:18px; font-weight:bold;}
+</style>
+ 
+
+<link rel='stylesheet' id='hueman-font-awesome-css'  href='/img/css/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"","inbound_paths":"","home_url":"https:\/\/www.itread01.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/frontend.min.js'></script>
+<script type='text/javascript' src='/img/css/js/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/img/css/jsjquery-migrate.min.js?ver=1.4.1'></script>
+<script src="/styles/highlight.js"></script>
+<link rel="stylesheet" type="text/css" href="/styles/default.css"/>
+<meta name="generator" content="WordPress 4.8.2" />
+<!--[if lt IE 9]>
+<script src="/img/css/js/html5shiv-printshiv.min.js"></script>
+<script src="/img/css/js/selectivizr.js"></script>
+<![endif]-->
+<style>.ios7.web-app-mode.has-fixed header{ background-color: rgba(45,53,63,.88);}</style></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-43193 single-format-standard wp-custom-logo col-2cl full-width topbar-enabled header-desktop-sticky header-mobile-sticky chrome">
+    <div id="wrapper">
+        <header id="header" class="specific-mobile-menu-on one-mobile-menu mobile_menu header-ads-desktop header-ads-mobile topbar-transparent no-header-img">
+        <nav class="nav-container group mobile-menu mobile-sticky " id="nav-mobile" data-menu-id="header-1">
+  <div class="mobile-title-logo-in-header"><p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" title="首頁"><img src="https://www.itread01.com/logo.png"></a></p>
+                </div>
+        <div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </div>
+        </div>
+            
+      <div class="nav-text"></div>
+      <div class="nav-wrap container">
+                  <ul class="nav container-inner group mobile-search">
+                            <li>
+                  <form class="searchform themeform" onSubmit="return searchKw(this)">
+	<div>
+		<input type="text" name="kw" class="search" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+	</div>
+</form>    
+<script>function searchKw(c){var b=c.getElementsByTagName("input")[0],a=b.value.replace(/^\s+|\s+$/g,"");a=a.replace(/['"]/g,"");location.href="https://www.itread01.com/search/"+encodeURIComponent(a)+"";return false};</script>            </li>
+                      </ul>
+                <ul id="menu-top" class="nav container-inner group">
+                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+				<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+						  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+ 
+</ul>      </div>
+</nav><!--/#nav-topbar-->  
+        <nav class="nav-container group desktop-menu desktop-sticky " id="nav-topbar" data-menu-id="header-2">
+    <div class="nav-text"></div>
+  <div class="topbar-toggle-down">
+    <i class="fas fa-angle-double-down" aria-hidden="true" data-toggle="down" title="展開功能表清單"></i>
+    <i class="fas fa-angle-double-up" aria-hidden="true" data-toggle="up" title="折疊功能表清單"></i>
+  </div>
+  <div class="nav-wrap container">
+    <ul id="menu-footer" class="nav container-inner group"> 
+    <li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.itread01.com/" rel="nofollow">首頁</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/study/mysql-tutorial.html">MySQL教學</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網站技巧/1/">網站技巧</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網路程式設計/1/">網路程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/軟體程式設計/1/">軟體程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/資料庫/1/">資料庫</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/作業系統/1/">作業系統</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/指令碼專欄/1/">其它</a></li>
+ 
+</ul>  </div>
+      <div id="topbar-header-search" class="container">
+      <div class="container-inner">
+        <div class="toggle-search"><i class="fas fa-search"></i></div>
+        <div class="search-expand">
+          <div class="search-expand-inner"><form class="searchform themeform" onSubmit="return searchKw(this)">
+	<div>
+		<input type="text" class="search" name="kw" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+	</div>
+</form></div>
+        </div>
+      </div><!--/.container-inner-->
+    </div><!--/.container-->
+  
+</nav><!--/#nav-topbar-->  
+  <div class="container group">
+        <div class="container-inner">
+
+                    <div class="group pad central-header-zone">
+                  <div class="logo-tagline-group">
+                                        <p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" ><img src="https://www.itread01.com/logo.png"  ></a></p>
+                                                        </div>
+
+                                        <div id="header-widgets">
+                          <div id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- /109765683/728_Banner -->
+ </div></div>                      </div><!--/#header-ads-->
+                                </div>
+                <nav class="nav-container group desktop-menu " id="nav-header" data-menu-id="header-3">
+    <div class="nav-text"><!-- put your mobile menu text here --></div>
+  <div class="nav-wrap container">
+        <ul id="menu-top-1" class="nav container-inner group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+</ul>  </div>
+</nav><!--/#nav-header-->      
+    </div><!--/.container-inner-->
+      </div><!--/.container-->
+</header><!--/#header-->        
+        <div class="container" id="page">
+            <div class="container-inner">
+
+                                <div class="main">
+                    <div class="main-inner group">
+                        
+              <section class="content">
+              <div class="page-title pad group">
+          	    		<ul class="meta-single group">
+    			<li class="category"><a href="/infolist/其他/1/">其他</a></li>
+    			    		</ul>
+
+    	
+    </div><!--/.page-title-->
+          <div class="pad group">
+              <article class="post-43193 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-stripe tag-32305 tag-32306 tag-4550 tag-5237 tag-31545 tag-6260">
+    <div class="post-inner group">
+
+      <h1 class="post-title entry-title">Linux下system與popen函式</h1>
+<p class="post-byline"><span class="vcard author">
+     <span class="fn"><a href="/infolist/其他/1/">其他</a></span>
+   </span> &middot;
+                            發表 <time class="published" datetime="2019-02-03">2019-02-03</time>
+             
+               </p>
+               <ins id="scupio-sc-4995-17811-847678" class="scupioadslot" style="display:none;width:100%;height:100px;"
+    data-sca-pub="lRIJBAgyQA=="
+    data-sca-web="4995"
+    data-sca-category="17"
+    data-sca-cid="17811"
+    data-sca-slot-type="PRA"></ins>
+<script async src="https://img.scupio.com/js/ad.js"></script>
+<script>
+(function(s, c, u, p, i, o, a, d) {
+    'use strict';
+    var z=function(t,e,r){var a,n=document.createElement('ins'),s=n.style;for(a in n.className='scupioadslot',r&&(n.id=r),t)t.hasOwnProperty(a)&&(s[a]=t[a]);for(a in e)e.hasOwnProperty(a)&&n.setAttribute('data-sca-'+a,e[a]);return n};
+    (d = s.Scupioads = s.Scupioads || []).push({
+        id: u,
+        callback: function() {
+            p = c.getElementById(u);
+            i = p.style;
+            o = 'inline-block';
+            p.appendChild(z({
+                display: o,
+                width: '100%',
+                height: '100px',
+                margin: 'auto'
+            }, {
+                'pub': 'lRIJBAgyQA==',
+                'web': '4995',
+                'category': '17',
+                'cid': '17812',
+                'slot-type': 'STA'
+            }));
+            i.width = '100%';
+            i.height = '100px';
+            i.display = o;
+        }
+    });
+    setTimeout(function(){if(!s.Scupioads.init)for(i=d.length-1;0<=i;i--)if(d[i].id===u){d[i].callback(),d[i].callback=function(){};break}},1e3);
+})(window, document, 'scupio-sc-4995-17811-847678');
+</script>
+      
+      <div class="clear"></div>
+ 
+      <div class="entry themeform share">
+        <div class="entry-inner">
+		<div class="htmledit_views" id="content_views">
+                
+
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+曾經的曾經，被system()函式折磨過，之所以這樣，是因為對system()函數了解不夠深入。只是簡單的知道用這個函式執行一個系統命令，這遠遠不夠，它的返回值、它所執行命令的返回值以及命令執行失敗原因如何定位，這才是重點。當初因為這個函式風險較多，故拋棄不用，改用其他的方法。這裡先不說我用了什麼方法，這裡必須要搞懂system()函式，因為還是有很多人用了system()函式，有時你不得不面對它。</div>
+
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+<span style="padding:0px; margin:0px">先來看一下system()函式的簡單介紹：</span></div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+<div id="highlighter_230084" class="syntaxhighlighter  " style="width:716.75px; padding:1px!important; margin:1em 0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:relative!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<div class="lines" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<div class="line alt1" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">1</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="preprocessor" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:gray!important">#include
+ &lt;stdlib.h&gt;</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt2" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; background-color:rgb(248,248,248)!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">2</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="color1 bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(128,128,128)!important">int</code> <code class="functions bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(255,20,147)!important">system</code><code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">(</code><code class="keyword bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(0,102,153)!important">const</code> <code class="color1 bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(128,128,128)!important">char</code> <code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">*command);</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<p style="padding-top:0px; padding-bottom:0px; margin-top:0px; margin-bottom:15pt; line-height:1.5; letter-spacing:1px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+<span style="font-family:'Courier New'; padding:0px; margin:0px">system() executes a command specified in command by calling /bin/sh -c command, and returns after the command has been completed. During execution of the command, SIGCHLD will be blocked, and
+ SIGINT and SIGQUIT will be ignored.</span></p>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+system()函式呼叫/bin/sh來執行引數指定的命令，/bin/sh 一般是一個軟連線，指向某個具體的shell，比如bash，-c選項是告訴shell從字串command中讀取命令；</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+在該command執行期間，SIGCHLD是被阻塞的，好比在說：hi，核心，這會不要給我送SIGCHLD訊號，等我忙完再說；</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+在該command執行期間，SIGINT和SIGQUIT是被忽略的，意思是程序收到這兩個訊號後沒有任何動作。</div>
+
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+<span style="padding:0px; margin:0px">再來看一下system()函式返回值：</span></div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+<div style="padding:0px; margin:0px"><span style="font-family:'Courier New'; padding:0px; margin:0px">The value returned is -1 on error (e.g. fork(2) failed), and the return status of the command otherwise. This latter return status is in the format specified
+ in wait(2). Thus, the exit code of the command will be WEXITSTATUS(status). In case /bin/sh could not be executed, the exit status will be that of a command that does exit(127).</span></div>
+<div style="padding:0px; margin:0px"><span style="font-family:'Courier New'; padding:0px; margin:0px">If the value of command is NULL, system() returns nonzero if the shell is available, and zero if not.</span></div>
+</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+<div style="padding:0px; margin:0px">為了更好的理解system()函式返回值，需要了解其執行過程，實際上system()函式執行了三步操作：</div>
+</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+1.fork一個子程序；</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+2.在子程序中呼叫exec函式去執行command；</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+3.在父程序中呼叫wait去等待子程序結束。</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+對於fork失敗，system()函式返回-1。</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+如果exec執行成功，也即command順利執行完畢，則返回command通過exit或return返回的值。</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+（注意，command順利執行不代表執行成功，比如command："rm debuglog.txt"，不管檔案存不存在該command都順利執行了）</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+如果exec執行失敗，也即command沒有順利執行，比如被訊號中斷，或者command命令根本不存在，system()函式返回127.</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+如果command為NULL，則system()函式返回非0值，一般為1.</div>
+
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+<span style="padding:0px; margin:0px">看一下system()函式的原始碼</span></div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+看完這些，我想肯定有人對system()函式返回值還是不清楚，看原始碼最清楚，下面給出一個system()函式的實現：</div>
+<div style="padding:0px; margin:0px; font-family:Verdana,sans-serif,宋體; font-size:14px">
+<div id="highlighter_953005" class="syntaxhighlighter  " style="width:716.75px; padding:1px!important; margin:1em 0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:relative!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<div class="lines" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<div class="line alt1" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">01</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="color1 bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(128,128,128)!important">int</code> <code class="functions bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(255,20,147)!important">system</code><code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">(</code><code class="keyword bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(0,102,153)!important">const</code> <code class="color1 bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(128,128,128)!important">char</code> <code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">*
+ cmdstring)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt2" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; background-color:rgb(248,248,248)!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">02</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">{</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt1" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">03</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">pid_t
+ pid;</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt2" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; background-color:rgb(248,248,248)!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">04</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="color1 bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(128,128,128)!important">int</code> <code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">status;</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt1" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">05</code></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt2" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; background-color:rgb(248,248,248)!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">06</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="keyword bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(0,102,153)!important">if</code><code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">(cmdstring
+ == NULL)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt1" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">07</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">{</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt2" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; background-color:rgb(248,248,248)!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">08</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="keyword bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-weight:bold!important; font-size:10pt!important; min-height:auto!important; color:rgb(0,102,153)!important">return</code> <code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">(1); </code><code class="comments" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(0,130,0)!important">//如果cmdstring為空，返回非零值，一般為1</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt1" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">09</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="plain" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt2" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; background-color:rgb(248,248,248)!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">10</code></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line alt1" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<table style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important; border-collapse:collapse!important">
+<tbody style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<tr style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-size:10pt!important; min-height:auto!important">
+<td class="number" style="padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:3em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; color:rgb(175,175,175)!important">
+<code style="word-break:break-all; padding:0px 0.3em 0px 0px!important; margin:0px!important; border:0px!important; outline:0px!important; text-align:right!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:2.7em!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important; display:block!important">11</code></td>
+<td class="content" style="padding:0px 0px 0px 0.5em!important; margin:0px!important; border-width:0px 0px 0px 3px!important; border-left-style:solid!important; border-left-color:rgb(108,226,108)!important; outline:0px!important; float:none!important; vertical-align:top!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monospace!important; font-size:10pt!important; min-height:auto!important">
+<code class="keyword bold" style="word-break:break-all; padding:0px!important; margin:0px!important; border:0px!important; outline:0px!important; float:none!important; vertical-align:baseline!important; position:static!important; left:auto!important; top:auto!important; right:auto!important; bottom:auto!important; height:auto!important; width:auto!important; line-height:1.1em!important; font-family:Consolas,'Bitstream Vera Sans Mono','Courier New',Courier,monos
+	 <center><ins id="scupio-sc-4995-17522-26274" class="scupioadslot" style="display:inline-block;width:300px;height:250px;"
+    data-sca-pub="lRIJBAgyQA=="
+    data-sca-web="4995"
+    data-sca-category="17"
+    data-sca-cid="17522"
+    data-sca-slot-type="PRA"></ins>
+<script async src="https://img.scupio.com/js/ad.js"></script>
+<script>
+(function(s, c, u, p, i, o, a, d) {
+    'use strict';
+    var z=function(t,e,r){var a,n=document.createElement('ins'),s=n.style;for(a in n.className='scupioadslot',r&&(n.id=r),t)t.hasOwnProperty(a)&&(s[a]=t[a]);for(a in e)e.hasOwnProperty(a)&&n.setAttribute('data-sca-'+a,e[a]);return n};
+    (d = s.Scupioads = s.Scupioads || []).push({
+        id: u,
+        callback: function() {
+            p = c.getElementById(u);
+            i = p.style;
+            o = 'inline-block';
+            p.appendChild(z({
+                display: o,
+                width: '300px',
+                height: '250px',
+                margin: 'auto'
+            }, {
+                'pub': 'lRIJBAgyQA==',
+                'web': '4995',
+                'category': '17',
+                'cid': '17523',
+                'slot-type': 'STA'
+            }));
+            i.width = '300px';
+            i.height = '250px';
+            i.display = o;
+        }
+    });
+    setTimeout(function(){if(!s.Scupioads.init)for(i=d.length-1;0<=i;i--)if(d[i].id===u){d[i].callback(),d[i].callback=function(){};break}},1e3);
+})(window, document, 'scupio-sc-4995-17522-26274');
+</script></center>
+          <nav class="pagination group">
+                      </nav><!--/.pagination-->
+        </div>
+
+    
+        <div class="clear"></div>
+      </div><!--/.entry-->
+
+    </div><!--/.post-inner-->
+  </article><!--/.post-->
+
+<div class="clear"></div>
+
+<p class="post-tags"><span>標籤：</span>  </p>
+
+<center>
+</center>
+
+
+<h4 class="heading">
+	<i class="far fa-hand-point-right"></i>您可能也會喜歡…</h4>
+
+ <ul class="lrelated-posts group">
+		 	<li><a href="/content/1549194313.html" target="_blank">Linux下system與popen函式</a> </li>
+    	<li><a href="/content/1549841413.html" target="_blank">system與popen函式的效率</a> </li>
+    	<li><a href="/content/1549560245.html" target="_blank">Linux 下stat和access函式</a> </li>
+    	<li><a href="/content/1549463226.html" target="_blank">Linux下的時間函式以及格式化輸出時間</a> </li>
+    	<li><a href="/content/1549301234.html" target="_blank">linux下的時間函式</a> </li>
+    	<li><a href="/content/1549122683.html" target="_blank">Linux下Python與C程式程序間通訊</a> </li>
+    	<li><a href="/content/1548626239.html" target="_blank">Linux下cfsetospeed和cfsetispeed函式</a> </li>
+    	<li><a href="/content/1548506174.html" target="_blank">linux下的c庫函式目錄</a> </li>
+    	<li><a href="/content/1547847723.html" target="_blank">Linux下send、sendto、sendmsg函式分析</a> </li>
+    	<li><a href="/content/1547455333.html" target="_blank">Linux下利用ioctl函式獲取網絡卡資訊</a> </li>
+    	<li><a href="/content/1547304902.html" target="_blank">linux下的靜態函式庫和動態函式庫</a> </li>
+    	<li><a href="/content/1546712839.html" target="_blank">Linux下curses常用函式</a> </li>
+    	<li><a href="/content/1544572265.html" target="_blank">Linux：sync、fsync與fdatasync函式使用介紹</a> </li>
+    	<li><a href="/content/1549978771.html" target="_blank">linux下system函式錯誤返回-1 錯誤原因NO child processes</a> </li>
+    	<li><a href="/content/1549659266.html" target="_blank">對於linux下system()函式的深度理解(轉載)</a> </li>
+     
+</ul><!--/.post-related-->
+
+
+
+        </div><!--/.pad-->
+        </section><!--/.content-->
+          
+
+	<div class="sidebar s1 collapsed" data-position="right" data-layout="col-2cl" data-sb-id="s1">
+
+		<a class="sidebar-toggle" title="延伸側邊欄位"><i class="fas icon-sidebar-toggle"></i></a>
+
+		<div class="sidebar-content">
+
+			  			<div class="sidebar-top group">
+                        <p>贊助商廣告</p>
+             
+           			</div>
+		 
+				<ul class="post-nav group">
+      
+ 
+		<li class="previous"> </li>
+  
+  
+		 <li class="next">  </li>
+ 
+	</ul>
+
+<div id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- /109765683/300x250 -->
+<ins id="scupio-sc-4995-17521-400386" class="scupioadslot" style="display:inline-block;width:300px;height:250px;"
+    data-sca-pub="lRIJBAgyQA=="
+    data-sca-web="4995"
+    data-sca-category="17"
+    data-sca-cid="17521"
+    data-sca-slot-type="PRA"></ins>
+<script async src="https://img.scupio.com/js/ad.js"></script>
+<script>
+(function(s, c, u, p, i, o, a, d) {
+    'use strict';
+    var z=function(t,e,r){var a,n=document.createElement('ins'),s=n.style;for(a in n.className='scupioadslot',r&&(n.id=r),t)t.hasOwnProperty(a)&&(s[a]=t[a]);for(a in e)e.hasOwnProperty(a)&&n.setAttribute('data-sca-'+a,e[a]);return n};
+    (d = s.Scupioads = s.Scupioads || []).push({
+        id: u,
+        callback: function() {
+            p = c.getElementById(u);
+            i = p.style;
+            o = 'inline-block';
+            p.appendChild(z({
+                display: o,
+                width: '300px',
+                height: '250px',
+                margin: 'auto'
+            }, {
+                'pub': 'lRIJBAgyQA==',
+                'web': '4995',
+                'category': '17',
+                'cid': '17518',
+                'slot-type': 'STA'
+            }));
+            i.width = '300px';
+            i.height = '250px';
+            i.display = o;
+        }
+    });
+    setTimeout(function(){if(!s.Scupioads.init)for(i=d.length-1;0<=i;i--)if(d[i].id===u){d[i].callback(),d[i].callback=function(){};break}},1e3);
+})(window, document, 'scupio-sc-4995-17521-400386');
+</script>
+</div></div><div id="text-7" class="widget widget_text">			 
+		</div>
+        
+        <div id="alxtabs-2" class="widget widget_hu_tabs">
+<h3 class="widget-title"></h3>
+<ul class="alx-tabs-nav group tab-count-3"><li class="alx-tab tab-recent"><a href="#tab-recent-2" title="熱門文章"><i class="far fa-clock"></i></a></li><li class="alx-tab tab-tags"><a href="#tab-tags-2" title="標籤"><i class="fas fa-star"></i> </a></li></ul>
+	<div class="alx-tabs-container">						
+			<ul id="tab-recent-2" class="alx-tab group">
+								 
+					      
+                  <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194314.html">python中*和**的用法 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194316.html">馬斯洛需求層次——教會我們因人而異，推銷產品 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194317.html">mysql查詢一個表自增主鍵的下一個主鍵值: </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194318.html">騰訊雲伺服器安裝wampserver,,電腦出現缺少vcruntime140.dll檔案問題 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194319.html">GD32F130FXP6學習筆記三：ARM的GPIO初識 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194322.html">SQL Server不存在或拒絕訪問故障的排除 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194323.html">Mysql 字串 操作函式 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194324.html">Entity Framework多對多關聯對映的實現 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194326.html">Redis的常用方法總結 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194328.html">176.第二高的薪水 </a></p>
+										</div>
+				</li>
+                
+                
+  	 
+				</ul><!--/.alx-tab-->
+
+			<ul id="tab-tags-2" class="alx-tab group">
+				<li>
+					<a href="https://www.itread01.com/android/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >Android</a> 	
+					<a href="https://www.itread01.com/study/itools_download.html" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >iTools</a> 
+					<a href="https://www.itread01.com/mysql/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >Mysql</a> 
+					<a href="https://www.itread01.com/windows/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >Windows</a> 
+					<a href="https://www.3du.tw/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >三度辭典</a> 
+					 
+                   </li>
+			</ul><!--/.alx-tab-->
+
+			</div>
+</div>
+		</div><!--/.sidebar-content-->
+
+	</div><!--/.sidebar-->
+
+	
+
+        </div><!--/.main-inner-->
+      </div><!--/.main-->
+    </div><!--/.container-inner-->
+  </div><!--/.container-->
+    <footer id="footer">
+          <nav class="nav-container group" id="nav-footer" data-menu-id="footer-4" data-menu-scrollable="false">
+                      <!-- <div class="ham__navbar-toggler collapsed" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="ham-toggler-menu__span"></span>
+          </div>
+        </div> -->
+        <div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </div>
+        </div>
+                    <div class="nav-text"></div>
+        <div class="nav-wrap">
+          <ul id="menu-top-2" class="nav container group">
+           <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/" rel="nofollow">首頁</a></li>
+		   <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/study/python-tutorial.html" >Python教學</a></li>
+ 
+</ul>        </div>
+      </nav><!--/#nav-footer-->
+    
+    <section class="container" id="footer-bottom">
+      <div class="container-inner">
+
+        <a id="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+
+        <div class="pad group">
+
+          <div class="grid one-half">
+                        
+            <div id="copyright">
+                              <p>ITREAD01.COM &copy; 2018. 版權所有。 </p>
+                          </div><!--/#copyright-->
+          </div>
+        </div><!--/.pad-->
+
+      </div><!--/.container-inner-->
+    </section><!--/.container-->
+
+  </footer><!--/#footer-->
+
+</div><!--/#wrapper-->
+
+<!-- Powered by WPtouch: 4.3.27 --><script type='text/javascript' src='/img/css/js/jQuerySharrre.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/img/css/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"1","extLinksTargetExt":"1","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".container .content",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":true,"mobile":false},"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"isDevMode":"","ajaxUrl":"https:\/\/www.itread01.com\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"d9125fec3b"},"userStarted":{"with":"with|3.3.27","on":{"date":"2018-03-27 03:41:18.000000","timezone_type":3,"timezone":"UTC"}},"isWelcomeNoteOn":"","welcomeContent":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/scripts.min.js?ver=3.3.27'></script>
+<script type='text/javascript' src='/img/css/js/wp-embed.min.js?ver=4.8.2'></script>
+
+<!--[if lt IE 9]>
+<script src="/img/css/js/respond.js"></script>
+<![endif]-->
+<div style="display:none"><script type='text/javascript' src='/js/c.js'></script>0.11854386329651</div>
+</body>
+</html>    <!-- Bootstrap core JavaScript ================================================== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+function joinUrl(url, concat) {
+  var url1 = url.split('/');
+  var url2 = concat.split('/');
+  var url3 = [ ];
+  for (var i = 0, l = url1.length; i < l; i ++) {
+    if (url1[i] == '..') {
+      url3.pop();
+    } else if (url1[i] == '.') {
+      continue;
+    } else {
+      url3.push(url1[i]);
+    }
+  }
+  for (var i = 0, l = url2.length; i < l; i ++) {
+    if (url2[i] == '..') {
+      url3.pop();
+    } else if (url2[i] == '.') {
+      continue;
+    } else {
+      url3.push(url2[i]);
+    }
+  }
+  return url3.join('/');
+}
+$(document).ready(function() {
+    $('pre').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
+	var source = $('#source-url').html();
+	if(source.indexOf('segmentfault.com') > 0) {
+		var imgs = $('#main-content').find('img');
+		$.each(imgs, function(index, img) {
+			var data_src = $(img).attr('data-src');
+			data_src = 'https://segmentfault.com' + data_src;
+			console.log(data_src);
+			$(img).attr('src', data_src);
+			// $(img).attr('src', '');
+		});
+	}
+});
+</script>

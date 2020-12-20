@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Tantek &#xC7;elik</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="canonical" href="https://tantek.com/"/>
+<link rel="icon" href="logo.jpg"/>
+<link rel="apple-touch-icon-precomposed" href="logo.jpg"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<link rel="webmention" href="https://webmention.io/tantek.com/webmention"/>
+<link rel="hub" href="https://pubsubhubbub.superfeedr.com/"/>
+<link rel="self" href="https://tantek.com/"/>
+<link rel="openid.delegate" href="https://tantek.com/"/>
+<link rel="openid.server" href="https://indieauth.com/openid"/>
+<link rel="authorization_endpoint" href="https://indieauth.com/auth"/>
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token"/>
+<link rel="microsub" href="https://aperture.p3k.io/microsub/277"/>
+<link rel="alternate" type="application/atom+xml" href="updates.atom"/>
+<link rel="serviceworker" href="serviceworker.js"/>
+<style type="text/css">/**/ 
+/* HTML5+CSS work in progress. Copy paste AT YOUR OWN RISK! */
+
+@import "2020/simple.css";
+h2 { font-size:1em; }
+
+body { 
+  margin:auto;
+  padding:1.6em;
+  max-width:940px;
+}
+
+iframe { max-width:100%; }
+abbr { text-decoration:none }
+
+.header {
+ border-bottom:solid 1px #666;
+ margin-top:0;
+ margin-bottom:1em;
+}
+
+.header h1 {
+  margin:0;
+  padding:5px 0 0;
+  font-size:3em;
+  line-height:1.3;
+  font-weight:bold;
+  white-space:nowrap;
+}
+.header h2 {
+  font-size:1.5em;
+  font-weight:normal;
+  line-height:1em;
+  min-width:20em;
+  min-height:3em;
+  margin:0;
+}
+
+.aside dt, .aside dd {margin:0;padding:0}
+.aside dt { margin-top:.77em; color:#666; }
+.aside dd { color:#000}
+.aside img { max-width:100% }
+
+form.search {
+  clear: right;
+  text-align: right;
+  margin-bottom: 1em;
+  white-space: nowrap; 
+  font-size: 1.3em;
+}
+
+.stream>ol { margin:0; padding:0; }
+
+/* div.stream li.h-entry .figure { margin:0 -1em; } */
+
+span.see-more { display:inline; }
+
+.interact img,
+.p-org.h-card img,
+.p-category.h-card img { height:1.4em; vertical-align:-.3em }
+
+@media screen and (min-width:40em) {
+/* progressive enhance wider screens */
+
+span.see-more { display:none; }
+
+body { padding:2em; }
+
+.header { height:90px; margin-top:1.3em }
+
+form.search { 
+  margin-top: -3.9em; 
+  width: 34%;
+  float: right; 
+}
+
+.stream {
+  clear:left;
+  float:left;
+  width:62%;
+  margin-right:4%;
+}
+
+.stream>ol { margin-right:3em; }
+
+.hentry ol, .hentry ul { margin-left:30px; }
+
+.aside {
+  float:left;
+  width:33%;
+}
+
+.footer .section {
+  float:left;
+  width:30%;
+  margin-right:3%;
+}
+
+div.stream li.h-entry .figure { margin:0; }
+
+.aside .recent-photos {
+  margin-left:0; margin-right:0;
+}
+
+.aside .recent-photos h2 {
+  margin-left:0;
+}
+
+} /* end wider screen enhancements */
+
+
+.photo { 
+  width:73px; 
+  float:left;
+  margin:0 20px 0 0;
+}
+
+form.search input[type=search] { width:62%; }
+
+form.search input, form.search button {
+  font-size:1em;
+  height:1.7em;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  vertical-align:bottom;
+}
+
+.stream>ol { list-style:none; }
+
+.aside h2,.footer h2 {
+  font-size: 1.3em;
+  text-transform:uppercase;
+  line-height:1.25;  
+  margin:0 0 1em;
+}
+
+.aside .section { margin-top:2em; }
+.aside .section.hello { margin-top:0; }
+
+.aside .section h2 {  margin-bottom:0.5em;
+}
+
+.aside p,.aside li,.aside dl,.footer p,.footer li {
+  font-size:1.3em;
+  line-height:1.54;
+  margin:0;
+  color: #AAA; /* #666; */
+  list-style:none;
+}
+/*.hello p { color:#000; }*/
+.elsewhere img {
+  vertical-align:bottom;
+  padding-bottom:.2em;
+}
+.aside h2 {
+  font-size:1.5em;
+  line-height:1.43;
+  font-weight:bold;
+}
+
+.aside .recent-photos {
+  margin-left:-1.5em;
+  margin-right:-1.5em; 
+  padding:0;
+}
+
+.aside .recent-photos h2 {
+  margin-left:1em;
+}
+
+div.footer {
+  margin-left:1em;
+  clear:both;
+  margin-top:1em;
+  padding-top:5em;
+}
+.footer address { white-space:nowrap; }
+
+.footer p { margin-top:1em; }
+.footer .section li { list-style:disc inside; }
+
+address {
+  font-style:normal;
+  text-align:center;
+  clear:both;
+  margin:1em 5%;
+  padding:3em;
+}
+
+ul.nav,.nav li,ul.offsite { list-style:none; }
+ul.nav { float:right; margin-right: 5%; }
+ul.offsite,.offsite li,.nav li { list-style:inline; display:inline; }
+
+#a:link { color: #D0D044;  /* color:#2240C0;*/ }
+#a:link:hover { color:#F0F088; /* color:#22B040;*/ }
+#a:visited { color:#66D; }
+#a:visited:hover { color:#99F; /* color:#88D0F0;*/ /* color:#118020; */ }
+
+/* events */
+#events li.vevent { list-style:none;margin-top:1em; }
+#events abbr.location {
+ display:block; text-align:center;
+ text-transform:uppercase;
+ font-weight:bold; font-size:2em; word-spacing:-.1em; font-size:1.5em;
+}
+#events li.vevent a { 
+  display:block; width:167px; text-align:center; color:inherit;
+  border:2px solid; padding:2px 1px 0 1px; 
+}
+#events li.vevent object,.vevent img { max-width:160px }
+#events li.vevent .with { display:block }
+.subhead { display:block }
+.html5 { 
+  display:block; padding-top:3px;
+  color:#3C790A;
+  font-family: Helvetica, sans-serif; font-weight: 900; 
+  font-size: 27px; line-height:.7em; 
+}
+.html5 span { 
+  display:block;
+  font-size:66%; line-height:1em; text-transform:capitalize;
+}
+#events .vevent a:visited:hover { color:#66F; }
+#events .vevent a:link:hover { color:#33F; }
+input,button { font-size:1em; }
+button { margin: 0 0.5em 0 0; padding:0 0.5em; }
+/**/</style>
+</head>
+<body class="h-card vcard">
+<header><div class="header">
+<img class="photo u-photo" src="photo.jpg" alt=""/><a class="u-url u-uid" rel="author" href=""></a>
+<div class="hgroup" style="margin-bottom:-1em">
+<h1 class="p-name fn">Tantek &#xC7;elik</h1>
+<h2 class="p-role role">
+<span class="p-category category">Inventor</span>, <span class="p-category category">writer</span>, <span class="p-category category">teacher</span>, <span class="p-category category">runner</span>, <span class="p-category category">coder</span><span class="see-more">, <a href="#hello">more</a>.</span>
+</h2>
+</div>
+<span class="see-more" style="float:left; max-width:6em; font-size:2.4em; margin:0; padding:0; text-align:center">
+<indie-action do="follow" with="https://tantek.com/"><!--
+<a href="https://twitter.com/intent/follow?screen_name=t"><abbr title="Follow Tantek on Twitter"><img style="margin:0 -0.3em -0.3em -0.4em" src="icon/twitter.png" alt="Follow @t" /></abbr></a>-->
+</indie-action>
+<a href="//tantek.com/contact"><abbr title="Message Tantek">&#128172;</abbr></a>
+<a rel="payment" href="//tantek.com/tip/1" title="Tip: Did you read something of value here and want to encourage more posts like that? Feel free to tip a small amount and mention which topics you enjoyed! (Just please avoid specific products or services. Thanks! -t)">&#128079; </a>
+</span>
+<form class="search" action="https://duckduckgo.com/html/" method="get"><div>
+<input type="hidden" name="type" value="list"/>
+<input type="search" value="site:tantek.com " name="q" style="max-width:10.5em"/>
+<button type="submit">Search</button>
+</div></form>
+</div></header>
+
+<!-- h-feed filled in dynamically -->
+<div class="h-feed section stream" id="updates">
+<div class="pinned"></div>
+<ol>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">&#128077;</span><span class="reply-context"> to <a href="https://github.com/w3c/w3process/issues/469#issuecomment-747619385" class="u-in-reply-to h-cite">a comment on issue 469 of GitHub project &ldquo;w3process&rdquo;</a></span></p>
+<span class="info footer"><a href="2020/352/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="10:43-0800">10:43</time> on <time class="value">2020-12-17</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">One year &amp; one week ago, I finished my first #<span class="p-category auto-tag">ultramarathon</span> race <a class="auto-link h-cassis-username" href="https://twitter.com/theNorthFaceECS">@theNorthFaceECS</a> #<span class="p-category auto-tag">ECSCA</span> 50k (actually 53km), my second-to-last race before everything was canceled (last: #<span class="p-category auto-tag">TNFECS</span> #<span class="p-category auto-tag">halfmarathon</span> the next day).<br class="auto-break"/><br class="auto-break"/><a class="auto-link" href="https://tantek.com/2019/323/t1/did-ecsca-50k-ultramarathon">https://tantek.com/2019/323/t1/did-ecsca-50k-ultramarathon</a><br class="auto-break"/><a class="auto-link" href="https://twitter.com/t/status/1196740536201297925">https://twitter.com/t/status/1196740536201297925</a></span></p>
+<span class="info footer"><a href="2020/328/t1/year-ago-first-ultramarathon-race-ecsca" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="00:07-0800">00:07</time> on <time class="value">2020-11-23</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block"><data class="p-rsvp" value="yes">RSVP yes</data> to: <a href="https://2020.indieweb.org/east" class="u-in-reply-to h-cite">an IndieWeb event</a></span> <span class="p-name entry-title e-content entry-content">attending #<span class="p-category auto-tag">IndieWebCamp</span> East today &amp; tomorrow!<br class="auto-break"/><br class="auto-break"/>Great first keynote by David Dylan Thomas (<a class="auto-link h-cassis-username" href="https://twitter.com/movie_pundit">@movie_pundit</a>)!<br class="auto-break"/><br class="auto-break"/>Up next, Sarah Hibner (<a class="auto-link h-cassis-username" href="https://twitter.com/practicing_dsgn">@practicing_dsgn</a>)<br class="auto-break"/><br class="auto-break"/>Grab a complimentary ticket at <a class="auto-link" href="https://2020.indieweb.org/east">https://2020.indieweb.org/east</a> and join us in Zoom &amp; online chat: <a class="auto-link" href="https://indieweb.org/discuss">https://indieweb.org/discuss</a></span></p>
+<span class="info footer"><a href="2020/319/t1/indiewebcamp-east" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="07:36-0800">07:36</time> on <time class="value">2020-11-14</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/WebStandardsFuture/browser-engine-diversity/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;browser-engine-diversity&rdquo;</a></span> <a href="2020/307/b2/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Consider browser engine diversity impact on web standards in general, beyond W3C
+</h1></a><div class="entry-content e-content">
+<p>
+As a place for bringing together interested and concerned parties about browser engine diversity and standards, this repo would be useful for considering web standards in general beyond W3C, and the impact upon them by the participation (or lack thereof) of one or more browser engine implementations. How different orgs (IETF, WHATWG, TC39, etc.) approach these challenges and questions may help provide common approaches worth considering.
+</p>
+<p>
+While the origin of this repo is from a W3C TPAC session, it was clear from the broad and diverse participation in that session that this is an area that goes beyond W3C, and thus we should consider expanding the README accordingly, noting browser engine diversity issues and opportunities across multiple standards organizations, and leave the W3C-specific parts as part of the origin (but not any restriction in scope) of this repo. If this general approach is non-controversial, I can make pull requests to update the README accordingly for specifics.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/307/b2/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="15:28-0800">15:28</time> on <time class="value">2020-11-02</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/codimd/server/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;server&rdquo;</a></span> <a href="2020/307/b1/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Feature request: support IndieAuth for federated sign-in
+</h1></a><div class="entry-content e-content">
+<p>
+Please consider supporting the 
+<a href="https://indieauth.spec.indieweb.org/">IndieAuth open federated sign-in standard</a> 
+for logging into a CodiMD server. cc: @aaronpk. Thanks for your consideration!
+</p>
+<p>
+Label: <span class="p-category">feature request</span>
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/307/b1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="09:12-0800">09:12</time> on <time class="value">2020-11-02</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Today: 14 miles in Marin with pal <a class="auto-link h-cassis-username" href="https://twitter.com/bryanting">@bryanting</a>.<br class="auto-break"/>Filled out my 2020 ballot and dropped it off at the local ballot dropbox. #<span class="p-category auto-tag">Voted</span></span></p>
+<span class="info footer"><a href="2020/305/t2/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:58-0700">23:58</time> on <time class="value">2020-10-31</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">7 years ago yesterday, showed up to <a class="auto-link h-cassis-username" href="https://twitter.com/Nov_Project_SF">@Nov_Project_SF</a>. Last year: <a class="auto-link" href="https://tantek.com/t53L2">https://tantek.com/t53L2</a><br class="auto-break"/><br class="auto-break"/>Yesterday was a rest day, registered for 2021-08-22 #<span class="p-category auto-tag">baytobreakers:</span> <a class="auto-link" href="https://baytobreakers.com/">https://baytobreakers.com/</a> Previously: <a class="auto-link" href="https://tantek.com/t53L1">https://tantek.com/t53L1</a><br class="auto-break"/>#<span class="p-category auto-tag">2020_304</span> #<span class="p-category auto-tag">20201030</span></span></p>
+<span class="info footer"><a href="2020/305/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:41-0700">23:41</time> on <time class="value">2020-10-31</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://mobile.twitter.com/dens/status/1321920904776110083" class="u-in-reply-to h-cite">@dens&rsquo;s tweet</a></span> <span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/dens">@dens</a> I remember 2009, when our worst complaints about #<span class="p-category auto-tag">socialmedia</span> were too many failwhales.<br class="auto-break"/><br class="auto-break"/>Congrats on Marsbot for AirPods!<br class="auto-break"/>Could you allow sign-in with <a class="auto-link h-cassis-username" href="https://twitter.com/Foursquare">@Foursquare</a> (OAuth) instead of a phone number for those of us without one or avoiding SIMjacking?</span></p>
+<span class="info footer"><a href="2020/304/t1/marsbot-for-airpods-foursquare-oauth" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="16:57-0700">16:57</time> on <time class="value">2020-10-30</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/WICG/canvas-formatted-text/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;canvas-formatted-text&rdquo;</a></span> <a href="2020/290/b1/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Canvas Formatted Text should be harmonized with CSS Houdini, consider past SVG work
+</h1></a><div class="entry-content e-content">
+<p>
+High level feedback on Canvas Formatted Text: Please harmonize this work with the 
+<a href="https://github.com/w3c/css-houdini-drafts/wiki">CSS Houdini effort</a>. 
+In addition you may want to take a look at some of the prior work in:
+<a href="https://www.w3.org/TR/SVG/text.html">SVG2 Chapter 11: Text</a>.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/290/b1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="13:48-0700">13:48</time> on <time class="value">2020-10-16</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/indieweb/indieauth/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;indieauth&rdquo;</a></span> <a href="2020/286/b1/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+IndieAuth needs non-normative Privacy Threat Model documentation
+</h1></a><div class="entry-content e-content">
+<p>
+Similar to 
+<a href="https://github.com/WICG/WebID/blob/master/privacy_threat_model.md">The Google WebID privacy threat model document</a>, 
+the IndieAuth specification should have a brief non-normative 
+&ldquo;Privacy Threat Model&rdquo; or &ldquo;Privacy Considerations&rdquo; section, perhaps right after the 
+<a href="https://indieauth.spec.indieweb.org/#security-considerations">Security Considerations</a> section, or alternatively as a separate document which the spec links to.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/286/b1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="15:48-0700">15:48</time> on <time class="value">2020-10-12</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://github.com/w3c/w3process/issues/60" class="u-in-reply-to h-cite">issue 60 of GitHub project &ldquo;w3process&rdquo;</a></span> <span class="p-name entry-title e-content entry-content">This is not an &ldquo;editorial mistake&rdquo; from the perspective of those that carefully reviewed the Process document with the voting changes and in particular interpreted the only logical way that the election could be implemented given the text of the document (literally STV per seat for the number of seats in an election), and only approved the process accordingly. Several AC reps would have filed formal objections to the process had this been dropped before the Process went to review, and before that, in the AB.<br class="auto-break"/><br class="auto-break"/>The Process also doesn&rsquo;t say, implement whatever voting experiments were run, so the excuses that have been made to justify running the subsequent elections as they have been run (&ldquo;but the experiments!&rdquo;) also hold no justification in the Process document.<br class="auto-break"/><br class="auto-break"/>Both of those are deemed objectionable enough to not remove this text from the Process and yes that leaves us at an impasse that the AB must take-up to resolve, especially towards a future where we may/will be relying even more on elected bodies to resolve conflicts rather than a BDFL &ldquo;Director&rdquo;.<br class="auto-break"/><br class="auto-break"/>I do not expect to see this resolved for 2021.</span></p>
+<span class="info footer"><a href="2020/281/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="07:56-0700">07:56</time> on <time class="value">2020-10-07</time></a></span>
+</li>
+<li class="h-entry hentry as-like">
+<p class="p-name p-summary article">likes <a class="u-like-of" href="https://twitter.com/slbedard/status/1312113787978149889">@slbedard&rsquo;s tweet</a></p>
+<span class="info footer"><a href="2020/276/f1" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="12:40-0700">12:40</time> on <time class="value">2020-10-02</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">science &amp; personal responsibility. <br class="auto-break"/><br class="auto-break"/>that&rsquo;s it. that&rsquo;s the tweet.</span></p>
+<span class="info footer"><a href="2020/276/t2/science" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="09:05-0700">09:05</time> on <time class="value">2020-10-02</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://tantek.com/2020/275/t1" class="u-in-reply-to h-cite">Tantek&rsquo;s note</a></span> <span class="p-name entry-title e-content entry-content">At least stop reading Facebook &amp; YouTube algorithmic feeds, and turn off all #<span class="p-category auto-tag">socialMedia</span> notifications.<br class="auto-break"/><br class="auto-break"/>More from <a class="auto-link h-cassis-username" href="https://twitter.com/mantonsblog">@mantonsblog</a>: <a class="auto-link" href="https://www.manton.org/2020/09/14/stop-using-facebook.html">https://www.manton.org/2020/09/14/stop-using-facebook.html</a><br class="auto-break"/><br class="auto-break"/><a class="auto-link h-cassis-username" href="https://twitter.com/aaronpk">@aaronpk</a> How to leave Facebook: <a class="auto-link" href="https://aaronparecki.com/2020/06/14/14/how-to-leave-facebook">https://aaronparecki.com/2020/06/14/14/how-to-leave-facebook</a><br class="auto-break"/><br class="auto-break"/>Want smaller steps? <a class="auto-link" href="https://indieweb.org/Facebook#How_to_wean_yourself_from">https://indieweb.org/Facebook#How_to_wean_yourself_from</a></span></p>
+<span class="info footer"><a href="2020/276/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="00:10-0700">00:10</time> on <time class="value">2020-10-02</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Make #<span class="p-category auto-tag">October</span> the month you block Facebook, YouTube, and anywhere else recommending misinformation, yes a #<span class="p-category auto-tag">Blocktober</span> of sorts.<br class="auto-break"/><br class="auto-break"/>See Also:<br class="auto-break"/>* <a class="auto-link" href="https://twitter.com/mantonsblog/status/1305983204281769986">https://twitter.com/mantonsblog/status/1305983204281769986</a><br class="auto-break"/>* <a class="auto-link" href="https://jgregorymcverry.com/Blocktober">https://jgregorymcverry.com/Blocktober</a></span></p>
+<span class="info footer"><a href="2020/275/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:50-0700">23:50</time> on <time class="value">2020-10-01</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/indieweb/this-week/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;this-week&rdquo;</a></span> <a href="2020/275/b1/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Top Edited Wiki Pages should omit User: pages
+</h1></a><div class="entry-content e-content">
+<p>
+As illustrated by the 
+<a href="https://indieweb.org/this-week/2020-10-02.html#changed-wiki-pages">2020-10-02 draft newsletter</a>, 
+the Top Edited Wiki Pages includes User: pages which are more personal projects or bot updates and don't really add significant information to the This Week newsletter. User: pages should be omitted from the Top Edited Wiki Pages section.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/275/b1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="21:43-0700">21:43</time> on <time class="value">2020-10-01</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/microformats/h-entry/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;h-entry&rdquo;</a></span> <a href="2020/259/b2/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Process for updating a proposed h-entry property
+</h1></a><div class="entry-content e-content">
+<p>
+The current 
+<a href="https://microformats.org/wiki/h-entry#change_control">h-entry change control process</a> 
+does not specify how to update the definition of a proposed feature, which means it falls back to being as strict as updating a stable feature which is more strict that desired for proposals. This issue is for considering a proposal for updating the definition of a proposed feature, as discussed during the 
+<a href="https://events.indieweb.org/2020/09/microformats2-issues-resolution-session-cay9SF07oNTY">recent Microformats Issue Resolution pop-up</a>.
+</p>
+<p>
+Proposal: the definition of a proposed feature may be updated to be more consistent with one or more real world public web sites publishing and or consuming the feature, by citing URLs for those examples in an edit summary. New proposed property or value definitions may also be added for consideration per the existing requirements for adding a proposed feature. If you&rsquo;re not sure whether to update an existing definition or add a new definition, try to work with the proposer(s) of an existing definition to come to a consensus to update it. Lacking consensus, add a new definition for consideration, retaining any previous definition(s).
+</p>
+<p>
+This proposal also adds a convergence requirement for moving a feature from proposed to draft. If there are multiple definitions for a proposed feature, an issue must be opened to discuss how to converge the definitions by consensus agreement among those with real world public web sites publishing and or implementations consuming the feature.
+</p>
+<p>
+This is a rough first draft, feel free to propose alternatives, simplifications, editorial suggestions.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/259/b2/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:10-0700">18:10</time> on <time class="value">2020-09-15</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/dtran320/runair/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;runair&rdquo;</a></span> <a href="2020/259/b1/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Runair needs an open source license
+</h1></a><div class="entry-content e-content">
+<p>
+Runair is awesome! Would be great to give an explicit open source license like CC0 (preferred), or BSD, MIT, Apache etc. of your preference and mention it in README.md.
+</p>
+<p>
+For example, the IndieWeb newBase60py library uses CC0: https://github.com/indieweb/newBase60py and you could copy this LICENSE file in its entirety https://github.com/indieweb/newBase60py/blob/master/LICENSE
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/259/b1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="16:39-0700">16:39</time> on <time class="value">2020-09-15</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://github.com/mozilla/standards-positions/issues/23#issuecomment-685896537" class="u-in-reply-to h-cite">a comment on issue 23 of GitHub project &ldquo;standards-positions&rdquo;</a></span> <span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/adamroach">@adamroach</a>:<br class="auto-break"/>&gt; where you're seeing "non-harmful" here? <br class="auto-break"/>The first link (420 comment) you quoted.</span></p>
+<span class="info footer"><a href="2020/246/t2/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="10:59-0700">10:59</time> on <time class="value">2020-09-02</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://github.com/mozilla/standards-positions/issues/23" class="u-in-reply-to h-cite">issue 23 of GitHub project &ldquo;standards-positions&rdquo;</a></span> <span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/annevk">@annevk</a>, per your comment in <a class="auto-link" href="https://github.com/mozilla/standards-positions/pull/420#issuecomment-669759232">https://github.com/mozilla/standards-positions/pull/420#issuecomment-669759232</a>, could you summarize here (in this issue) our reasoning for changing to a "non-harmful" position, rather than "defer", and with explicit reasons for why we are downgrading from our previous "worth prototyping" position. <br class="auto-break"/><br class="auto-break"/>To be clear: I&rsquo;m not disagreeing with "non-harmful". Thanks.</span></p>
+<span class="info footer"><a href="2020/246/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="10:01-0700">10:01</time> on <time class="value">2020-09-02</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://twitter.com/slightlylate/status/1300128696070598661" class="u-in-reply-to h-cite">@slightlylate&rsquo;s tweet</a></span> <span class="p-name entry-title e-content entry-content">Pretty shocked to hear of Emil Eklund (<a class="auto-link h-cassis-username" href="https://twitter.com/eae">@eae</a>) passing &#128532;<br class="auto-break"/><br class="auto-break"/><a class="auto-link h-cassis-username" href="https://twitter.com/slightlylate">@slightlylate</a> sorry for your and all of our collective loss. Saw him at #<span class="p-category auto-tag">W3CTPAC</span> 2019. He was kind &amp; welcoming to new folks <a class="auto-link h-cassis-username" href="https://twitter.com/W3C">@W3C</a> (<a class="auto-link h-cassis-username" href="https://twitter.com/CSSWG">@CSSWG</a> etc.); appreciated his contributions &amp; conversations &#128148;</span></p>
+<span class="info footer"><a href="2020/244/t1/emil-eklund" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="08:28-0700">08:28</time> on <time class="value">2020-08-31</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">I believe in the #<span class="p-category auto-tag">webPlatform</span> (#EngineDiversityAbsolutist)<br class="auto-break"/>And the web as *your platform* (#IndieWeb over #<span class="p-category auto-tag">BigTech</span> #<span class="p-category auto-tag">socialMedia</span> corporate web)<br class="auto-break"/><br class="auto-break"/>#<span class="p-category auto-tag">webDeveloper</span> <a class="auto-link h-cassis-username" href="https://twitter.com/ohhelloana">@ohhelloana</a> <a class="auto-link h-cassis-username" href="https://twitter.com/smashingmag">@smashingmag</a>:<br class="auto-break"/>&ldquo;Autonomy Online: A Case For The IndieWeb&rdquo; <a class="auto-link" href="https://www.smashingmagazine.com/2020/08/autonomy-online-indieweb/">https://www.smashingmagazine.com/2020/08/autonomy-online-indieweb/</a></span></p>
+<span class="info footer"><a href="2020/240/t1/webplatform-web-as-platform-indieweb" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="17:38-0700">17:38</time> on <time class="value">2020-08-27</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">As announced over a week ago, <a class="auto-link h-cassis-username" href="https://twitter.com/Mozilla">@Mozilla</a> had a &ldquo;significant reduction in our workforce by approximately 250 people&rdquo; <a class="auto-link" href="https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/">https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/</a><br class="auto-break"/><br class="auto-break"/>See <a class="auto-link" href="https://talentdirectory.mozilla.org/">https://talentdirectory.mozilla.org/</a> and #<span class="p-category auto-tag">MozillaLifeBoat</span> for amazing people.<br class="auto-break"/><br class="auto-break"/>I worked directly with many of these individuals and am sad to see them go.<br class="auto-break"/><br class="auto-break"/>I&rsquo;ve ignored my LinkedIn for many years; will be logging in to connect with Mozillians, and helping to make introductions.<br class="auto-break"/><br class="auto-break"/>Previously: <a class="auto-link" href="https://tantek.com/2020/015/t1/mozilla-roles-mozillalifeboat">https://tantek.com/2020/015/t1/mozilla-roles-mozillalifeboat</a></span></p>
+<span class="info footer"><a href="2020/236/t1/mozilla-amazing-people-mozillalifeboat" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:59-0700">23:59</time> on <time class="value">2020-08-23</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://github.com/mozilla/standards-positions/issues/336" class="u-in-reply-to h-cite">issue 336 of GitHub project &ldquo;standards-positions&rdquo;</a></span> <span class="p-name entry-title e-content entry-content">In response to (most of) the continued commentary here.<br class="auto-break"/><br class="auto-break"/>This issue is not the place to make pitches for use-cases.<br class="auto-break"/><br class="auto-break"/>While we (Mozilla) are definitely sympathetic to use-cases that help users, a better place to capture those is either on your own blog with blog posts, or perhaps as pull-requests to add them to the respective Explainer, e.g. in this case:<br class="auto-break"/><br class="auto-break"/><a class="auto-link" href="https://github.com/WICG/serial/blob/gh-pages/EXPLAINER.md">https://github.com/WICG/serial/blob/gh-pages/EXPLAINER.md</a><br class="auto-break"/><br class="auto-break"/>Better yet both, so you can fully express the use-cases yourself and then cite them with a brief summary in the Explainer.<br class="auto-break"/><br class="auto-break"/>On the specific medical use-cases provided, if anything these are great examples both in terms of greater potential harm to users, and more vulnerable infrastructure due to systemic IT process issues. Those are both good reasons to expose fewer potentially risky features, not more.</span></p>
+<span class="info footer"><a href="2020/234/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="09:44-0700">09:44</time> on <time class="value">2020-08-21</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">I&rsquo;m sorry this happened Yan :(<br class="auto-break"/><br class="auto-break"/>I know <a class="auto-link h-cassis-username" href="https://twitter.com/bcrypt">@bcrypt</a> and trust her. Read the images.<br class="auto-break"/><a class="auto-link" href="https://twitter.com/bcrypt/status/1292550669044297728/">https://twitter.com/bcrypt/status/1292550669044297728/</a></span></p>
+<span class="info footer"><a href="2020/222/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="15:39-0700">15:39</time> on <time class="value">2020-08-09</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://twitter.com/slbedard/status/1292264161305600001" class="u-in-reply-to h-cite">@slbedard&rsquo;s tweet</a></span> <span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/slbedard">@slbedard</a> or a Shazam for #<span class="p-category auto-tag">birdsong</span>, showing both which bird(s) and map of where heard, with optional contribution of location, naturally with <a class="auto-link h-cassis-username" href="https://twitter.com/SwarmApp">@SwarmApp</a> checkin integration for the obvious birds &amp; bees mashup, and Twitter to tweet your #<span class="p-category auto-tag">twitching</span> &#128038;&#127926;</span></p>
+<span class="info footer"><a href="2020/221/t1/shazam-birdsong-swarmapp-birds-bees" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:09-0700">18:09</time> on <time class="value">2020-08-08</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">#<span class="p-category auto-tag">TechIsNotNeutral</span>. Laws SHOULD NOT mandate specific technologies (certainly #<span class="p-category auto-tag">notBlockchain</span>) nor unproven standards.<br class="auto-break"/><br class="auto-break"/><a class="auto-link h-cassis-username" href="https://twitter.com/Mozilla">@Mozilla</a> blog:<br class="auto-break"/>&#xA0;By embracing #<span class="p-category auto-tag">blockchain</span>, a California bill takes the wrong step forward: <a class="auto-link" href="https://blog.mozilla.org/netpolicy/2020/08/06/by-embracing-blockchain-a-california-bill-takes-the-wrong-step-forward/">https://blog.mozilla.org/netpolicy/2020/08/06/by-embracing-blockchain-a-california-bill-takes-the-wrong-step-forward/</a><br class="auto-break"/><br class="auto-break"/><a class="auto-link" href="https://twitter.com/mozilla/status/1291504303870562305">https://twitter.com/mozilla/status/1291504303870562305</a></span></p>
+<span class="info footer"><a href="2020/220/t2/blockchain-wrong" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="16:28-0700">16:28</time> on <time class="value">2020-08-07</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block"><data class="p-rsvp" value="yes">RSVP yes</data> to: <a href="https://events.indieweb.org/2020/08/indieauth-1-1-identity-protocol-standards-session-6xlxgeCEMgv8" class="u-in-reply-to h-cite">an IndieWeb event</a></span> <span class="p-name entry-title e-content entry-content">going to part of the IndieAuth Pop-up Session<br class="auto-break"/>&#128467; 9:30-11:30am PDT, Sat 8/8<br class="auto-break"/>&#127903; RSVP: <a class="auto-link" href="https://events.indieweb.org/2020/08/indieauth-1-1-identity-protocol-standards-session-6xlxgeCEMgv8">https://events.indieweb.org/2020/08/indieauth-1-1-identity-protocol-standards-session-6xlxgeCEMgv8</a><br class="auto-break"/><br class="auto-break"/>#<span class="p-category auto-tag">IndieAuth</span> is the most implemented decentralized #<span class="p-category auto-tag">identity</span> #<span class="p-category auto-tag">protocol</span>, built on #<span class="p-category auto-tag">OAuth</span> 2.<br class="auto-break"/><br class="auto-break"/>#<span class="p-category auto-tag">IndieWeb</span> #<span class="p-category auto-tag">OpenWeb</span> #<span class="p-category auto-tag">WebIdentity</span> <br class="auto-break"/>#<span class="p-category auto-tag">noBlockchain</span> needed</span></p>
+<span class="info footer"><a href="2020/220/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="10:18-0700">10:18</time> on <time class="value">2020-08-07</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/snarfed/bridgy/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;bridgy&rdquo;</a></span> <a href="2020/219/b2/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+backfeed GitHub labels on your issues
+</h1></a><div class="entry-content e-content">
+<p>
+On GitHub, project team members are able to add labels to your issues on a project. If your issue is a POSSE copy of an original post on your site, Bridgy should backfeed these as "tag-of" responses to the original post. cc: @dshanske
+</p>
+<p>
+Bridgy Publish already 
+<a href="https://github.com/snarfed/bridgy/issues/811">supports POSSEing tag-of posts in reply to GitHub issues</a>, 
+as labels on those issues, and this is the backfeed counterpart. Brainstormed here: 
+<a href="https://indieweb.org/tag-reply#How_to_post_a_tag-reply">https://indieweb.org/tag-reply#How_to_post_a_tag-reply</a>.
+</p>
+<p>
+This is similar to 
+<a href="https://github.com/snarfed/bridgy/issues/776">issue #776</a> 
+which is the same backfeed feature request but for Flickr.
+</p>
+<p>
+This is also the &ldquo;labeled&rdquo; specific subfeature of 
+<a href="https://github.com/snarfed/bridgy/issues/833">issue #833</a> 
+which documents many more backfeed for GitHub requests.
+</p>
+<p>
+And similar to 
+<a href="https://github.com/snarfed/bridgy/issues/811#issuecomment-382469530">this comment on #811</a> 
+(<a href="https://tantek.com/2018/108/t2/untag-of-bridgy-publish-github-label">original post</a>) 
+requesting Bridgy Publish untag-of support, 
+it&rsquo;s worth considering Bridgy Backfeed untag-of support 
+(the &ldquo;unlabeled&rdquo; specific subfeature of #833), 
+so when someone removes a label from your issue, your original issue post is notified. However, the 
+<a href="https://indieweb.org/untag#How_to_mark_up.3F">brainstorming of how to markup untagging</a> 
+is still ongoing, and thus may need to wait for more discussion before implementing.
+</p>
+<p>
+Label: <span class="p-category">backfeed</span>.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/219/b2/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="13:08-0700">13:08</time> on <time class="value">2020-08-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/microformats/microformats2-parsing/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;microformats2-parsing&rdquo;</a></span> <a href="2020/219/b1/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Should we specify a MIME type / Content-Type for canonical JSON from parsed mf2?
+</h1></a><div class="entry-content e-content">
+<p>
+There has been some past brainstorming about possible MIME types for the JSON resulting from a compliant microformats2 parsing implementation:
+<a href="https://microformats.org/wiki/microformats2-mime-type">microformats2-mime-type</a>. 
+It seems one in particular, <code>application/mf2+json</code>, has seen some adoption in the wild: <a href="https://indieweb.org/application/mf2+json">https://indieweb.org/application/mf2+json</a>.
+Should we specify an explicit MIME type for the parsed JSON result of an mf2 parser? And if so, should we adopt <code>application/mf2+json</code> or some other alternative?
+</p>
+<p>
+Labels: <span class="p-category">enhancement</span>, 
+<span class="p-category">question</span>, 
+<span class="p-category">needs proposed resolution</span>.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/219/b1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="11:46-0700">11:46</time> on <time class="value">2020-08-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/mozilla/standards-positions/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;standards-positions&rdquo;</a></span> <a href="2020/217/b2/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+CSS Overflow 3: overflow:clip
+</h1></a><div class="entry-content e-content">
+<h2>Request for Mozilla Position on an Emerging Web Specification</h2>
+<ul>
+<li>Specification Title: CSS Overflow Module Level 3: overflow:clip
+</li>
+<li>Specification or proposal URL: https://drafts.csswg.org/css-overflow-3/#valdef-overflow-clip
+</li>
+<li>Caniuse.com URL (optional): 
+</li>
+<li>MDN (optional): https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+</li>
+<li>Bugzilla URL (optional): https://bugzilla.mozilla.org/show_bug.cgi?id=1531609
+</li>
+
+<li>Mozillians who can provide input (optional): @emilio, @heycam
+</li>
+<li>W3C Tag Design Review issue: none
+</li>
+</ul>
+<h3>Other information</h3>
+<p>
+This value has recently been implemented in Nightly: 
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1531609">overflow:clip</a>
+(as <a href="https://wiki.mozilla.org/Firefox/Roadmap/Updates#2020-08-03">announced yesterday</a>).
+</p>
+<p>
+This feature is both a useful declarative presentational feature for web developers and one that formerly had a non-standard -moz prefixed value (-moz-hidden-unscrollable). Thus we should consider giving it an explicit status of "important".
+</p>
+<p>
+Label: <span class="p-category">w3c</span>.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/217/b2/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="20:42-0700">20:42</time> on <time class="value">2020-08-04</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/mozilla/standards-positions/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;standards-positions&rdquo;</a></span> <a href="2020/217/b1/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+CSS Images 4: cross-fade()
+</h1></a><div class="entry-content e-content">
+<h2>Request for Mozilla Position on an Emerging Web Specification</h2>
+<ul>
+<li>Specification Title: CSS Image Values and Replaced Content Module Level 4: cross-fade()
+</li>
+<li>Specification or proposal URL: https://drafts.csswg.org/css-images-4/#cross-fade-function
+</li>
+<li>Caniuse.com URL (optional): 
+</li>
+<li>MDN (optional): https://developer.mozilla.org/en-US/docs/Web/CSS/cross-fade
+</li>
+<li>Bugzilla URL (optional): https://bugzilla.mozilla.org/show_bug.cgi?id=546052
+</li>
+
+<li>Mozillians who can provide input (optional): @dholbert, @heycam
+</li>
+<li>W3C Tag Design Review issue: none
+</li>
+</ul>
+<h3>Other information</h3>
+<p>
+This function has recently been implemented in Nightly: 
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=546052">cross-fade()</a>
+(as <a href="https://wiki.mozilla.org/Firefox/Roadmap/Updates#2020-08-03">announced yesterday</a>).
+</p>
+<p>
+This is a useful declarative presentational feature for web developers, and thus we should consider giving it an explicit status of "important".
+</p>
+<p>
+Label: <span class="p-category">w3c</span>.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/217/b1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="19:50-0700">19:50</time> on <time class="value">2020-08-04</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Looking forward to 2021, when 2020 will finally be hindsight.</span></p>
+<span class="info footer"><a href="2020/216/t1/forward-hindsight" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="13:37-0700">13:37</time> on <time class="value">2020-08-03</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">* 17k+ #<span class="p-category auto-tag">Berlin</span> anti-mask/anti-vax protesters gathered without masks (#COVID19 surge coming)<br class="auto-break"/>* "Day X" preppers infiltrate German state institutions (<a class="auto-link h-cassis-username" href="https://twitter.com/kbennhold">@kbennhold</a>), like a real-life MCU Hydra<br class="auto-break"/>* Ware State Prison riot<br class="auto-break"/>* Murder Hornet trapped, &lt;2 mo. to find their nest<br class="auto-break"/><br class="auto-break"/>Welcome to August.<br class="auto-break"/><br class="auto-break"/>Berlin anti-mask/anti-vax protests:<br class="auto-break"/>* <a class="auto-link" href="https://in.reuters.com/article/germany-protests-idINKBN24X3SC">https://in.reuters.com/article/germany-protests-idINKBN24X3SC</a><br class="auto-break"/>* <a class="auto-link" href="https://www.bbc.com/news/world-europe-53622797">https://www.bbc.com/news/world-europe-53622797</a><br class="auto-break"/><br class="auto-break"/>"Day X" thread and article:<br class="auto-break"/>* <a class="auto-link" href="https://twitter.com/kbennhold/status/1289568828691746816">https://twitter.com/kbennhold/status/1289568828691746816</a><br class="auto-break"/>* <a class="auto-link" href="https://www.nytimes.com/2020/08/01/world/europe/germany-nazi-infiltration.html">https://www.nytimes.com/2020/08/01/world/europe/germany-nazi-infiltration.html</a><br class="auto-break"/><br class="auto-break"/>Ware State Prison riot:<br class="auto-break"/>* <a class="auto-link" href="https://www.ajc.com/news/breaking-violent-riot-reported-at-south-georgia-prison/3EISC6BDTZBRHI7YATPM3HPPNU/">https://www.ajc.com/news/breaking-violent-riot-reported-at-south-georgia-prison/3EISC6BDTZBRHI7YATPM3HPPNU/</a><br class="auto-break"/><br class="auto-break"/>Murder Hornet trapped:<br class="auto-break"/>* <a class="auto-link" href="https://www.npr.org/2020/08/01/898173003/researchers-in-washington-state-have-trapped-their-first-murder-hornet">https://www.npr.org/2020/08/01/898173003/researchers-in-washington-state-have-trapped-their-first-murder-hornet</a></span></p>
+<span class="info footer"><a href="2020/214/t1/august" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:59-0700">23:59</time> on <time class="value">2020-08-01</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Hey guys (yes, literally), and anyone in a position of power (management, leads) at Google, or any tech company, or any company, please read this thread by <a class="auto-link h-cassis-username" href="https://twitter.com/EmilyKager">@EmilyKager</a>:<br class="auto-break"/><br class="auto-break"/>Content warning: domestic violence, images<br class="auto-break"/><br class="auto-break"/><a class="auto-link" href="https://twitter.com/EmilyKager/status/1288864659584450560">https://twitter.com/EmilyKager/status/1288864659584450560</a></span></p>
+<span class="info footer"><a href="2020/213/t2/hey-guys-please-read-thread" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:26-0700">23:26</time> on <time class="value">2020-07-31</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">2wks "virtual" <a class="auto-link h-cassis-username" href="https://twitter.com/W3C">@W3C</a> F2Fs:<br class="auto-break"/>Prev: MTW 06:00-09:30 <a class="auto-link h-cassis-username" href="https://twitter.com/W3CAB">@W3CAB</a>, first as a returning AB member<br class="auto-break"/>This: MT1-5p ThF7-11a <a class="auto-link h-cassis-username" href="https://twitter.com/CSSWG">@CSSWG</a><br class="auto-break"/>Long Zoom/gMeet hrs, missed in-person time &amp; break chats.<br class="auto-break"/>Though I could reference 30yo typography books for ::first-letter issues, like The Elements of Typographic Style, and How to Spec Type.</span></p>
+<span class="info footer"><a href="2020/213/t1/virtual-w3c-f2fs-ab" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="13:13-0700">13:13</time> on <time class="value">2020-07-31</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Thoughts with Portland friends, and implications.<br class="auto-break"/>Watching indicators:<br class="auto-break"/>* # cities DHS Operation Legend<br class="auto-break"/>* # kidnapped from protests, streets<br class="auto-break"/>* dystopia phrases like &ldquo;proactively arrest&rdquo;<br class="auto-break"/>* USPS delays, defunding<br class="auto-break"/>* swing state outbreaks<br class="auto-break"/>* novel voter disenfranchisements<br class="auto-break"/>* &ldquo;resignations&rdquo; of or &ldquo;retiring&rdquo; US generals<br class="auto-break"/>* border closures<br class="auto-break"/>* airport closures<br class="auto-break"/><br class="auto-break"/>Some links:<br class="auto-break"/><br class="auto-break"/>&ldquo;Operation Legend&rdquo;:<br class="auto-break"/>* <a class="auto-link" href="https://www.politico.com/news/2020/07/21/trump-federal-force-cities-377273">https://www.politico.com/news/2020/07/21/trump-federal-force-cities-377273</a> <br class="auto-break"/>* <a class="auto-link" href="https://en.wikipedia.org/wiki/Operation_Legend">https://en.wikipedia.org/wiki/Operation_Legend</a><br class="auto-break"/><br class="auto-break"/>People kidnapped from protests, streets:<br class="auto-break"/>* <a class="auto-link" href="https://www.portlandmercury.com/blogtown/2020/07/20/28659148/what-to-do-if-youre-kidnapped-by-federal-officers-while-protesting">https://www.portlandmercury.com/blogtown/2020/07/20/28659148/what-to-do-if-youre-kidnapped-by-federal-officers-while-protesting</a><br class="auto-break"/>* <a class="auto-link" href="https://twitter.com/matcha_chai/status/1283328232033411072">https://twitter.com/matcha_chai/status/1283328232033411072</a><br class="auto-break"/>* <a class="auto-link" href="https://www.wweek.com/news/2020/07/17/federal-officers-appear-to-be-using-rental-cars-from-enterprise-to-snatch-portland-protesters/">https://www.wweek.com/news/2020/07/17/federal-officers-appear-to-be-using-rental-cars-from-enterprise-to-snatch-portland-protesters/</a><br class="auto-break"/><br class="auto-break"/>Dystopia phrases, especially from police/military dystopias:<br class="auto-break"/>* <a class="auto-link" href="https://www.newsweek.com/portland-federal-agents-minority-report-1519574">https://www.newsweek.com/portland-federal-agents-minority-report-1519574</a><br class="auto-break"/><br class="auto-break"/>USPS:<br class="auto-break"/>* <a class="auto-link" href="https://www.npr.org/2020/07/23/894794250/critics-say-changes-to-usps-may-completely-transform-the-post-office">https://www.npr.org/2020/07/23/894794250/critics-say-changes-to-usps-may-completely-transform-the-post-office</a><br class="auto-break"/>* <a class="auto-link" href="https://fortune.com/2020/07/24/usps-mail-delivery-postmaster-general-louis-dejoy-us-postal-service/">https://fortune.com/2020/07/24/usps-mail-delivery-postmaster-general-louis-dejoy-us-postal-service/</a><br class="auto-break"/>* <a class="auto-link" href="https://www.commondreams.org/news/2020/07/22/maine-letter-carriers-allege-usps-leadership-willfully-delaying-mail-sabotage-postal">https://www.commondreams.org/news/2020/07/22/maine-letter-carriers-allege-usps-leadership-willfully-delaying-mail-sabotage-postal</a><br class="auto-break"/>* <a class="auto-link" href="https://www.vox.com/21328220/senate-democrats-usps-vote-by-mail">https://www.vox.com/21328220/senate-democrats-usps-vote-by-mail</a><br class="auto-break"/><br class="auto-break"/>Novel voter disenfranchisements:<br class="auto-break"/>* <a class="auto-link" href="https://americanindependent.com/texas-gop-electoral-college-rig-elections-popular-vote-senate/">https://americanindependent.com/texas-gop-electoral-college-rig-elections-popular-vote-senate/</a></span></p>
+<span class="info footer"><a href="2020/206/t1/thoughts-implications-indicators-watching" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="17:35-0700">17:35</time> on <time class="value">2020-07-24</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">&#128077;</span><span class="reply-context"> to <a href="https://github.com/w3c/w3process/issues/334#issuecomment-662659706" class="u-in-reply-to h-cite">a comment on issue 334 of GitHub project &ldquo;w3process&rdquo;</a></span></p>
+<span class="info footer"><a href="2020/204/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:26-0700">23:26</time> on <time class="value">2020-07-22</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://twitter.com/b_cavello/status/1283888918937518080" class="u-in-reply-to h-cite">@b_cavello&rsquo;s tweet</a></span> <span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/b_cavello">@b_cavello</a>, been reflecting. "immunity" not the goal. "#decentralisation" has been colonized by #<span class="p-category auto-tag">blockchain</span> snakeoil<br class="auto-break"/><br class="auto-break"/>Goals:<br class="auto-break"/>* agency+community instead of corp dominance<br class="auto-break"/>* humble interop, choices, direct practices<br class="auto-break"/>Like end of tweet #<span class="p-category auto-tag">IndieWeb</span> post links <br class="auto-break"/>which allow us to write and post more on our own sites, <br class="auto-break"/>and link to more resources like: <br class="auto-break"/>* <a class="auto-link" href="https://indieweb.org/principles">https://indieweb.org/principles</a><br class="auto-break"/>* <a class="auto-link" href="https://indieweb.org/why">https://indieweb.org/why</a><br class="auto-break"/>* <a class="auto-link" href="https://indieweb.org/start">https://indieweb.org/start</a><br class="auto-break"/><br class="auto-break"/>We reject traditional "fast growth" capitalist narratives, and instead humbly encourage slow sustainable growth across numerous projects that interoperate with each other.<br class="auto-break"/><br class="auto-break"/>Longevity &amp; dependability directly benefit the people participating, instead of shortterm excitement which typically only benefits investors (sometimes "serial" entrepreneurs).<br class="auto-break"/><br class="auto-break"/>Would love to chat more about these topics: <a class="auto-link" href="https://chat.indieweb.org/">https://chat.indieweb.org/</a> (There&rsquo;s a Slack link there too to use Slack to join).</span></p>
+<span class="info footer"><a href="2020/201/t1/agency-community-interop-indieweb" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="14:51-0700">14:51</time> on <time class="value">2020-07-19</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Good #<span class="p-category auto-tag">IndieWeb</span> reminder from <a class="auto-link h-cassis-username" href="https://twitter.com/brentsimmons">@brentsimmons</a>: <a class="auto-link" href="https://inessential.com/2020/07/15/zillion_times_easier">https://inessential.com/2020/07/15/zillion_times_easier</a> (<a class="auto-link" href="https://twitter.com/brentsimmons/status/1283534944493502470">https://twitter.com/brentsimmons/status/1283534944493502470</a>)<br class="auto-break"/><br class="auto-break"/>And #<span class="p-category auto-tag">BlueChecks</span> appear to be frozen, unable to tweet, only retweet.<br class="auto-break"/><br class="auto-break"/>So of course this exists: <a class="auto-link h-cassis-username" href="https://twitter.com/EveryWord">@EveryWord</a></span></p>
+<span class="info footer"><a href="2020/197/t2/good-indieweb-reminder" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="16:04-0700">16:04</time> on <time class="value">2020-07-15</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">#<span class="p-category auto-tag">TwitterHacked</span>. What she said <a class="auto-link" href="https://twitter.com/AOC/status/1283513914597298178">https://twitter.com/AOC/status/1283513914597298178</a> via <a class="auto-link h-cassis-username" href="https://twitter.com/b_cavello">@b_cavello</a><br class="auto-break"/><br class="auto-break"/>Y&rsquo;all know:<br class="auto-break"/>#<span class="p-category auto-tag">Bitcoin</span> is a coal-burning CO2 producing currency for organized crime<br class="auto-break"/>#<span class="p-category auto-tag">blockchain</span> is mostly #<span class="p-category auto-tag">dweb</span> snakeoil (singleton, OSS monoculture)<br class="auto-break"/><br class="auto-break"/>Go #<span class="p-category auto-tag">IndieWeb</span> or SSB for the real: <a class="auto-link" href="https://indieweb.org/">https://indieweb.org/</a></span></p>
+<span class="info footer"><a href="2020/197/t1/twitterhacked-bitcoin-blockchain" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="14:57-0700">14:57</time> on <time class="value">2020-07-15</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/solarpunk_girl">@solarpunk_girl</a> still reflecting on <a class="auto-link" href="https://twitter.com/solarpunk_girl/status/1261196542519672834">https://twitter.com/solarpunk_girl/status/1261196542519672834</a>, how to design modern multi-generational housing? E.g. with care-sharing &amp; support as primary goals, and COVID persisting: create quarantine split levels/sections with separate BRs/BA. Healthy half could provide food etc. for those in quarantine. Would work both for traveler / suspected exposure quarantine (like many countries requiring 14 days), and confirmed cases recuperating. If there were both (suspected and confirmed cases), they would need to be split apart as well, both sections accessible for care-providing without intersecting the other. We need new architectures of local sustainable support for a post-pandemic world.</span></p>
+<span class="info footer"><a href="2020/195/t1/modern-multi-generational-housing-care" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:08-0700">18:08</time> on <time class="value">2020-07-13</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/mozilla/standards-positions/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;standards-positions&rdquo;</a></span> <a href="2020/195/b1/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Media Queries Level 5: prefers-reduced-motion, prefers-contrast, prefers-color-scheme
+</h1></a><div class="entry-content e-content">
+<h2>Request for Mozilla Position on an Emerging Web Specification</h2>
+<ul>
+<li>Specification Title: Media Queries Level 5: User Preference Media Features
+</li>
+<li>Specification or proposal URL: https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion
+</li>
+<li>Specification or proposal URL: https://drafts.csswg.org/mediaqueries-5/#prefers-contrast
+</li>
+<li>Specification or proposal URL: https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme
+</li>
+<li>Caniuse.com URL (optional): 
+</li>
+<li>Bugzilla URL (optional): https://bugzilla.mozilla.org/show_bug.cgi?id=1365045
+</li>
+<li>Bugzilla URL (optional): https://bugzilla.mozilla.org/show_bug.cgi?id=1506364
+</li>
+<li>Bugzilla URL (optional): https://bugzilla.mozilla.org/show_bug.cgi?id=1494034
+</li>
+
+<li>Mozillians who can provide input (optional): <a href="https://github.com/heycam">@heycam</a>, 
+<a href="https://github.com/dbaron">@dbaron</a>
+</li>
+<li>W3C Tag Design Review issue: none
+</li>
+</ul>
+<h3>Other information</h3>
+<p>
+This issue is scoped to three of the new features in Media Queries Level 5, 
+which we have implemented, as part of evaluating 
+<a href="https://github.com/mozilla/standards-positions/issues/389">Media Queries Level 5 as a whole</a>: 
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1434491">prefers-reduced-motion</a>, 
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1494034">prefers-color-scheme</a>, 
+and most recently,
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1506364">prefers-contrast</a> 
+(as <a href="https://wiki.mozilla.org/Firefox/Roadmap/Updates#2020-07-06">announced last week</a>).
+</p>
+<p>
+These features enhance accessibility features of the platform and thus we should consider a status of "important" for these three as a whole.
+</p>
+<p>
+Label: <span class="p-category">w3c</span>.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/195/b1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="15:58-0700">15:58</time> on <time class="value">2020-07-13</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/mozilla/standards-positions/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;standards-positions&rdquo;</a></span> <a href="2020/191/b2/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+CSS Media Queries Level 5
+</h1></a><div class="entry-content e-content">
+<h2>Request for Mozilla Position on an Emerging Web Specification</h2>
+<ul>
+<li>Specification Title: Media Queries Level 5
+</li>
+<li>Specification or proposal URL: https://drafts.csswg.org/mediaqueries-5/
+</li>
+<li>Caniuse.com URL (optional): 
+</li>
+<li>Bugzilla URL (optional): https://bugzilla.mozilla.org/show_bug.cgi?id=1434491
+</li>
+<li>Mozillians who can provide input (optional): 
+<a href="https://github.com/heycam">@heycam</a>, 
+<a href="https://github.com/dbaron">@dbaron</a>
+</li>
+<li>W3C Tag Design Review issue: none
+</li>
+</ul>
+<h3>Other information</h3>
+<p>
+We have implemented several of the features in Media Queries Level 5:
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1434491">prefers-reduced-motion</a>, 
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1494034">prefers-color-scheme</a>, 
+and most recently,
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1506364">prefers-contrast</a> 
+(as <a href="https://wiki.mozilla.org/Firefox/Roadmap/Updates#2020-07-06">announced Monday</a>).
+</p>
+<p>
+In general Media Queries Level 5 has several accessibility enhancing features and thus we should consider an overall status of "important".
+</p>
+<p>
+Label: <span class="p-category">w3c</span>.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/191/b2/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="16:45-0700">16:45</time> on <time class="value">2020-07-09</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/mozilla/standards-positions/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;standards-positions&rdquo;</a></span> <a href="2020/191/b1/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+HTML: dialog element
+</h1></a><div class="entry-content e-content">
+<h2>Request for Mozilla Position on an Emerging Web Specification</h2>
+<ul>
+<li>Specification Title: HTML: The dialog element
+</li>
+<li>Specification or proposal URL: https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element
+</li>
+<li>Caniuse.com URL (optional): https://caniuse.com/dialog
+</li>
+<li>Bugzilla URL (optional): https://bugzilla.mozilla.org/show_bug.cgi?id=840640
+</li>
+<li>Mozillians who can provide input (optional): 
+<a href="https://github.com/annevk">@annevk</a>, 
+<a href="https://github.com/dbaron">@dbaron</a>
+</li>
+<li>W3C Tag Design Review issue: none
+</li>
+</ul>
+<h3>Other information</h3>
+<p>
+We have implemented the HTML dialog element in Nightly 
+(<a href="https://wiki.mozilla.org/Firefox/Roadmap/Updates#2020-07-06">announced Monday</a>), 
+with a few caveats as described in 
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1645046">Bugzilla 1645046</a>.
+</p>
+<p>
+Along with inert (<a href="https://github.com/mozilla/standards-positions/issues/174">#174</a>), 
+this seems worthy of recording as "worth prototyping".
+</p>
+<p>
+Label: <span class="p-category">whatwg</span>.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/191/b1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="16:33-0700">16:33</time> on <time class="value">2020-07-09</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block"><data class="p-rsvp" value="yes">RSVP yes</data> to: <a href="https://events.indieweb.org/2020/07/homebrew-website-club-west-coast-ZObv0hlGOdR5" class="u-in-reply-to h-cite">an IndieWeb event</a></span> <span class="p-name entry-title e-content entry-content">hosted Homebrew Website Club West Coast tonight:<br class="auto-break"/><a class="auto-link" href="https://events.indieweb.org/2020/07/homebrew-website-club-west-coast-ZObv0hlGOdR5">https://events.indieweb.org/2020/07/homebrew-website-club-west-coast-ZObv0hlGOdR5</a><br class="auto-break"/>Discussed many topics: proposed h-entry p-content-warning property <a class="auto-link" href="https://github.com/microformats/h-entry/issues/19">https://github.com/microformats/h-entry/issues/19</a>, IndieAuth test suite, UX personas roles as a way to update <a class="auto-link" href="https://indieweb.org/generations">https://indieweb.org/generations</a>, and more</span></p>
+<span class="info footer"><a href="2020/190/t2/homebrew-website-club-west" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:21-0700">23:21</time> on <time class="value">2020-07-08</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block"><data class="p-rsvp" value="yes">RSVP yes</data> to: <a href="https://events.indieweb.org/2020/07/online-homebrew-website-club-europe-london-eIf6VfMWuhLY" class="u-in-reply-to h-cite">an IndieWeb event</a></span> <span class="p-name entry-title e-content entry-content">went to Homebrew Website Club London:<br class="auto-break"/><a class="auto-link" href="https://events.indieweb.org/2020/07/online-homebrew-website-club-europe-london-eIf6VfMWuhLY">https://events.indieweb.org/2020/07/online-homebrew-website-club-europe-london-eIf6VfMWuhLY</a><br class="auto-break"/>Great chatting with folks about rethinking person-tagging public photos (now considered harmful), and discussed #<span class="p-category auto-tag">IndieWeb</span> Organizers &amp; Organizing blog post: <a class="auto-link" href="https://tantek.com/2020/187/b1/changes-indieweb-organizing-indiewebcamp-west">https://tantek.com/2020/187/b1/changes-indieweb-organizing-indiewebcamp-west</a></span></p>
+<span class="info footer"><a href="2020/190/t1/homebrew-website-club-london" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="17:20-0700">17:20</time> on <time class="value">2020-07-08</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">A month ago <a class="auto-link h-cassis-username" href="https://twitter.com/moral_imagining">@moral_imagining</a>, <a class="auto-link h-cassis-username" href="https://twitter.com/solarpunk_girl">@solarpunk_girl</a> asked us to write a #<span class="p-category auto-tag">MoralImaginations</span> continuation to The Impossible Train story.<br class="auto-break"/><br class="auto-break"/>* * *<br class="auto-break"/><br class="auto-break"/>Since the train stopped, we&rsquo;ve seen so many odd, shocking, and inspiring things.<br class="auto-break"/><br class="auto-break"/>People outside their train cars protesting to be let back on to enjoy their window views and demanding their familiar entitlements served by others.<br class="auto-break"/><br class="auto-break"/>Tensions outside the train bringing rise to new &amp; familiar tragedies, now more visible to all.<br class="auto-break"/><br class="auto-break"/>A pair of humans board a shiny new train to the sky, launch, and arrive at the sky station to much applause.<br class="auto-break"/><br class="auto-break"/>People from different train cars, witnessing tragedy on tragedy, declaring enough, band together in solidarity, confronting and witnessing more tragedies.<br class="auto-break"/><br class="auto-break"/>Reports arrive that despite the apparent stoppage, the train is still moving, slowly, and the upcoming cliff, still crumbling away.<br class="auto-break"/><br class="auto-break"/>* * *</span></p>
+<span class="info footer"><a href="2020/188/t1/moralimaginations-continuation-impossible-train" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:59-0700">23:59</time> on <time class="value">2020-07-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/w3c/dap-charter/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;dap-charter&rdquo;</a></span> <a href="2020/188/b8/das-drop-network-information-api" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+DASWG: Drop Network Information API because it is harmful to the web
+</h1></a><div class="entry-content e-content">
+<p>
+Per <a href="https://lists.w3.org/Archives/Public/public-new-work/2020Jun/0012.html">DAS charter feedback</a>:
+Mozilla has significant concerns about the inclusion of the
+Network Information API in the charter (as a specification to potentially
+adopt from the WICG) &#x2014; Mozilla's public position is that this API is
+"harmful" to the Web as the information that it provides is unreliable and,
+at the same time, open to privacy abuses. As we have 
+<a href="https://mozilla.github.io/standards-positions/#netinfo">stated publicly</a>,
+we believe it is "better that sites use methods that dynamically adapt to
+available bandwidth, as that is more accurate and likely to be applicable
+in the moment". Or, alternatively, use newer declarative solutions, such as
+"lazy loading" images and alike. 
+</p>
+<p>
+cc: 
+<a href="https://github.com/dwsinger">@dwsinger</a> 
+<a href="https://github.com/pes10k">@pes10k</a> 
+<a href="https://github.com/marcoscaceres">@marcoscaceres</a> 
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/188/b8/das-drop-network-information-api" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:34-0700">23:34</time> on <time class="value">2020-07-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/w3c/dap-charter/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;dap-charter&rdquo;</a></span> <a href="2020/188/b7/das-drop-orientation-sensor" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+DASWG: Drop Orientation Sensor in favor of existing APIs
+</h1></a><div class="entry-content e-content">
+<p>
+Per <a href="https://lists.w3.org/Archives/Public/public-new-work/2020Jun/0012.html">DAS charter feedback</a>:
+Where we already have an existing Web APIs, e.g., Orientation Sensor, 
+we would prefer the working group cease work on
+those items and instead focus on evolving the existing specifications. 
+</p>
+<p>
+cc: 
+<a href="https://github.com/dwsinger">@dwsinger</a> 
+<a href="https://github.com/pes10k">@pes10k</a> 
+<a href="https://github.com/marcoscaceres">@marcoscaceres</a> 
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/188/b7/das-drop-orientation-sensor" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:30-0700">23:30</time> on <time class="value">2020-07-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/w3c/dap-charter/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;dap-charter&rdquo;</a></span> <a href="2020/188/b6/das-drop-geolocation-sensor" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+DASWG: Drop Geolocation Sensor in favor of existing APIs
+</h1></a><div class="entry-content e-content">
+<p>
+Per <a href="https://lists.w3.org/Archives/Public/public-new-work/2020Jun/0012.html">DAS charter feedback</a>:
+Where we already have an existing Web APIs, e.g., Geolocation Sensor, 
+we would prefer the working group cease work on
+those items and instead focus on evolving the existing specifications. 
+</p>
+<p>
+As is 
+<a href="https://lists.w3.org/Archives/Public/public-device-apis/2020Jun/0006.html">evident with the Geolocation API</a>, 
+implementers have continued to
+make significant privacy and security enhancements to existing APIs, and
+those enhancements have made their way back to the W3C. As such, we feel
+it's unnecessary to have duplicate specifications.  
+</p>
+<p>
+cc: 
+<a href="https://github.com/dwsinger">@dwsinger</a> 
+<a href="https://github.com/pes10k">@pes10k</a> 
+<a href="https://github.com/marcoscaceres">@marcoscaceres</a> 
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/188/b6/das-drop-geolocation-sensor" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:27-0700">23:27</time> on <time class="value">2020-07-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/w3c/dap-charter/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;dap-charter&rdquo;</a></span> <a href="2020/188/b5/das-fold-angle-wicg" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+DASWG: Leave Fold Angle in WICG for now and collaborate with CSS
+</h1></a><div class="entry-content e-content">
+<p>
+Per <a href="https://lists.w3.org/Archives/Public/public-new-work/2020Jun/0012.html">DAS charter feedback</a>:
+The Fold Angle specification should be
+incubated in the WICG before it becomes a working group deliverable. For
+Fold Angle, we'd also like to see closer collaboration and input from the
+CSS WG on the design. 
+</p>
+<p>
+Having said that, we would be comfortable with having WICG incubated specs
+being explicitly listed as charter work items that the working group could
+adopt at a future date. However, we'd like to see them listed in a manner
+similar to the 
+<a href="https://www.w3.org/2019/05/webapps-charter.html#wicgspecs">Web Apps WG Charter's section on WICG Specs</a> (i.e.,
+separated out of the main deliverables list for the working group).
+</p>
+<p>
+cc: 
+<a href="https://github.com/dwsinger">@dwsinger</a> 
+<a href="https://github.com/pes10k">@pes10k</a> 
+<a href="https://github.com/marcoscaceres">@marcoscaceres</a> 
+<a href="https://github.com/torgo">@torgo</a> 
+<a href="https://github.com/dbaron">@dbaron</a> 
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/188/b5/das-fold-angle-wicg" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:19-0700">23:19</time> on <time class="value">2020-07-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/w3c/dap-charter/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;dap-charter&rdquo;</a></span> <a href="2020/188/b4/das-system-wakelock-api-wicg" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+DASWG: Leave System WakeLock API in WICG until there is a second implementer
+</h1></a><div class="entry-content e-content">
+<p>
+Per <a href="https://lists.w3.org/Archives/Public/public-new-work/2020Jun/0012.html">DAS charter feedback</a>:
+We believe it would be prudent for the System WakeLock API to go through
+the WICG process until it gets implementation commitment from at least a
+second browser vendor. 
+</p>
+<p>
+Having said that, we would be comfortable with having WICG incubated specs
+being explicitly listed as charter as work items the working group could
+adopt at a future date. However, we'd like to see them listed in a manner
+similar to the 
+<a href="https://www.w3.org/2019/05/webapps-charter.html#wicgspecs">Web Apps WG Charter's section on WICG Specs</a> (i.e.,
+separated out of the main deliverables list for the working group). 
+</p>
+<p>
+cc: 
+<a href="https://github.com/dwsinger">@dwsinger</a> 
+<a href="https://github.com/pes10k">@pes10k</a> 
+<a href="https://github.com/marcoscaceres">@marcoscaceres</a> 
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/188/b4/das-system-wakelock-api-wicg" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:17-0700">23:17</time> on <time class="value">2020-07-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/w3c/dap-charter/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;dap-charter&rdquo;</a></span> <a href="2020/188/b3/das-drop-ambient-light-sensor-api" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+DASWG: Drop Ambient light sensor API for privacy and lack of implementer support
+</h1></a><div class="entry-content e-content">
+<p>
+Per <a href="https://lists.w3.org/Archives/Public/public-new-work/2020Jun/0012.html">DAS charter feedback</a>:
+On the the grounds of privacy, and given a lack of implementer support, we
+would like the Devices and Sensors Working Group to cease work on the Ambient light sensor API and see it published as a Working Group Note instead.
+</p>
+<p>
+cc: 
+<a href="https://github.com/dwsinger">@dwsinger</a> 
+<a href="https://github.com/pes10k">@pes10k</a> 
+<a href="https://github.com/marcoscaceres">@marcoscaceres</a> 
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/188/b3/das-drop-ambient-light-sensor-api" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:14-0700">23:14</time> on <time class="value">2020-07-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/w3c/dap-charter/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;dap-charter&rdquo;</a></span> <a href="2020/188/b2/das-drop-proximity-sensor-api" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+DASWG: Drop Proximity sensor API for privacy and lack of implementer support
+</h1></a><div class="entry-content e-content">
+<p>
+Per <a href="https://lists.w3.org/Archives/Public/public-new-work/2020Jun/0012.html">DAS charter feedback</a>:
+On the the grounds of privacy, and given a lack of implementer support, we
+would like the Devices and Sensors Working Group to cease work on the Proximity sensor API and see it published as a Working Group Note instead.
+</p>
+<p>
+cc: 
+<a href="https://github.com/dwsinger">@dwsinger</a> 
+<a href="https://github.com/pes10k">@pes10k</a> 
+<a href="https://github.com/marcoscaceres">@marcoscaceres</a> 
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/188/b2/das-drop-proximity-sensor-api" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:12-0700">23:12</time> on <time class="value">2020-07-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/w3c/dap-charter/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;dap-charter&rdquo;</a></span> <a href="2020/188/b1/das-drop-battery-api" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+DASWG: Drop Battery API for privacy and lack of implementer support
+</h1></a><div class="entry-content e-content">
+<p>
+Per <a href="https://lists.w3.org/Archives/Public/public-new-work/2020Jun/0012.html">DAS charter feedback</a>:
+On the the grounds of privacy, and given a lack of implementer support, we
+would like the Devices and Sensors Working Group to cease work on the Battery API and see it published as a Working Group Note instead.
+</p>
+<p>
+cc: 
+<a href="https://github.com/dwsinger">@dwsinger</a> 
+<a href="https://github.com/pes10k">@pes10k</a> 
+<a href="https://github.com/marcoscaceres">@marcoscaceres</a> 
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/188/b1/das-drop-battery-api" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="22:35-0700">22:35</time> on <time class="value">2020-07-06</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<a href="2020/187/b1/changes-indieweb-organizing-indiewebcamp-west" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Changes To IndieWeb Organizing, Brief Words At IndieWebCamp West
+</h1></a><div class="entry-content e-content">
+<p>
+A week ago Saturday morning co-organizer 
+<a href="https://boffosocko.com/">Chris Aldrich</a> opened 
+<a href="https://indieweb.org/2020/West">IndieWebCamp West</a> 
+and introduced the keynote speakers. After their inspiring talks he asked me to say a few words about changes we&rsquo;re making in the IndieWeb community around organizing. This is an edited version of those words, rewritten for clarity and context. &#x2014; Tantek
+</p>
+<p>
+Chris mentioned that one of his favorite parts of 
+<a href="https://indieweb.org/code-of-conduct">our code of conduct</a> 
+is that we 
+<a href="https://indieweb.org/code-of-conduct#prioritizes_marginalized_people">prioritize marginalized people&rsquo;s safety above privileged folks&rsquo;s comfort</a>.
+</p>
+<p>
+That was a change we deliberately made last year, announced at last year&rsquo;s summit. It was well received, but it&rsquo;s only one minor change.
+</p>
+<p>
+Those of us that have organized and have been organizing our all-volunteer IndieWebCamps and other IndieWeb events have been thinking a lot about the events of the past few months, especially in the United States. We met the day before IndieWebCamp West and  discussed our roles in the IndieWeb community and what can we do to to examine the structural barriers and systemic racism and or sexism that exists even in our own community. We have been asking, what can we do to explicitly dismantle those?
+</p>
+<p>
+We have done a bunch of things. Rather, we as a community have improved things organically, in a distributed way, sharing with each other, rather than any explicit top-down directives. Some improvements are smaller, such as renaming things like whitelist &amp; blacklist to allowlist &amp; blocklist (though we had documented 
+<a href="https://indieweb.org/blocklist">blocklist</a> since 2016, <a href="https://indieweb.org/allowlist">allowlist</a> since this past January, and only added whitelist/blacklist as redirects afterwards).
+</p>
+<p>
+Many of these changes have been part of larger quieter waves already happening in the technology and specifically open source and standards communities for quite some time. Waves of changes that are now much more glaringly obviously important to many more people than before. Choosing and changing terms to reinforce our intentions, not legacy systemic white supremacy.
+</p>
+<p>
+Part of our role &amp; responsibility as organizers (as anyone who has any power or authority, implied or explicit, in any organization or community), is to work to dismantle any aspect or institution or anything that contributes to white supremacy or to patriarchy, even in our own volunteer-based community.
+</p>
+<p>
+We&rsquo;re not going to get everything right. We&rsquo;re going to make mistakes. An important part of the process is acknowledging when that happens, making corrections, and moving forward; keep listening and keep learning.
+</p>
+<p>
+The most recent change we&rsquo;ve made has to do with Organizers Meetups that we have been doing for several years, usually a half day logistics &amp; community issues meeting the day before an IndieWebCamp. Or Organizers Summits a half day before our annual IndieWeb Summits; in 2019 that&rsquo;s when we made that aforementioned update to our Code of Conduct to prioritize marginalized people&rsquo;s safety.
+</p>
+<p>
+Typically we have asked people to have some experience with organizing in order to participate in organizers meetups. Since the community actively helps anyone who wants to put in the work to become an organizer, and provides instructions, guidelines, and tips for successfully doing so, this seemed like a reasonable requirement. It also kept organizers meetups very focused on both pragmatic logistics, and dedicated time for continuous community improvement, learning from other events and our own IndieWebCamps, and improving future IndieWebCamps accordingly.
+</p>
+<p>
+However, we must acknowledge that our community, like a lot of online, open communities, volunteer communities, unfortunately reflects a very privileged demographic. If you look at the photos from Homebrew Website Clubs, they&rsquo;re mostly white individuals, mostly male, mostly apparently cis. Mostly white cis males. This does not represent the users of the Web. For that matter, it does not represent the demographics of the society we're in.
+</p>
+<p>
+One of our ideals, I believe, is to better reflect in the IndieWeb community, both the demographic of everyone that uses the Web, and ideally, everyone in society.
+While we don't expect to solve all the problems of the Web (or society) by ourselves, we believe we can take steps towards dismantling white supremacy and patriarchy where we encounter them.
+</p>
+<p>
+One step we are taking, effective immediately, is making all of our organizers meetups forward-looking for those who want to organize a Homebrew Website Club or IndieWebCamp. We still suggest people have experience organizing. We also explicitly recognize that any kind of requirement of experience may serve to reinforce existing systemic biases that we have no interest in reinforcing. 
+</p>
+<p>
+We have 
+<a href="https://indieweb.org/Organizers">updated our Organizers page</a> with a new statement of who should participate, our recognition of broader systemic inequalities, and an explicit:
+</p>
+<blockquote>&#x2026; welcome to Organizers Meetups all individuals who identify as BIPOC, non-male, non-cis, or any marginalized identity, independent of any organizing experience.</blockquote>
+<p>
+This is one step. As organizers, we&rsquo;re all open to listening, learning, and doing more work. That's something that we encourage everyone to adopt. We think this is an important aspect of maintaining a healthy community and frankly, just being the positive force that that we want the IndieWeb to be on the Web and hopefully for society as a whole.
+</p>
+<p>
+If folks have questions, I or any other organizers are happy to answer them, either 
+<a href="https://chat.indieweb.org/meta">in chat</a> or privately, however anyone feels comfortable discussing these changes.
+</p>
+<p>
+Thanks. &#x2014; Tantek
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/187/b1/changes-indieweb-organizing-indiewebcamp-west" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:59-0700">23:59</time> on <time class="value">2020-07-05</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/aaronpk/Meetable/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;Meetable&rdquo;</a></span> <a href="2020/185/b1/meetable-redirect-tag-tags" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Meetable should redirect /tag to /tags
+</h1></a><div class="entry-content e-content">
+<p>
+Currently meetable supports tag browsing pages like: https://events.indieweb.org/tag/hwc
+</p>
+<p>
+However if you trim the last segment, you get a 404: https://events.indieweb.org/tag/ or https://events.indieweb.org/tag
+</p>
+<p>
+Meetable should instead redirect those to: https://events.indieweb.org/tags
+</p>
+<p>
+Additionally, Meetable should consider redirecting https://events.indieweb.org/tags/ with the trailing slash to https://events.indieweb.org/tags without the trailing slash instead of serving duplicate content at those two URLs.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/185/b1/meetable-redirect-tag-tags" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:04-0700">18:04</time> on <time class="value">2020-07-03</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block"><data class="p-rsvp" value="yes">RSVP yes</data> to: <a href="https://events.indieweb.org/2020/07/homebrew-website-club-west-coast-gIN0wgZCOdeP" class="u-in-reply-to h-cite">an IndieWeb event</a></span> <span class="p-name entry-title e-content entry-content">hosting Homebrew Website Club West Coast NOW!<br class="auto-break"/>&#128467; started at 18:00, seven of us here, hop on Zoom and say hi!<br class="auto-break"/><a class="auto-link" href="https://events.indieweb.org/2020/07/homebrew-website-club-west-coast-gIN0wgZCOdeP">https://events.indieweb.org/2020/07/homebrew-website-club-west-coast-gIN0wgZCOdeP</a><br class="auto-break"/><a class="auto-link h-cassis-username" href="https://twitter.com/brb_irl">@brb_irl</a> <a class="auto-link h-cassis-username" href="https://twitter.com/Kongaloosh">@Kongaloosh</a> <a class="auto-link h-cassis-username" href="https://twitter.com/AllAboutGeorge">@AllAboutGeorge</a> <a class="auto-link h-cassis-username" href="https://twitter.com/JackyAlcine">@JackyAlcine</a> <a class="auto-link h-cassis-username" href="https://twitter.com/AndiGalpern">@AndiGalpern</a> <a class="auto-link h-cassis-username" href="https://twitter.com/indirect">@indirect</a> <a class="auto-link h-cassis-username" href="https://twitter.com/generativist">@generativist</a> <a class="auto-link h-cassis-username" href="https://twitter.com/BenWerd">@BenWerd</a> <a class="auto-link h-cassis-username" href="https://twitter.com/pvh">@pvh</a> <a class="auto-link h-cassis-username" href="https://twitter.com/aaronpk">@aaronpk</a></span></p>
+<span class="info footer"><a href="2020/183/t1/homebrew-website-club-west-coast" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:00-0700">18:00</time> on <time class="value">2020-07-01</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">&#128077;</span><span class="reply-context"> to <a href="https://github.com/w3c/PWETF/pull/143#issuecomment-651990278" class="u-in-reply-to h-cite">a comment on pull request 143 to GitHub project &ldquo;PWETF&rdquo;</a></span></p>
+<span class="info footer"><a href="2020/182/t4/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="15:13-0700">15:13</time> on <time class="value">2020-06-30</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">&#128077;</span><span class="reply-context"> to <a href="https://github.com/w3c/PWETF/pull/143#issuecomment-651928996" class="u-in-reply-to h-cite">a comment on pull request 143 to GitHub project &ldquo;PWETF&rdquo;</a></span></p>
+<span class="info footer"><a href="2020/182/t3/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="15:12-0700">15:12</time> on <time class="value">2020-06-30</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">&#128077;</span><span class="reply-context"> to <a href="https://github.com/w3c/PWETF/pull/143#pullrequestreview-440206392" class="u-in-reply-to h-cite">a review on pull request 143 to GitHub project &ldquo;PWETF&rdquo;</a></span></p>
+<span class="info footer"><a href="2020/182/t2/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="15:11-0700">15:11</time> on <time class="value">2020-06-30</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/snarfed/bridgy/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;bridgy&rdquo;</a></span> <a href="2020/182/b1/" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Bridgy Publish: Support reacji to pull request reviews
+</h1></a><div class="entry-content e-content">
+<p>
+GitHub pull requests accept reacji just like comments, issues, etc. But currently Bridgy seems to not recognize reacji in reply to a pull request review permalink like:
+</p>
+<p>
+<a href="https://github.com/w3c/PWETF/pull/143#issuecomment-651990278">https://github.com/w3c/PWETF/pull/143#issuecomment-651990278</a>
+</p>
+<p>
+And returned this error:
+</p>
+<blockquote>
+2020-06-30 20:05:17.817455 Please remove the fragment #pullrequestreview-440206392 from your in-reply-to URL.
+</blockquote>
+<p>
+Expected result: apply the reacji to the pull request review.
+</p>
+<p>
+Label: <span class="p-category">publish</span>.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/182/b1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="14:45-0700">14:45</time> on <time class="value">2020-06-30</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">&#128077;</span><span class="reply-context"> to <a href="https://github.com/w3c/PWETF/pull/143#issuecomment-651879205" class="u-in-reply-to h-cite">a comment on pull request 143 to GitHub project &ldquo;PWETF&rdquo;</a></span></p>
+<span class="info footer"><a href="2020/182/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="12:43-0700">12:43</time> on <time class="value">2020-06-30</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block"><data class="p-rsvp" value="yes">RSVP yes</data> to: <a href="https://2020.indieweb.org/west" class="u-in-reply-to h-cite">an IndieWeb event</a></span> <span class="p-name entry-title e-content entry-content">going to IndieWebCamp West this weekend!<br class="auto-break"/>&#128467; 9am-6pm both Sat &amp; Sun<br class="auto-break"/>&#127903; RSVP &amp; more <a class="auto-link" href="https://2020.indieweb.org/west">https://2020.indieweb.org/west</a><br class="auto-break"/>&#9993;&#65039; Join us for keynotes, and pop-in for sessions thru the weekend!<br class="auto-break"/><a class="auto-link h-cassis-username" href="https://twitter.com/brb_irl">@brb_irl</a> <a class="auto-link h-cassis-username" href="https://twitter.com/Kongaloosh">@Kongaloosh</a> <a class="auto-link h-cassis-username" href="https://twitter.com/AllAboutGeorge">@AllAboutGeorge</a> <a class="auto-link h-cassis-username" href="https://twitter.com/JackyAlcine">@JackyAlcine</a> <a class="auto-link h-cassis-username" href="https://twitter.com/AndiGalpern">@AndiGalpern</a> <a class="auto-link h-cassis-username" href="https://twitter.com/BenWerd">@BenWerd</a> <a class="auto-link h-cassis-username" href="https://twitter.com/indirect">@indirect</a> <a class="auto-link h-cassis-username" href="https://twitter.com/generativist">@generativist</a> <a class="auto-link h-cassis-username" href="https://twitter.com/pvh">@pvh</a> <a class="auto-link h-cassis-username" href="https://twitter.com/chrisaldrich">@chrisaldrich</a></span></p>
+<span class="info footer"><a href="2020/176/t4/indiewebcamp-west" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:53-0700">18:53</time> on <time class="value">2020-06-24</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block"><data class="p-rsvp" value="yes">RSVP yes</data> to: <a href="https://events.indieweb.org/2020/06/indiewebcamp-west-eat-your-own-cooking-pre-party-DH5F8SRjSHff" class="u-in-reply-to h-cite">an IndieWeb event</a></span> <span class="p-name entry-title e-content entry-content">going to IndieWebCamp West - Eat Your Own Cooking Pre-Party!<br class="auto-break"/>&#128467; 8-10pm Friday!<br class="auto-break"/>&#127903; Details: <a class="auto-link" href="https://events.indieweb.org/2020/06/indiewebcamp-west-eat-your-own-cooking-pre-party-DH5F8SRjSHff">https://events.indieweb.org/2020/06/indiewebcamp-west-eat-your-own-cooking-pre-party-DH5F8SRjSHff</a><br class="auto-break"/>&#9993;&#65039; Join us from your dining table, coffee table etc! <br class="auto-break"/><a class="auto-link h-cassis-username" href="https://twitter.com/brb_irl">@brb_irl</a> <a class="auto-link h-cassis-username" href="https://twitter.com/Kongaloosh">@Kongaloosh</a> <a class="auto-link h-cassis-username" href="https://twitter.com/AllAboutGeorge">@AllAboutGeorge</a> <a class="auto-link h-cassis-username" href="https://twitter.com/JackyAlcine">@JackyAlcine</a> <a class="auto-link h-cassis-username" href="https://twitter.com/AndiGalpern">@AndiGalpern</a> <a class="auto-link h-cassis-username" href="https://twitter.com/BenWerd">@BenWerd</a> <a class="auto-link h-cassis-username" href="https://twitter.com/indirect">@indirect</a> <a class="auto-link h-cassis-username" href="https://twitter.com/generativist">@generativist</a> <a class="auto-link h-cassis-username" href="https://twitter.com/pvh">@pvh</a> <a class="auto-link h-cassis-username" href="https://twitter.com/chrisaldrich">@chrisaldrich</a></span></p>
+<span class="info footer"><a href="2020/176/t3/indiewebcamp-west-pre-party" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:45-0700">18:45</time> on <time class="value">2020-06-24</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://twitter.com/brb_irl/status/1275960707167600640" class="u-in-reply-to h-cite">@brb_irl&rsquo;s tweet</a></span> <span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/brb_irl">@brb_irl</a> looking forward to it!<br class="auto-break"/><br class="auto-break"/>Also join us <a class="auto-link h-cassis-username" href="https://twitter.com/IndieWebCamp">@IndieWebCamp</a> West this weekend! <a class="auto-link" href="https://2020.indieweb.org/west">https://2020.indieweb.org/west</a> <br class="auto-break"/><br class="auto-break"/>and Friday pre-party: <a class="auto-link" href="https://events.indieweb.org/2020/06/indiewebcamp-west-eat-your-own-cooking-pre-party-DH5F8SRjSHff">https://events.indieweb.org/2020/06/indiewebcamp-west-eat-your-own-cooking-pre-party-DH5F8SRjSHff</a><br class="auto-break"/>&#xA0;<br class="auto-break"/><a class="auto-link h-cassis-username" href="https://twitter.com/generativist">@generativist</a> HWC West is weekly! Add a repeating event, or subscribe: <a class="auto-link" href="https://events.indieweb.org/tag/sanfrancisco">https://events.indieweb.org/tag/sanfrancisco</a></span></p>
+<span class="info footer"><a href="2020/176/t2/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:23-0700">18:23</time> on <time class="value">2020-06-24</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block"><data class="p-rsvp" value="yes">RSVP yes</data> to: <a href="https://events.indieweb.org/2020/06/homebrew-website-club-west-coast-nR8FpEvMNsh5" class="u-in-reply-to h-cite">an IndieWeb event</a></span> <span class="p-name entry-title e-content entry-content">hosting Homebrew Website Club West Coast NOW!<br class="auto-break"/>&#128467; 18:00 today<br class="auto-break"/>&#127903; RSVP &amp; more: <a class="auto-link" href="https://events.indieweb.org/2020/06/homebrew-website-club-west-coast-nR8FpEvMNsh5">https://events.indieweb.org/2020/06/homebrew-website-club-west-coast-nR8FpEvMNsh5</a><br class="auto-break"/>&#9993;&#65039; Join us on Zoom! <a class="auto-link h-cassis-username" href="https://twitter.com/brb_irl">@brb_irl</a> <a class="auto-link h-cassis-username" href="https://twitter.com/Kongaloosh">@Kongaloosh</a> <a class="auto-link h-cassis-username" href="https://twitter.com/AllAboutGeorge">@AllAboutGeorge</a> <a class="auto-link h-cassis-username" href="https://twitter.com/JackyAlcine">@JackyAlcine</a> <a class="auto-link h-cassis-username" href="https://twitter.com/AndiGalpern">@AndiGalpern</a> <a class="auto-link h-cassis-username" href="https://twitter.com/indirect">@indirect</a> <a class="auto-link h-cassis-username" href="https://twitter.com/generativist">@generativist</a> <a class="auto-link h-cassis-username" href="https://twitter.com/BenWerd">@BenWerd</a> <a class="auto-link h-cassis-username" href="https://twitter.com/pvh">@pvh</a> <a class="auto-link h-cassis-username" href="https://twitter.com/chrisaldrich">@chrisaldrich</a></span></p>
+<span class="info footer"><a href="2020/176/t1/homebrew-website-club-west-coast" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:00-0700">18:00</time> on <time class="value">2020-06-24</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://tantek.com/2020/172/t1/juneteenth-make-it-official" class="u-in-reply-to h-cite">Tantek&rsquo;s note</a></span> <span class="p-name entry-title e-content entry-content">1776-07-04 Declaration of Ind. "life, liberty" [for white men only]^1.<br class="auto-break"/>Via <a class="auto-link h-cassis-username" href="https://twitter.com/aclu">@aclu</a>^2<br class="auto-break"/>1863-01-01 Emancipation Proclamation<br class="auto-break"/>1865-06-19 EP &amp; Civil War end announced to TX enslaved<br class="auto-break"/>1865-12-06 13th amend<br class="auto-break"/><br class="auto-break"/>Why celebrate July 4 more than #<span class="p-category auto-tag">Juneteenth</span> when rights were declared for all, not only white men?<br class="auto-break"/><br class="auto-break"/>^1 <a class="auto-link" href="https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence#Slavery_and_the_Declaration">https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence#Slavery_and_the_Declaration</a><br class="auto-break"/>^2 <a class="auto-link" href="https://twitter.com/ACLU/status/1273944617600184320">https://twitter.com/ACLU/status/1273944617600184320</a></span></p>
+<span class="info footer"><a href="2020/172/t2/juneteenth-rights-for-all" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:54-0700">23:54</time> on <time class="value">2020-06-20</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Yesterday was #<span class="p-category auto-tag">Juneteenth</span>, a holiday I hadn&rsquo;t heard of before this June. Read a bit <a class="auto-link" href="https://en.wikipedia.org/wiki/Juneteenth">https://en.wikipedia.org/wiki/Juneteenth</a><br class="auto-break"/>Grateful <a class="auto-link h-cassis-username" href="https://twitter.com/Mozilla">@Mozilla</a> closed that day.<br class="auto-break"/><br class="auto-break"/>Thanks <a class="auto-link h-cassis-username" href="https://twitter.com/GavinNewsom">@GavinNewsom</a> <a class="auto-link" href="https://twitter.com/CAgovernor/status/1274043072045813760">https://twitter.com/CAgovernor/status/1274043072045813760</a><br class="auto-break"/>Please make it an official paid state holiday like TX VA NY PA (per Wikipedia).<br class="auto-break"/><br class="auto-break"/><a class="auto-link" href="https://www.gov.ca.gov/2020/06/19/governor-newsom-issues-proclamation-declaring-juneteenth-day-of-observance-2/">https://www.gov.ca.gov/2020/06/19/governor-newsom-issues-proclamation-declaring-juneteenth-day-of-observance-2/</a></span></p>
+<span class="info footer"><a href="2020/172/t1/juneteenth-make-it-official" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:14-0700">23:14</time> on <time class="value">2020-06-20</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://twitter.com/w3cdevs/status/1268138370947047425" class="u-in-reply-to h-cite">@w3cdevs&rsquo;s tweet</a></span> <span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/w3cdevs">@w3cdevs</a> <a class="auto-link h-cassis-username" href="https://twitter.com/mozilla">@mozilla</a> Thanks <a class="auto-link h-cassis-username" href="https://twitter.com/frivoal">@frivoal</a> <a class="auto-link h-cassis-username" href="https://twitter.com/TzviyaSiegman">@TzviyaSiegman</a>! Honored to rejoin you <a class="auto-link h-cassis-username" href="https://twitter.com/W3CAB">@W3CAB</a> with Tatsuya Igarashi, <a class="auto-link h-cassis-username" href="https://twitter.com/daithesong">@daithesong</a>, <a class="auto-link h-cassis-username" href="https://twitter.com/fantasai">@fantasai</a>, Avneesh Singh, Eric Siow, <a class="auto-link h-cassis-username" href="https://twitter.com/LeonieWatson">@LeonieWatson</a>, <a class="auto-link h-cassis-username" href="https://twitter.com/cwilso">@cwilso</a>, &amp; Judy Zhu.<br class="auto-break"/>Auspicious times. Protests worldwide declare Black Lives Matter; as elected leaders we must ask uncomfortable questions about privilege &amp; institutional biases <a class="auto-link h-cassis-username" href="https://twitter.com/W3C">@W3C</a>.<br class="auto-break"/><br class="auto-break"/>When I was last on the Advisory Board (AB), I asked W3C Management (W3M) to provide a report on diversity of W3C, and in 2018 gender &amp; geographic barcharts over time were provided for the AB, TAG, and W3M:<br class="auto-break"/><br class="auto-break"/><a class="auto-link" href="https://www.w3.org/blog/2018/06/diversity-at-w3c-launch-of-tpac-diversity-scholarship/">https://www.w3.org/blog/2018/06/diversity-at-w3c-launch-of-tpac-diversity-scholarship/</a><br class="auto-break"/><br class="auto-break"/>We must provide more details and do better.<br class="auto-break"/><br class="auto-break"/>For example, what percentage of the AB, TAG, and W3M are white?<br class="auto-break"/><br class="auto-break"/>As far as I know, these W3C leadership groups lack even a single Black individual.<br class="auto-break"/><br class="auto-break"/>How many (if any) are in the Advisory Committee as a whole?<br class="auto-break"/><br class="auto-break"/>If W3C truly represents the interests of world-wide web standards, it&rsquo;s long past time to ask these and other uncomfortable questions about who holds positions of authority &amp; power <a class="auto-link h-cassis-username" href="https://twitter.com/W3C">@W3C</a>. We must have the courage to ask them, and keep asking them, and actively work to dismantle systemic biases.</span></p>
+<span class="info footer"><a href="2020/155/t1/w3cab-rejoin-auspicious-times" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:14-0700">23:14</time> on <time class="value">2020-06-03</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content"><a class="auto-link figure u-bridgy-flickr-photo" href="https://fastly.4sqi.net/img/general/original/476_wiYEJTxjdxLl_vZFlLefP9O8b-Jv9R12Q92ANKZXhSA.jpg"><img class="auto-embed u-photo" alt="Stencil street art of George Floyd on a red wall with the word JUSTICE above his head, and FOR GEORGE below." src="https://fastly.4sqi.net/img/general/width960/476_wiYEJTxjdxLl_vZFlLefP9O8b-Jv9R12Q92ANKZXhSA.jpg"/></a><a class="auto-link figure u-bridgy-flickr-photo" href="https://fastly.4sqi.net/img/general/original/476_fVGIQ3M211r8-ykH3ZL8ayriPo679woWrLUKp8ItyJM.jpg"><img class="auto-embed u-photo" alt="Stencil street art of George Floyd on a gray wall with the word JUSTICE above his head, and FOR GEORGE below. Two of the dried drippings of gray paint appear as if they are tears coming from his right eye." src="https://fastly.4sqi.net/img/general/width960/476_fVGIQ3M211r8-ykH3ZL8ayriPo679woWrLUKp8ItyJM.jpg"/></a>Justice For George.<br class="auto-break"/><br class="auto-break"/>Yesterday on Haight street, artist unknown.<br class="auto-break"/><br class="auto-break"/>#<span class="p-category auto-tag">GeorgeFloyd</span> #<span class="p-category auto-tag">SayHisName</span> #<span class="p-category auto-tag">JusticeForGeorge</span> #<span class="p-category auto-tag">BlackLivesMatter</span> #<span class="p-category auto-tag">laterGram</span> #<span class="p-category auto-tag">20200531</span> #<span class="p-category auto-tag">2020_152</span> #<span class="p-category auto-tag">noFilter</span></span></p>
+<span class="info footer"><a href="2020/153/t1/justice-for-george" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:33-0700">23:33</time> on <time class="value">2020-06-01</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://twitter.com/solarpunk_girl/status/1265170672642396161" class="u-in-reply-to h-cite">@solarpunk_girl&rsquo;s tweet</a></span> <span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/solarpunk_girl">@solarpunk_girl</a> really like this! Need to replace &amp; move beyond violent metaphors for common activities. Working on a longer post on this.<br class="auto-break"/><br class="auto-break"/>Another idea, playing on stone:<br class="auto-break"/><br class="auto-break"/>&ldquo;Feeding two birds with one stonefruit&rdquo;<br class="auto-break"/><br class="auto-break"/>Summer is coming. #<span class="p-category auto-tag">moralimaginations</span></span></p>
+<span class="info footer"><a href="2020/147/t2/replace-violent-metaphors" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="13:24-0700">13:24</time> on <time class="value">2020-05-26</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Ten years ago today I started working with Mozilla on #<span class="p-category auto-tag">webStandards</span>.<br class="auto-break"/><br class="auto-break"/><a class="auto-link" href="https://tantek.com/2010/146/t1/work-with-mozilla-advancing-web-standards">https://tantek.com/2010/146/t1/work-with-mozilla-advancing-web-standards</a><br class="auto-break"/><a class="auto-link" href="https://twitter.com/t/status/14764431903">https://twitter.com/t/status/14764431903</a><br class="auto-break"/><br class="auto-break"/>Still <a class="auto-link h-cassis-username" href="https://twitter.com/Mozilla">@Mozilla</a> (now <a class="auto-link h-cassis-username" href="https://twitter.com/W3C">@W3C</a> AC Rep), still working for a more #<span class="p-category auto-tag">OpenWeb</span>, and for an #<span class="p-category auto-tag">IndieWeb</span> that puts users in control instead of #<span class="p-category auto-tag">BigTech</span>.</span></p>
+<span class="info footer"><a href="2020/147/t1/ten-years-mozilla-web-standards" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="13:24-0700">13:24</time> on <time class="value">2020-05-26</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">There are systems of division, dominance, extraction, &amp; growth, and systems of solidarity, community, stewardship, &amp; sustainability.<br class="auto-break"/><br class="auto-break"/>Each has metaphors &amp; narratives, in everyday language &amp; framing.<br class="auto-break"/><br class="auto-break"/>Which systems shape your thoughts, words, and actions?</span></p>
+<span class="info footer"><a href="2020/145/t2/systems-metaphors-narratives-framing" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="17:33-0700">17:33</time> on <time class="value">2020-05-24</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://twitter.com/solarpunk_girl/status/1264446185294696449" class="u-in-reply-to h-cite">@solarpunk_girl&rsquo;s tweet</a></span> <span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/solarpunk_girl">@solarpunk_girl</a> yes!<br class="auto-break"/>Gardening &amp; farming are ripe with metaphors for #<span class="p-category auto-tag">NewNarratives</span>.<br class="auto-break"/>Also considering sourcing from cooking, baking, and toolmaking.<br class="auto-break"/>New story arcs for the #<span class="p-category auto-tag">NewPossible</span>. #<span class="p-category auto-tag">DontGoBackToNormal</span></span></p>
+<span class="info footer"><a href="2020/145/t1/gardening-farming-cooking-baking-toolmaking" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="13:18-0700">13:18</time> on <time class="value">2020-05-24</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content"><a class="auto-link figure u-bridgy-flickr-photo" href="https://fastly.4sqi.net/img/general/original/476_SpwXl5ANk0Pyg5xBFSovR5qUkMoaEE_6uak0acFKU8w.jpg"><img class="auto-embed u-photo" alt="Intersection of Frederick and Ashbury streets at night, looking westward, everything is dark except for streetlamps, lights outside a boarded up Ashbury Market, and a second floor corner apartment on the other side, above a lit bus stop for the number 6 outbound bus." src="https://fastly.4sqi.net/img/general/width960/476_SpwXl5ANk0Pyg5xBFSovR5qUkMoaEE_6uak0acFKU8w.jpg"/></a><a class="auto-link figure u-bridgy-flickr-photo" href="https://fastly.4sqi.net/img/general/original/476_HlFL2skqhq-xokyBS-0U1FOp5Fa8uUKEU9Do3kpqBF4.jpg"><img class="auto-embed u-photo" alt="Intersection of Frederick and Downey streets at night, looking eastward, everything is dark except the aforemention things at Frederick and Ashbury, the trees of Buena Vista Park are very dark, outlined by the gray sky above them." src="https://fastly.4sqi.net/img/general/width960/476_HlFL2skqhq-xokyBS-0U1FOp5Fa8uUKEU9Do3kpqBF4.jpg"/></a>&#127747;&#127795; March 28th, SF distancing day twelve. Spent the day inside (except to move my car) until leaving 10 minutes to midnight for a night run.<br class="auto-break"/><br class="auto-break"/>Started tracking at Frederick &amp; Ashbury, an empty intersection, lights out except the corner 2nd floor apartment(1). Empty to the East as well, up to the dark trees of Buena Vista Park, outlined by a gray sky above(2). Continued onward to spell NO FEAR on the streets (<a class="auto-link" href="https://tantek.com/t55q1">https://tantek.com/t55q1</a>).<br class="auto-break"/><br class="auto-break"/>#<span class="p-category auto-tag">run</span> #<span class="p-category auto-tag">runner</span> #<span class="p-category auto-tag">AshburyHeights</span> #<span class="p-category auto-tag">FrederickStreet</span> #<span class="p-category auto-tag">night</span> #<span class="p-category auto-tag">nightrun</span> #<span class="p-category auto-tag">midnight</span> #<span class="p-category auto-tag">darkness</span> #<span class="p-category auto-tag">empty</span> #<span class="p-category auto-tag">ShelterInPlace</span> #<span class="p-category auto-tag">COVID19</span> #<span class="p-category auto-tag">CoronaVirus</span> #<span class="p-category auto-tag">SFdistancing</span> #<span class="p-category auto-tag">SF</span> #<span class="p-category auto-tag">SanFrancisco</span> #<span class="p-category auto-tag">optOutside</span> #<span class="p-category auto-tag">fromWhereIRun</span> #<span class="p-category auto-tag">NeverStopExploring</span> #<span class="p-category auto-tag">InstaRunner</span> #<span class="p-category auto-tag">2020_088</span> #<span class="p-category auto-tag">20200328</span> #<span class="p-category auto-tag">laterGram</span> #<span class="p-category auto-tag">noFilter</span></span></p>
+<span class="info footer"><a href="2020/137/t3/sf-distancing-day-twelve" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:37-0700">23:37</time> on <time class="value">2020-05-16</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Yesterday <a class="auto-link h-cassis-username" href="https://twitter.com/moral_imagining">@moral_imagining</a>, <a class="auto-link h-cassis-username" href="https://twitter.com/solarpunk_girl">@solarpunk_girl</a> asked us to tell a story of this time, from the future. I wrote this (edited)<br class="auto-break"/><br class="auto-break"/>There was so much fear<br class="auto-break"/>As we started sheltering <br class="auto-break"/>we felt safer and yet more lonely<br class="auto-break"/>Venturing outside, it was so quiet<br class="auto-break"/>Fewer cars, fewer machines making noises<br class="auto-break"/>Even in the city, we heard nature&rsquo;s sounds<br class="auto-break"/>from the crows to the parrots<br class="auto-break"/>We closed streets to cars, <br class="auto-break"/>welcoming runners, hikers, bicyclists<br class="auto-break"/>Without cars, without their noise &amp; pollution, <br class="auto-break"/>more animals wandered near us.<br class="auto-break"/>Coyotes, birds, rabbits, squirrels<br class="auto-break"/>Even red tailed hawks swooped near the ground,<br class="auto-break"/>showing off the bright tops of their tailfeathers<br class="auto-break"/>Strangers started to greet strangers, <br class="auto-break"/>as they passed each other at a distance,<br class="auto-break"/>Maybe a smile, a nod, a wave, a hello, <br class="auto-break"/>perhaps a brief exchange of greetings, <br class="auto-break"/>well wishes, introductions to pets<br class="auto-break"/>Slowly, our sense of fear<br class="auto-break"/>transformed into a sense of solidarity</span></p>
+<span class="info footer"><a href="2020/137/t2/story-from-the-future" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="22:50-0700">22:50</time> on <time class="value">2020-05-16</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://twitter.com/BarackObama/status/1261823767044476928" class="u-in-reply-to h-cite">@BarackObama&rsquo;s tweet</a></span> <span class="p-name entry-title e-content entry-content">&#9654; watched President <a class="auto-link h-cassis-username" href="https://twitter.com/BarackObama">@BarackObama</a>&rsquo;s Message to the #<span class="p-category auto-tag">ClassOf2020</span><br class="auto-break"/><a class="auto-link" href="https://www.youtube.com/watch?v=H8Ego3_43lQ">https://www.youtube.com/watch?v=H8Ego3_43lQ</a> <iframe class="youtube-player auto-embed figure" width="480" height="385" style="border:0" src="https://www.youtube.com/embed/H8Ego3_43lQ"></iframe><br class="auto-break"/>Appreciated:<br class="auto-break"/><br class="auto-break"/>&#xA0;1. Don&rsquo;t be afraid<br class="auto-break"/>&#xA0;2. Do what you think is right<br class="auto-break"/>&#xA0;3. Build the communty<br class="auto-break"/><br class="auto-break"/>&#xA0;Leave behind old ways of thinking that divide us.<br class="auto-break"/><br class="auto-break"/>#<span class="p-category auto-tag">DontGoBackToNormal</span></span></p>
+<span class="info footer"><a href="2020/137/t1/watched-president-message-classof2020" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="20:10-0700">20:10</time> on <time class="value">2020-05-16</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<a href="2020/136/b2/this-week-indieweb-six-years" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+&#127874; This Week in the IndieWeb celebrates six years of weekly newsletters! &#127881;
+</h1></a><div class="entry-content e-content">
+<p>
+This week (no pun intended), the IndieWeb community&rsquo;s 
+<a href="https://indieweb.org/this-week/2020-05-15.html">&ldquo;This Week in the IndieWeb&rdquo; turned 6</a>!
+</p>
+<p>First 
+<a href="https://indieweb.org/this-week/2014-05-12.html">published on 2014-05-12</a>, 
+the newsletter started as a fully-automatically generated weekly summary of activity on the IndieWeb&rsquo;s community wiki: a list of edited and new pages, followed by the full content of the new pages, and then the recent edit histories of pages changed that week.
+</p>
+<p>
+Since then the Newsletter has grown to include photos from recent events, the list of upcoming events, recent posts about the IndieWeb syndicated to the IndieNews aggregator, new community members (and their User pages), and a greatly simplified design of new &amp; changed pages.
+</p>
+<p>
+You can 
+<a href="https://indieweb.org/this-week-in-the-indieweb#How_to_Subscribe">subscribe to the newsletter</a> 
+via email, RSS, or h-feed in your favorite Reader.
+</p>
+<p>
+This week we also celebrated:
+</p>
+<ul>
+<li>6 years of <a href="https://indieweb.org/WithKnown">WithKnown</a>
+</li>
+<li>5 years of <a href="https://indieweb.org/D%C3%BCsseldorf">IndieWebCamps in D&uuml;sseldorf</a>
+</li>
+</ul>
+<p>
+See the 
+<a href="http://indieweb.org/timeline">Timeline</a> 
+page for more significant events in IndieWeb community history.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/136/b2/this-week-indieweb-six-years" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="14:40-0700">14:40</time> on <time class="value">2020-05-15</time></a></span>
+</li>
+<li class="h-entry hentry as-article">
+<div class="article">
+<span class="reply-context" style="display:block">New issue on <a href="https://github.com/aaronpk/Meetable/issues" class="u-in-reply-to h-cite">GitHub project &ldquo;Meetable&rdquo;</a></span> <a href="2020/136/b1/meetable-set-license-image-uploads" rel="bookmark" class="u-url u-uid"><h1 class="entry-title p-name">
+Meetable should set a license for image uploads
+</h1></a><div class="entry-content e-content">
+<p>
+Meetable events allow uploading images, both a banner for the event itself, 
+and photos of the event afterwards. There should be a setup feature to explicitly pick and set one or more required licenses for image uploads.
+</p>
+<p>
+At a minimum, Meetable should allow choosing a Creative Commons license like Flickr does
+(radio buttons), perhaps defaulting to a CC-BY-NC license like the Wikimedia upload default, to encourage compatibility with the broader Wikimedia commons, 
+so images uploaded to default Meetable installations can also be published to Wikimedia, 
+and to allow Wikimedia images to be used for Meetable event banners.
+</p>
+<p>
+Maybe allow multi-licensing as well, e.g. picking more than one license (checkboxes), 
+so uploads are required to be multi-licensed.
+</p>
+<p>
+Additionally, consider allowing a user to enter one or more license URLs, 
+so those setting up their own Meetable can choose other licenses beyond
+a predefined set of Creative Commons licenses.
+</p>
+</div>
+</div>
+<span class="info footer"><a href="2020/136/b1/meetable-set-license-image-uploads" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="11:32-0700">11:32</time> on <time class="value">2020-05-15</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://twitter.com/solarpunk_girl/status/1261196542519672834" class="u-in-reply-to h-cite">@solarpunk_girl&rsquo;s tweet</a></span> <span class="p-name entry-title e-content entry-content"><a class="auto-link h-cassis-username" href="https://twitter.com/solarpunk_girl">@solarpunk_girl</a> good questions; been pondering these and others since last Friday&rsquo;s <a class="auto-link h-cassis-username" href="https://twitter.com/moral_imagining">@moral_imagining</a>. Urban planning &amp; home architecture implications, autonomy vs community, evolution vs resilience. Some history/analyses: <a class="auto-link" href="https://www.theatlantic.com/magazine/archive/2020/03/the-nuclear-family-was-a-mistake/605536/">https://www.theatlantic.com/magazine/archive/2020/03/the-nuclear-family-was-a-mistake/605536/</a> <br class="auto-break"/>One thought: upgrading homes to support multi-generational configurations may be a good distributed return, actionable without requiring coordination, yet mutually beneficial among incrementally participating families.</span></p>
+<span class="info footer"><a href="2020/136/t1/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="02:16-0700">02:16</time> on <time class="value">2020-05-15</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content"><a class="auto-link figure u-bridgy-flickr-photo" href="https://fastly.4sqi.net/img/general/original/476_RLIxPGQ2v_yOJcsVnDalcK2pZETJNnYbZSr1I4VhrBc.jpg"><img class="auto-embed u-photo" alt="Strava map showing a roundtrip running route in red from Haight Ashbury to near a hairpin turn on Twin Peaks and back." src="https://fastly.4sqi.net/img/general/width960/476_RLIxPGQ2v_yOJcsVnDalcK2pZETJNnYbZSr1I4VhrBc.jpg"/></a><a class="auto-link figure u-bridgy-flickr-photo" href="https://fastly.4sqi.net/img/general/original/476_41K0WUWLHJIjpXTQ2PyCftdaoV_o-Mc71Jwqr44Wamw.jpg"><img class="auto-embed u-photo" alt="Hazy sky over a view of downtown San Francisco, Buena Vista park with dark green trees, and a row of bushes in the foreground." src="https://fastly.4sqi.net/img/general/width960/476_41K0WUWLHJIjpXTQ2PyCftdaoV_o-Mc71Jwqr44Wamw.jpg"/></a><a class="auto-link figure u-bridgy-flickr-photo" href="https://fastly.4sqi.net/img/general/original/476_rYGHrTznmqAM3tvEY2TLuhQDG-bckO4o0id3twgH1uU.jpg"><img class="auto-embed u-photo" alt="View of Mount Tam in the distance, Marin Headlands in front of it, the Golden Gate Bridge, the Presidio hills, trees close by, and the roofs of houses near by, some with solar panels on top." src="https://fastly.4sqi.net/img/general/width960/476_rYGHrTznmqAM3tvEY2TLuhQDG-bckO4o0id3twgH1uU.jpg"/></a>Yesterday I ran 2.23mi(1) in memory of #<span class="p-category auto-tag">AhmaudArbery</span>, who would have turned 26. He was shot on 2/23 for jogging while black. The video is horrifying. #<span class="p-category auto-tag">BlackLivesMatter</span> because how is this still happening in 2020. #<span class="p-category auto-tag">IRunWithMaud</span><br class="auto-break"/><br class="auto-break"/>This weekend #<span class="p-category auto-tag">RunWithMaud</span> in solidarity. If you&rsquo;re in SF, you can start at Haight &amp; Ashbury, run up Ashbury until it merges with Clayton, turn up Twin Peaks Boulevard, and turn around a bit after the first major turn, before the hairpin turn(2,3), running back down to Haight &amp; Ashbury to complete 2.23 miles.<br class="auto-break"/><br class="auto-break"/>More: <a class="auto-link" href="https://en.wikipedia.org/wiki/Shooting_of_Ahmaud_Arbery">https://en.wikipedia.org/wiki/Shooting_of_Ahmaud_Arbery</a></span></p>
+<span class="info footer"><a href="2020/130/t1/ahmaudarbery-blacklivesmatter" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:36-0700">18:36</time> on <time class="value">2020-05-09</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block">&#8627; In reply to <a href="https://github.com/mdn/browser-compat-data/issues/6103" class="u-in-reply-to h-cite">issue 6103 of GitHub project &ldquo;browser-compat-data&rdquo;</a></span> <span class="p-name entry-title e-content entry-content">From a strict interpretation, in the W3C at least, a specification must be at least a publicly published Working Draft (WD) by an active Working Group (WG) to be on an official "standards track", and thus that should be our condition for explicitly labeling a technology in a W3C document as "standards track". <br class="auto-break"/><br class="auto-break"/>At a minimum a specification must be accepted into a WG&rsquo;s charter, and not just as a NOTE, in order to qualify to be standards track. However it&rsquo;s not actually on that track (and citable as such) per se until the WG has agreed to publish it publicly as a WD.<br class="auto-break"/><br class="auto-break"/>By at least a WD, I&rsquo;m explicitly saying yes it can also obviously be a Candidate Recommendation (CR), Proposed Recommendation (PR), or Recommendation (REC, or edited, or amended). If it&rsquo;s an Obsolete Recommendation we should use the "Obsolete" label.<br class="auto-break"/><br class="auto-break"/>If it&rsquo;s only in an Editor&rsquo;s Draft or a WD (before a CR), that would be reasonable to label as "Experimental", as anything that&rsquo;s not yet in a CR can "Expect behavior to change in the future."<br class="auto-break"/><br class="auto-break"/>If a document is for example only developed in a Community Group (CG) such as WICG, it is not standards track (CGs cannot make standards), and thus we should explicitly label any technologies there as "Non-standard", until such document makes its way into a WG and the WG publishes it as a WD, therefore publicly signaling that the WG has agreed to advance it onto the standards track.<br class="auto-break"/><br class="auto-break"/>For IETF and other orgs, I&rsquo;ll let others chime in about what state a document must be in to transition between "non-standard" and "experimental" and "standards track", or "obsolete".</span></p>
+<span class="info footer"><a href="2020/127/t2/" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="16:45-0700">16:45</time> on <time class="value">2020-05-06</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="reply-context" style="display:block"><data class="p-rsvp" value="yes">RSVP yes</data> to: <a href="https://events.indieweb.org/2020/05/online-homebrew-website-club-west-coast-GX4yAV3eoPwh" class="u-in-reply-to h-cite">an IndieWeb event</a></span> <span class="p-name entry-title e-content entry-content">going to ONLINE Homebrew Website Club West Coast<br class="auto-break"/>&#128467; 18:00 today, now weekly!<br class="auto-break"/>&#127903; RSVP &amp; more: <a class="auto-link" href="https://events.indieweb.org/2020/05/online-homebrew-website-club-west-coast-GX4yAV3eoPwh">https://events.indieweb.org/2020/05/online-homebrew-website-club-west-coast-GX4yAV3eoPwh</a><br class="auto-break"/>&#9993;&#65039; Join us! <a class="auto-link h-cassis-username" href="https://twitter.com/brb_irl">@brb_irl</a> <a class="auto-link h-cassis-username" href="https://twitter.com/Kongaloosh">@Kongaloosh</a> <a class="auto-link h-cassis-username" href="https://twitter.com/AllAboutGeorge">@AllAboutGeorge</a> <a class="auto-link h-cassis-username" href="https://twitter.com/JackyAlcine">@JackyAlcine</a> <a class="auto-link h-cassis-username" href="https://twitter.com/AndiGalpern">@AndiGalpern</a> <a class="auto-link h-cassis-username" href="https://twitter.com/indirect">@indirect</a> <a class="auto-link h-cassis-username" href="https://twitter.com/generativist">@generativist</a> <a class="auto-link h-cassis-username" href="https://twitter.com/BenWerd">@BenWerd</a> <a class="auto-link h-cassis-username" href="https://twitter.com/pvh">@pvh</a> <a class="auto-link h-cassis-username" href="https://twitter.com/JohnMattDavis">@JohnMattDavis</a> <a class="auto-link h-cassis-username" href="https://twitter.com/html5cat">@html5cat</a></span></p>
+<span class="info footer"><a href="2020/127/t1/homebrew-website-club-west-coast" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="16:40-0700">16:40</time> on <time class="value">2020-05-06</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">I&rsquo;m running for <a class="auto-link h-cassis-username" href="https://twitter.com/W3CAB">@W3CAB</a> (The <a class="auto-link h-cassis-username" href="https://twitter.com/W3C">@W3C</a> Advisory Board), one of eight candidates for five seats: <a class="auto-link" href="https://twitter.com/w3cdevs/status/1257294597530755072">https://twitter.com/w3cdevs/status/1257294597530755072</a><br class="auto-break"/>Official statement: <a class="auto-link" href="https://www.w3.org/2020/05/04-ab-nominations.html#tc">https://www.w3.org/2020/05/04-ab-nominations.html#tc</a><br class="auto-break"/>Blog post to follow!</span></p>
+<span class="info footer"><a href="2020/125/t1/running-for-w3cab" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="18:04-0700">18:04</time> on <time class="value">2020-05-04</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Ten years ago the death of Blogger FTP two days before inspired introducing &ldquo;the indie web&rdquo; as a definite noun phrase:<br class="auto-break"/>&gt; Blogger turned off FTP May 1st [2010] Who/what will step up for the indie web?<br class="auto-break"/><a class="auto-link" href="http://tantek.com/2010/123/t2/blogger-turned-off-ftp-what-indie-web-diso">http://tantek.com/2010/123/t2/blogger-turned-off-ftp-what-indie-web-diso</a> (<a class="auto-link" href="https://twitter.com/t/status/13329370781">https://twitter.com/t/status/13329370781</a>)<br class="auto-break"/><br class="auto-break"/>&ldquo;The indie web&rdquo; was a name given to the collective us that used and still uses our domains for our actively independent web presence, a practice Blogger FTP helped enable for many years, for many people. Our sites worked (were at least viewable) without requiring (truly independent of) another web site or service being actively up &amp; running.<br class="auto-break"/><br class="auto-break"/>Blogger FTP was a nice-to-have, even if/when it was down, your site and permalinks were still browsable, and you could still manually FTP and edit your site, your blog, on whatever generic web hosting service you were using. You could migrate your blog by FTPing your static storage files from one web host to another. Without any database export/import/(re)configuration.<br class="auto-break"/><br class="auto-break"/>Subsequently of course <a class="auto-link" href="https://indiewebcamp.com/">https://indiewebcamp.com/</a> was founded, eventually (and currently) <a class="auto-link" href="https://indieweb.org/">https://indieweb.org/</a>, recognizing a pre-existing practice by naming it and giving it a community focus. A community to discover &amp; find each other, to actively collaborate, building on each other&rsquo;s ideas &amp; building blocks, evolving our sites, innovating the practical peer-to-peer web with a plurality of approaches, designs, interoperable implementations, and sustainable solutions.</span></p>
+<span class="info footer"><a href="2020/124/t1/ten-years-ago-the-indie-web-definite-noun" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="13:01-0700">13:01</time> on <time class="value">2020-05-03</time></a></span>
+</li>
+<li class="h-entry hentry as-note">
+<p class="article"><span class="p-name entry-title e-content entry-content">Support essential workers:<br class="auto-break"/>* Reduce or stop purchases from Amazon, Fedex, Instacart, Shipt, Target, Walmart, Whole Foods<br class="auto-break"/>* Don&rsquo;t cross the picket line<br class="auto-break"/>Until workers get:<br class="auto-break"/>* PPE<br class="auto-break"/>* hazard pay<br class="auto-break"/>* paid sick leave<br class="auto-break"/>* healthcare for all<br class="auto-break"/>More about #<span class="p-category auto-tag">MayDay2020:</span> <br class="auto-break"/><a class="auto-link" href="https://www.vice.com/en_us/article/884w3a/amazon-instacart-target-whole-foods-fedex-workers-explain-why-theyre-striking-may-day">https://www.vice.com/en_us/article/884w3a/amazon-instacart-target-whole-foods-fedex-workers-explain-why-theyre-striking-may-day</a><br class="auto-break"/><a class="auto-link" href="https://www.wired.com/story/amazon-instacart-target-coronavirus-may-day-strike/">https://www.wired.com/story/amazon-instacart-target-coronavirus-may-day-strike/</a> <br class="auto-break"/><a class="auto-link" href="https://www.salon.com/2020/05/01/essential-workers-across-the-us-went-on-strike-today-heres-why/">https://www.salon.com/2020/05/01/essential-workers-across-the-us-went-on-strike-today-heres-why/</a><br class="auto-break"/><a class="auto-link" href="https://www.washingtonpost.com/technology/2020/05/01/amazon-instacart-workers-strike/">https://www.washingtonpost.com/technology/2020/05/01/amazon-instacart-workers-strike/</a><br class="auto-break"/><a class="auto-link" href="https://www.sfgate.com/news/article/Employees-Whole-Foods-Amazon-strike-May-1-15237965.php">https://www.sfgate.com/news/article/Employees-Whole-Foods-Amazon-strike-May-1-15237965.php</a><br class="auto-break"/><a class="auto-link" href="https://www.npr.org/transcripts/849218750">https://www.npr.org/transcripts/849218750</a></span></p>
+<span class="info footer"><a href="2020/122/t1/support-essential-workers-ppe-pay-healthcare" class="dt-published published dt-updated updated u-url u-uid"><time class="value" datetime="23:16-0700">23:16</time> on <time class="value">2020-05-01</time></a></span>
+</li>
+</ol>
+</div>
+
+<aside><div class="aside" id="contact">
+
+<div class="p-note note">
+<div class="section hello" id="hello">
+<h2>Hello</h2>
+<p>Hi. I work on web standards and the indie web. I run trails at sunrise, practice yoga movement &amp; philosophy, code &amp; design my website, and write when I can. 
+My pronouns are 
+<span class="p-pronouns"><a href="https://pronoun.is/he" class="p-pronoun h-pronoun">he</a>/<a href="https://pronoun.is/he/him" class="p-pronoun h-pronoun">him</a></span>.
+<a href="?" rel="nofollow" title="Choose default theme">&#127968;</a> 
+<a href="?skin=vtx" rel="nofollow" title="Choose Terminal theme">&#128250;</a> 
+<a href="?skin=trn" rel="nofollow" title="Choose TRON:Legacy theme">&#128309;</a></p>
+</div>
+
+<div class="section interact">
+<ul>
+<li>
+<indie-action do="follow" with="https://tantek.com/">
+<!-- <a href="https://twitter.com/intent/follow?screen_name=t"><img style="height:1.8em;margin:0 -.2em -0.2em -.3em" src="icon/twitter.png" alt="Follow @t" /> Follow</a> -->
+</indie-action>
+</li>
+<li><a href="//tantek.com/contact">&#128172; Contact</a></li>
+<li><a href="//tantek.com/tip/1" title="Did you read something of value here and want to encourage more posts like that? Feel free to tip a small amount and mention which topics you enjoyed! (Just please avoid specific products or services. Thanks! -t)">&#128079; Tip</a></li>
+</ul>
+</div>
+
+<div class="section information">
+<ul>
+<li>
+<a href="https://indieweb.org/founders">Founder</a> at <a href="https://indieweb.org/" class="p-org org h-card">IndieWeb</a>
+</li>
+<li>
+<a href="https://xn--sr8hvo.ws/%F0%9F%93%8A/previous">&larr;</a>
+Member of IndieWeb Webring &#128376;&#128141;
+<a href="https://xn--sr8hvo.ws/%F0%9F%93%8A/next">&rarr;</a>
+</li>
+<li>
+<a href="http://microformats.org/about/people">Founder</a> at <a href="http://microformats.org/" class="p-org org h-card">microformats.org</a>
+</li>
+<li>
+<a class="p-role" href="https://wiki.mozilla.org/Standards">Web Standards Lead</a> at <a href="https://mozilla.org/" class="p-org org h-card">Mozilla</a>
+</li>
+<li>
+<a class="p-role" href="https://www.w3.org/Style/CSS/members">CSS Working Group</a> member at <a href="https://www.w3.org/" class="p-org org h-card">W3C</a>
+</li>
+<li>BSCS &amp; MSCS <a href="https://stanford.edu/" class="p-category category h-card">Stanford University</a>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- h-feed filled in dynamically -->
+<div id="recent-articles" class="section recent-articles h-feed">
+<h2 class="p-name">Recent Articles</h2>
+<ul>
+<li class="h-entry"><a href="2020/187/b1/changes-indieweb-organizing-indiewebcamp-west">Changes To IndieWeb Organizing, Brief Words At IndieWebCamp West</a></li>
+<li class="h-entry"><a href="2020/136/b2/this-week-indieweb-six-years">&#127874; This Week in the IndieWeb celebrates six years of weekly newsletters! &#127881;</a></li>
+<li class="h-entry"><a href="2020/037/b2/local-first-undo-redo-create-edit-publish">Local First, Undo Redo, JS-Optional, Create Edit Publish</a></li>
+</ul>
+</div>
+
+<!-- h-feed filled in dynamically -->
+<div id="recent-photos" class="section recent-photos h-feed"></div>
+
+<div class="section elsewhere">
+<h2>Elsewhere</h2>
+<ul class="facets">
+<li><a rel="me" class="u-url url" href="https://en.wikipedia.org/wiki/User:Tantek" title="encyclopedia contributions on Wikipedia"><img src="images/wikipedia-16x16.png" alt=""/> Wikipedia</a></li>
+
+<li><a rel="me" class="u-url url" href="http://last.fm/user/tantekc" title="music on last.fm"><img src="images/lastfm-16x16.png" alt=""/> last.fm</a></li>
+<li><a href="http://upcoming.org/user/6623" title="past events, talks, and conferences on Upcoming"><img src="images/upcoming-16x16.png" alt=""/> Upcoming</a></li>
+<li><a href="http://www.imdb.com/name/nm8414793" title="film appearance(s)on IMDB"><img src="images/imdb-16x16.png" alt=""/> IMDB</a></li>
+
+<li><a rel="me" class="u-url url" href="https://micro.blog/t"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 480 480" focusable="false" aria-hidden="true">
+  <defs>
+    <linearGradient id="a" x1="50%" x2="50%" y1="0" y2="78%">
+      <stop offset="0%" stop-color="#fb0"></stop>
+      <stop offset="100%" stop-color="#f80"></stop>
+    </linearGradient>
+    <linearGradient id="b" x1="50%" x2="50%" y1="0" y2="100%">
+      <stop offset="0%" stop-color="#ffc"></stop>
+      <stop offset="100%" stop-color="#ff6"></stop>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" d="M427 354c31-37 53-84 53-135C480 98 371 0 240 0 108 0 0 98 0 219s108 219 240 219c28 0 57-5 84-14 3-1 7 0 9 2 20 27 51 46 85 54l5-2v-6a93 93 0 0 1 4-118z"></path>
+  <path fill="url(#b)" d="M352 194l-61 46 22 72c1 3 0 6-3 8h-8l-63-43-63 43h-8c-3-2-4-5-3-8l22-72-61-46c-3-2-4-5-3-8 1-2 4-4 7-4l77-2 25-71c1-3 4-5 7-5s6 2 7 5l25 71 77 2c3 0 6 2 7 4 1 3 0 6-3 8z"></path>
+</svg> micro.blog</a></li>
+<li><a rel="me" class="u-url url" href="https://twitter.com/intent/user?screen_name=t"><img src="images/twitter-16x16.png" alt=""/> Twitter</a></li>
+<!-- 2019-137 unavailable <li><a rel="me" class="u-url url" href="http://lanyrd.com/people/t" title="conferences past, present, and future on Lanyrd"><img src="images/lanyrd-16x16.png" alt="" /> Lanyrd</a></li>-->
+<li><a rel="me" class="u-url url" href="https://github.com/tantek" title="open source on Github"><img src="images/github-16x16.png" alt=""/> Github</a></li>
+<!--<li><a rel="me" class="u-url url" href="http://tantek.pbwiki.com/" title="projects, notes, and events on PBWiki">PBworks wiki</a></li>-->
+
+<li><a rel="me" class="u-url url" href="https://www.flickr.com/people/tantek/" title="photos on Flickr"><img src="images/flickr-16x16.png" alt=""/> Flickr</a></li>
+<li><a rel="me" class="u-url url" href="http://dribbble.com/tantek/" title="design snippets on Dribbble"><img src="images/dribbble-16x16.png" alt=""/> Dribbble</a></li>
+<li><a rel="me" class="u-url url" href="https://www.instagram.com/tantek/" title="Private Instagram Account primarily as a means to the ends of posting photos from my iPod touch"><img src="images/instagram-16x16.png" alt=""/> Instagram</a></li>
+</ul>
+</div>
+
+<!-- <div class="section">
+<h2>Contact</h2>
+<ul>
+<li><a href="http://tantek.com/w/CommunicationProtocols">Preferred</a>: <a class="u-url url u-impp" href="aim:goim?screenname=tantekc"><img src="images/aim-16x16.png" alt="" /> aim:tantekc</a></li>
+<li><a class="u-url url" type="text/directory" href="http://h2vx.com/vcf/tantek.com/" title="Download my vCard to add my contact information to your Address Book"><img src="images/vcard-16x16.png" alt="" /> download vCard</a></li>
+</ul>
+</div>-->
+
+<div class="section">
+<h2>Buy my book!</h2>
+<a href="//tantek.com/html5now"><img src="images/html5nowdvd.jpg" alt="HTML5 Now!"/></a>
+<p>A step-by-step tutorial for getting started with HTML5 today. Includes reference guide and DVD with 2.5 hours of video plus 100 page searchable full-color PDF eBook.</p>
+<p><a href="//tantek.com/html5now">Buy at Amazon.com</a></p>
+</div>
+
+</div></aside>
+
+<footer><div class="footer">
+
+<div class="section">
+<h2>Launched &amp; Live</h2>
+<ul>
+<li>
+<a href="//tantek.com/html5now">HTML5 Now! book &amp; DVD</a> (<a href="https://twitter.com/html5now">@html5now</a>) - quickly learn how to write HTML5, from simple documents to video and vector graphics.</li>
+<li>
+<a href="https://asin.cc" title="Amazon product link shortener">ASIN.cc</a> (<a href="https://twitter.com/asindotcc">@asindotcc</a>) - a handy URL shortener for books and Amazon products</li>
+<li>
+<a href="https://h2vx.com/" title="hCard to vCard, hCalendar to iCalendar conversion services">H2VX</a> (<a href="https://twitter.com/h2vx">@h2vx</a>) - add hCard contacts and hCalendar events from web pages to your address book and calendar programs</li>
+<li class="h-card">
+<a class="p-name u-url" href="http://microformats.org/wiki">microformats.org</a> (<a class="u-url" href="https://twitter.com/microformats">@microformats</a>) - <span class="p-note">the fastest way to turn your web pages into simple APIs and simultaneously look better in search engines</span>
+</li>
+</ul>
+</div>
+<div class="section">
+<h2>Currently Working On</h2>
+<ul>
+<li>
+<a href="https://wiki.mozilla.org/Tantek-Mozilla-projects">Mozilla projects</a> - open standards: 
+<a class="p-category category" href="http://microformats.org/wiki/microformats2">microformats2</a> (e.g. <a class="p-category category" href="http://microformats.org/wiki/h-card">h-card</a>, 
+<a class="p-category category" href="http://microformats.org/wiki/h-cite">h-cite</a>, 
+<a class="p-category category" href="http://microformats.org/wiki/h-entry">h-entry</a>, &amp;
+<a class="p-category category" href="http://microformats.org/wiki/h-event">h-event</a>),
+some <span class="p-category category">HTML5</span> &amp;
+<span class="p-category category">CSS3</span>,
+growing the <a class="p-category category p-org org h-org" href="https://indieweb.org/">IndieWeb</a> &amp; <a href="https://indieweb.org/events/next-hwc">Homebrew Website</a> communities.</li>
+<li>
+<a href="https://indieweb.org/">IndieWeb community</a> (<a href="https://twitter.com/indiewebcamp">@indiewebcamp</a>) <a href="https://indieweb.org/events">events</a>, 
+<a href="//tantek.com/2014/067/b1/building-blocks-people-focused-mobile-communication">people-focused mobile communication</a>, 
+<a class="p-category category" href="https://indieweb.org/authorship">authorship</a>, 
+<a class="p-category category" href="https://indieweb.org/POSSE">POSSE</a>, 
+<a class="p-category category" href="https://indieweb.org/post-type-discovery">post type discovery</a>,
+<a class="p-category category" href="https://indieweb.org/webactions">webactions</a>, and measuring progress with <a class="p-category category" href="https://indieweb.org/IndieMark">IndieMark</a>.
+</li>
+<li>
+<a class="p-category category" href="http://cassisproject.com" title="CASSIS language and library"><abbr title="Client And Server Scripting Implementation Subset for Javascript and PHP">CASSIS</abbr></a> 
+(<a href="https://github.com/tantek/cassis/">on github</a>, <a href="https://twitter.com/cassisjs">@cassisjs</a>) - a functional programming language and framework for  code that natively executes in PHP and Javascript.</li>
+<!-- 
+need help with this: https://indieweb.org/User:Tantek.com#RelMeAuth_PHP_library
+<li><a class="p-category category" href="http://microformats.org/wiki/RelMeAuth" title="Simplified personal logins with rel-me and OAuth">RelMeAuth</a> - use a personal site and rel="me" hyperlinks to profiles on popular OAuth supporting services like <a href="https://twitter.com/t">Twitter</a>, <a href="https://github.com/tantek">Github</a> etc. to sign-in with your own URL.
+</li> -->
+<li>
+<a class="p-category category" href="https://indieweb.org/Falcon">Falcon</a> (<a href="https://twitter.com/falcon">@falcon</a>) - server-based personal tweeting/blogging application. See in particular, what <a href="https://indieweb.org/Falcon#Working_On">I'm currently working on</a>.
+</li>
+<li>
+<a href="//tantek.com/w/Whistle">Whistle</a> - personal algorithmically reversible URL shortener.</li>
+</ul>
+</div>
+
+<div class="section h-feed" id="events">
+<h2 class="p-name">Speaking &amp; Events</h2>
+<ol>
+
+<li class="h-event vevent">
+<span class="dt-start dtstart"><time>2020-02-22</time></span>&#x2026;<abbr class="dt-end dtend" title="2020-02-23"><time datetime="2020-02-23">23</time></abbr> <a class="u-url url" href="https://2020.indieweb.org/austin"><object class="u-attach attach" data="https://indieweb.org/images/b/b8/im-building-indiewebcamp.png" type="image/png"><span class="p-name summary">Indie Web Camp</span></object> <abbr class="p-location location" title="Austin, Texas, USA">Austin, TX</abbr></a>
+</li>
+
+<li class="h-event vevent">
+<span class="dt-start dtstart"><time>2020-03-04</time></span> <a class="u-url url" href="https://events.indieweb.org/2020/03/homebrew-website-club-san-francisco-KTBJlSw7JJKm"><span class="p-name summary">Homebrew Website Club</span> <abbr class="p-location location" title="San Francisco, California, USA">San Francisco</abbr></a>
+</li>
+
+<li class="h-event vevent">
+<span class="dt-start dtstart"><time>2020-03-14</time></span> <a class="u-url url" href="http://insidetrail.com/calendar/marin-ultra-challenge/"><abbr class="p-name summary" title="Inside Trail&rsquo;s Marin Ultra Challenge 50 mile trail race">MUC 50 mile race</abbr> <abbr class="p-location location" title="Marin Headlands, California, USA">Marin Headlands</abbr></a>
+</li>
+
+</ol>
+<!-- <p>See <a href="http://lanyrd.com/profile/t/future/">my Lanyrd</a> for more.</p>-->
+<p>
+<a href="webcal://dev.h2vx.com/ics/tantek.com">Subscribe to events</a>
+</p>
+</div>
+
+<div class="favorite-quotes" id="favorite-quotes" style="padding-top:2em;clear:both">
+<blockquote>I always had a repulsive sort of need to be something more than human. I felt very very puny as a human. I thought, &ldquo;Fuck that. I want to be a superman.&rdquo; <br/>
+&#x2014; <a href="https://en.wikiquote.org/wiki/David_Bowie#Quotes">David Bowie</a>, 1976</blockquote>
+<blockquote>There are two wolves and they are always fighting. One is darkness and despair, the other is light and hope. Which wolf wins? </blockquote>
+<blockquote>I get things are bad. But what are we doing to fix it?<br/>
+&#x2014; Casey Newton (<a href="https://en.wikiquote.org/wiki/Tomorrowland_%28film%29#Casey_Newton">Tomorrowland, 2015</a>)</blockquote>
+
+</div>
+
+<address class="copyright">&#xA9; <time>1996</time>-<time>2020</time> Tantek &#xC7;elik <span class="c">All Rights Reserved.</span>
+<span style="display:block" class="photo-credit">
+Icon photo by <span class="h-card">Rebecca Daniels</span>.
+</span>
+</address>
+
+</div></footer>
+<script type="text/javascript" src="cassis.js"></script>
+<script type="text/javascript">/**/ 
+var es = document.getElementById("link");
+if (es) {
+  es.onclick = function() {
+   var e = targetelement();
+   e.focus();
+   e.select();
+  };
+}
+/**/</script>
+<script>{var s=navigator.serviceWorker;if(s){s.register('/serviceworker.js');}}</script>
+</body>
+</html>

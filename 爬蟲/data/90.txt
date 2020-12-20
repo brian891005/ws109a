@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-TW" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>首款搭載華為鴻蒙作業系統產品釋出 - IT閱讀</title>
+<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta name="referrer" content="never">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="首款搭載華為鴻蒙作業系統產品釋出" />
+<meta property="og:site_name" content="IT閱讀|ITREAD01" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="原標題：首款搭載華為鴻蒙作業系統產品釋出 　　2019年8月10日下午，全球首款搭載華為鴻蒙作業系統的產品——榮耀智慧屏在東莞正式釋出。據榮耀手機官方微博資料顯示，榮耀智慧屏的全平臺預約量已經突破10萬臺。榮耀CEO趙明現場公佈榮耀智慧屏的" />
+<meta property="og:url" content="https://www.itread01.com/ixfeyx.html" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='hueman-main-style-css'href='/img/css/main.min.css' type='text/css' media='all' />
+<link href="https://www.itread01.com/img/prettify.css" type="text/css" rel="stylesheet"/>
+<script src="https://www.itread01.com/img/run_prettify.js"></script>
+<style id='hueman-main-style-inline-css' type='text/css'>
+body { font-family:'Source Sans Pro', Arial, sans-serif;font-size:1.00rem }@media only screen and (min-width: 720px) {
+.nav > li { font-size:1.00rem; }
+}::selection { background-color: #fca61b; }
+::-moz-selection { background-color: #fca61b; }a,.themeform label .required,#flexslider-featured .flex-direction-nav .flex-next:hover,#flexslider-featured .flex-direction-nav .flex-prev:hover,.post-hover:hover .post-title a,.post-title a:hover,.sidebar.s1 .post-nav li a:hover i,.content .post-nav li a:hover i,.post-related a:hover,.sidebar.s1 .widget_rss ul li a,#footer .widget_rss ul li a,.sidebar.s1 .widget_calendar a,#footer .widget_calendar a,.sidebar.s1 .alx-tab .tab-item-category a,.sidebar.s1 .alx-posts .post-item-category a,.sidebar.s1 .alx-tab li:hover .tab-item-title a,.sidebar.s1 .alx-tab li:hover .tab-item-comment a,.sidebar.s1 .alx-posts li:hover .post-item-title a,#footer .alx-tab .tab-item-category a,#footer .alx-posts .post-item-category a,#footer .alx-tab li:hover .tab-item-title a,#footer .alx-tab li:hover .tab-item-comment a,#footer .alx-posts li:hover .post-item-title a,.comment-tabs li.active a,.comment-awaiting-moderation,.child-menu a:hover,.child-menu .current_page_item > a,.wp-pagenavi a{ color: #fca61b; }.themeform input[type="submit"],.themeform button[type="submit"],.sidebar.s1 .sidebar-top,.sidebar.s1 .sidebar-toggle,#flexslider-featured .flex-control-nav li a.flex-active,.post-tags a:hover,.sidebar.s1 .widget_calendar caption,#footer .widget_calendar caption,.author-bio .bio-avatar:after,.commentlist li.bypostauthor > .comment-body:after,.commentlist li.comment-author-admin > .comment-body:after{ background-color: #fca61b; }.post-format .format-container { border-color: #fca61b; }.sidebar.s1 .alx-tabs-nav li.active a,#footer .alx-tabs-nav li.active a,.comment-tabs li.active a,.wp-pagenavi a:hover,.wp-pagenavi a:active,.wp-pagenavi span.current{ border-bottom-color: #fca61b!important; }.sidebar.s2 .post-nav li a:hover i,
+.sidebar.s2 .widget_rss ul li a,
+.sidebar.s2 .widget_calendar a,
+.sidebar.s2 .alx-tab .tab-item-category a,
+.sidebar.s2 .alx-posts .post-item-category a,
+.sidebar.s2 .alx-tab li:hover .tab-item-title a,
+.sidebar.s2 .alx-tab li:hover .tab-item-comment a,
+.sidebar.s2 .alx-posts li:hover .post-item-title a { color: #3bcfe2; }
+.sidebar.s2 .sidebar-top,.sidebar.s2 .sidebar-toggle,.post-comments,.jp-play-bar,.jp-volume-bar-value,.sidebar.s2 .widget_calendar caption{ background-color: #3bcfe2; }.sidebar.s2 .alx-tabs-nav li.active a { border-bottom-color: #3bcfe2; }
+.post-comments span:before { border-right-color: #3bcfe2; }
+.search-expand,
+#nav-topbar.nav-container { background-color: #303030}@media only screen and (min-width: 720px) {
+#nav-topbar .nav ul { background-color: #303030; }
+}.is-scrolled #header .nav-container.desktop-sticky,
+.is-scrolled #header .search-expand { background-color: #303030; background-color: rgba(48,48,48,0.90) }.is-scrolled .topbar-transparent #nav-topbar.desktop-sticky .nav ul { background-color: #303030; background-color: rgba(48,48,48,0.95) }#header { background-color: #363944; }
+.entry-inner p{ text-indent:2em; }
+@media only screen and (min-width: 720px) {
+#nav-header .nav ul { background-color: #363944; }
+}
+.is-scrolled #header #nav-mobile { background-color: #454e5c; background-color: rgba(69,78,92,0.90) }body { background-color: #eaeaea; }
+.entry-inner h2, .entry-inner h3 ,.entry-inner h4{ font-size:22px; font-weight:bold;}
+ 
+</style>
+ 
+<link rel='stylesheet' id='hueman-font-awesome-css'href='/img/css/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"","inbound_paths":"","home_url":"https:\/\/www.itread01.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/frontend.min.js'></script>
+<script type='text/javascript' src='/img/css/js/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/img/css/jsjquery-migrate.min.js?ver=1.4.1'></script>
+<meta name="generator" content="WordPress 4.8.2" />
+<style data-context="foundation-flickity-css">/*! Flickity v2.0.2
+http://flickity.metafizzy.co
+---------------------------------------------- */.flickity-enabled{position:relative}.flickity-enabled:focus{outline:0}.flickity-viewport{overflow:hidden;position:relative;height:100%}.flickity-slider{position:absolute;width:100%;height:100%}.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.flickity-enabled.is-draggable .flickity-viewport{cursor:move;cursor:-webkit-grab;cursor:grab}.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down{cursor:-webkit-grabbing;cursor:grabbing}.flickity-prev-next-button{position:absolute;top:50%;width:44px;height:44px;border:none;border-radius:50%;background:#fff;background:hsla(0,0%,100%,.75);cursor:pointer;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.flickity-prev-next-button:hover{background:#fff}.flickity-prev-next-button:focus{outline:0;box-shadow:0 0 0 5px #09F}.flickity-prev-next-button:active{opacity:.6}.flickity-prev-next-button.previous{left:10px}.flickity-prev-next-button.next{right:10px}.flickity-rtl .flickity-prev-next-button.previous{left:auto;right:10px}.flickity-rtl .flickity-prev-next-button.next{right:auto;left:10px}.flickity-prev-next-button:disabled{opacity:.3;cursor:auto}.flickity-prev-next-button svg{position:absolute;left:20%;top:20%;width:60%;height:60%}.flickity-prev-next-button .arrow{fill:#333}.flickity-page-dots{position:absolute;width:100%;bottom:-25px;padding:0;margin:0;list-style:none;text-align:center;line-height:1}.flickity-rtl .flickity-page-dots{direction:rtl}.flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}.flickity-page-dots .dot.is-selected{opacity:1}</style><style data-context="foundation-slideout-css">.slideout-menu{position:fixed;left:0;top:0;bottom:0;right:auto;z-index:0;width:256px;overflow-y:auto;-webkit-overflow-scrolling:touch;display:none}.slideout-menu.pushit-right{left:auto;right:0}.slideout-panel{position:relative;z-index:1;will-change:transform}.slideout-open,.slideout-open .slideout-panel,.slideout-open body{overflow:hidden}.slideout-open .slideout-menu{display:block}.pushit{display:none} code {
+padding: 2px 4px;
+color: #d14;
+background-color: #fbfbfb;
+border: 1px solid #e1e1e8;
+white-space: nowrap;
+font-family:Monaco,Menlo,Consolas,"Courier New",monospace;
+font-size: 10px;
+border-radius: 3px;
+}</style><!--[if lt IE 9]>
+<script src="/img/css/js/html5shiv-printshiv.min.js"></script>
+<script src="/img/css/js/selectivizr.js"></script>
+<![endif]-->
+<style>.ios7.web-app-mode.has-fixed header{ background-color: rgba(45,53,63,.88);}</style></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-43193 single-format-standard wp-custom-logo col-2cl full-width topbar-enabled header-desktop-sticky header-mobile-sticky chrome">
+<div id="wrapper">
+<header id="header" class="specific-mobile-menu-on one-mobile-menu mobile_menu header-ads-desktop header-ads-mobile topbar-transparent no-header-img">
+<nav class="nav-container group mobile-menu mobile-sticky " id="nav-mobile" data-menu-id="header-1">
+<div class="mobile-title-logo-in-header"><p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" title="首頁"><img src="https://www.itread01.com/logo.png"></a></p>
+</div>
+<div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
+</div>
+</div>
+
+<div class="nav-text"></div>
+<div class="nav-wrap container">
+<ul class="nav container-inner group mobile-search">
+<li>
+<form class="searchform themeform" onSubmit="return searchKw(this)">
+<div>
+<input type="text" name="kw" class="search" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+</div>
+</form>
+<script>function searchKw(c){var b=c.getElementsByTagName("input")[0],a=b.value.replace(/^\s+|\s+$/g,"");a=a.replace(/['"]/g,"");location.href="https://www.itread01.com/search/"+encodeURIComponent(a)+"";return false};</script></li>
+</ul>
+<ul id="menu-top" class="nav container-inner group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+ 
+</ul></div>
+</nav><!--/#nav-topbar-->
+<nav class="nav-container group desktop-menu desktop-sticky " id="nav-topbar" data-menu-id="header-2">
+<div class="nav-text"></div>
+<div class="topbar-toggle-down">
+<i class="fas fa-angle-double-down" aria-hidden="true" data-toggle="down" title="展開功能表清單"></i>
+<i class="fas fa-angle-double-up" aria-hidden="true" data-toggle="up" title="折疊功能表清單"></i>
+</div>
+<div class="nav-wrap container">
+<ul id="menu-footer" class="nav container-inner group"> 
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.itread01.com/" rel="nofollow">首頁</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/study/mysql-tutorial.html">MySQL教學</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網站技巧/1/">網站技巧</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網路程式設計/1/">網路程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/軟體程式設計/1/">軟體程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/資料庫/1/">資料庫</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/作業系統/1/">作業系統</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/指令碼專欄/1/">其它</a></li>
+ 
+</ul></div>
+<div id="topbar-header-search" class="container">
+<div class="container-inner">
+<div class="toggle-search"><i class="fas fa-search"></i></div>
+<div class="search-expand">
+<div class="search-expand-inner"><form class="searchform themeform" onSubmit="return searchKw(this)">
+<div>
+<input type="text" class="search" name="kw" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+</div>
+</form></div>
+</div>
+</div><!--/.container-inner-->
+</div><!--/.container-->
+
+</nav><!--/#nav-topbar-->
+<div class="container group">
+<div class="container-inner">
+
+<div class="group pad central-header-zone">
+<div class="logo-tagline-group">
+<p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" ><img src="https://www.itread01.com/logo.png"></a></p>
+</div>
+
+<div id="header-widgets">
+<div id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- /109765683/728_Banner -->
+ </div></div></div><!--/#header-ads-->
+</div>
+<nav class="nav-container group desktop-menu " id="nav-header" data-menu-id="header-3">
+<div class="nav-text"><!-- put your mobile menu text here --></div>
+<div class="nav-wrap container">
+<ul id="menu-top-1" class="nav container-inner group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+</ul></div>
+</nav><!--/#nav-header-->
+</div><!--/.container-inner-->
+</div><!--/.container-->
+</header><!--/#header-->
+<div class="container" id="page">
+<div class="container-inner">
+<div class="main">
+<div class="main-inner group">
+
+<section class="content">
+<div class="page-title pad group">
+<ul class="meta-single group">
+<li class="category"><a href="">科技</a></li>
+</ul>
+</div><!--/.page-title-->
+<div class="pad group">
+<article class="post-43193 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-stripe tag-32305 tag-32306 tag-4550 tag-5237 tag-31545 tag-6260">
+<div class="post-inner group">
+
+<h1 class="post-title entry-title">首款搭載華為鴻蒙作業系統產品釋出</h1>
+<p class="post-byline"><span class="vcard author">
+<span class="post-tags"><a href=/科技/>科技</a> </span>&middot;
+發表 <time class="published" >2019-08-11 07:04:50</time>
+
+</p>
+
+<div class="clear"></div>
+<div class="entry themeform share">
+<div class="entry-inner">
+<div style="font-size:14px; color:#666; margin-bottom:20px;">摘要：原標題：首款搭載華為鴻蒙作業系統產品釋出 　　2019年8月10日下午，全球首款搭載華為鴻蒙作業系統的產品——榮耀智慧屏在東莞正式釋出。據榮耀手機官方微博資料顯示，榮耀智慧屏的全平臺預約量已經突破10萬臺。榮耀CEO趙明現場公佈榮耀智慧屏的售價為3799元，PRO版為4799元。趙明表示，這是鴻蒙系...</div>
+
+ <p data-role="original-title" style="display:none">原標題：首款搭載華為鴻蒙作業系統產品釋出</p> <p>　　2019年8月10日下午，全球首款搭載華為鴻蒙作業系統的產品——榮耀智慧屏在東莞正式釋出。據榮耀手機官方微博資料顯示，榮耀智慧屏的全平臺預約量已經突破10萬臺。榮耀CEO趙明現場公佈榮耀智慧屏的售價為3799元，PRO版為4799元。趙明表示，這是鴻蒙系統應用在大屏產品上的表現。華為消費者業務CEO餘承東表示，榮耀的智慧屏將為年輕人打造智慧生活的雙中心，它將成為家庭的情感中心。 </p> <p>鴻蒙相容全部安卓應用和所有Web應用 </p> <p>當天，華為消費者業務CEO餘承東稱，榮耀智慧屏是首款搭載鴻蒙作業系統產品。按照9日華為全球開發者大會上透露的資訊，隨著全場景智慧時代的到來，華為認為需要進一步提升作業系統的跨平臺能力，包括支援全場景、跨多裝置和平臺的能力以及應對低時延、高安全性挑戰的能力。而鴻蒙正是那個打通了手機、電腦、平板、電視、汽車在內的大多數硬體裝置，相容全部安卓應用和所有Web應用，面向下一代的作業系統。 </p> <p>餘承東表示，鴻蒙OS的出發點和Android、iOS都不一樣，是一款全新的基於微核心的面向全場景的分散式作業系統，鴻蒙應未來而生。 </p> <p>據瞭解，鴻蒙系統可以支撐不同裝置，包括智慧大屏、穿戴、車機、音響、手錶、手機、PC等等各種裝置，可以打通這些裝置，統一成一個作業系統。鴻蒙作業系統可以根據具體硬體裝置，自動選擇載入相應模組，而搭載鴻蒙作業系統的各形態硬體互為外設，隨著鴻蒙OS所使用技術手段的不斷更迭，智慧屏上的鴻蒙作業系統能力也會逐步更新迭代。 </p> <p>像手機一樣的“電視” </p> <p>除鴻蒙外，眾多的“銳科技”也給了榮耀底氣，按照榮耀CEO趙明所說，智慧屏將與手機一同成為未來年輕人的智慧生活雙中心；作為家庭情感中心，它會成為家庭資訊共享中心、控制管理中心、多裝置互動中心和影音娛樂中心。 </p> <p>趙明說，榮耀智慧屏不是傳統電視，榮耀像做手機一樣來做智慧屏，“你可以理解成是個放大100倍的手機。”而榮耀智慧屏鴻鵠818智慧晶片、AI攝像頭的NPU晶片、旗艦手機級的WiFi晶片，三芯協同，強大運算能力讓榮耀智慧屏在音畫質優化、AI識別、網路連線等方面將超越傳統電視。 </p> <p>據介紹，鴻鵠818智慧晶片就是智慧屏的“大腦”；此外，升降式AI攝像頭使其具備強大的獲取資訊能力，多裝置互動功能讓它具備了人臉識別、人像跟蹤、姿勢檢測等AI能力。 </p> <p>而且智慧屏可以像手機一樣“操作”，不僅可以一鍵即可快速發起視訊通話——在華為/榮耀手機上，使用者在手機系統通訊錄聯絡人介面可以直接點選即可發起1080P視訊通話。而且可以進行Magic-link魔法閃投，無需下載任何APP，手機輕輕一碰隨機附贈的NFC標籤，就可以把手機內容輕鬆投屏到大屏上，看視訊、看圖片、玩遊戲，都可以更快捷的分享。而據趙明介紹，在手機和電視連線不同網路，甚至是全部無網的狀態下也可以投屏。而這個Magic-link魔法控屏正是智慧屏可以實現用操作手機的方式操作的關鍵。 </p> <p>通過智慧屏APP，可以實現手機、iPad的映象方式控制大屏，搜片、點播、設定引數等操作。基於華為賬號還可實現手機與智慧屏之間的互動，子女可以通過該功能協助長輩完成複雜功能的遠端操作。 </p> <p>此外，趙明還強調，智慧屏沒有開機廣告。“榮耀智慧屏在開機和關機時永遠不會放廣告。” </p> <p>採寫：南都記者 孔學劭 </p><nav class="pagination group">
+</nav><!--/.pagination-->
+</div>
+
+
+<div class="clear"></div>
+</div><!--/.entry-->
+
+</div><!--/.post-inner-->
+</article><!--/.post-->
+
+<div class="clear"></div>
+
+<p class="post-tags"><span>來源：</span><a href="/author/%E5%8D%97%E6%96%B9%E9%83%BD%E5%B8%82%E5%A0%B1/1/">南方都市報</a></p>
+
+<h4 class="heading">
+<i class="far fa-hand-point-right"></i>您可能也會喜歡…</h4>
+ <ul class="lrelated-posts group">
+<li><a href="/ilpxcx.html">華為5G手機首發 “智慧屏”將搭載鴻蒙作業系統</a></li>
+<li><a href="/hkeiieq.html">深度資訊 | 華為自研作業系統準備B計劃，但生態鴻溝不好跨</a></li>
+<li><a href="/yyphkfhk.html">華為自研作業系統爆光 華為作業系統往事</a></li>
+<li><a href="/fx.html">Windows 7確定在500天后停止更新，Windows 10將成為主流作業系統</a></li>
+<li><a href="/ixeycx.html">首款搭載鴻蒙產品“榮耀智慧屏”釋出</a></li>
+<li><a href="/hkeei.html">萬寶龍 Summit 2 是首款搭載 Snapdragon Wear 3100 的手錶</a></li>
+<li><a href="/hkifhk.html">首款搭載高通Wear 3100處理器的手錶竟要1000美元</a></li>
+<li><a href="/hkieee.html">Galaxy P30/P30+或成首款搭載屏下指紋的三星手機</a></li>
+<li><a href="/llpex.html">高通發力PC電腦市場，首款搭載驍龍850筆記本確認！</a></li>
+<li><a href="/lyqql.html">松下發表首款搭載「有機」8K CMOS 的攝影機</a></li>
+
+</ul><!--/.post-related-->
+ 
+</div><!--/.pad-->
+</section><!--/.content-->
+<div class="sidebar s1 collapsed" data-position="right" data-layout="col-2cl" data-sb-id="s1">
+
+<a class="sidebar-toggle" title="延伸側邊欄位"><i class="fas icon-sidebar-toggle"></i></a>
+
+<div class="sidebar-content">
+<div class="sidebar-top group">
+<p>贊助商廣告</p>
+
+</div>
+<div id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"> 
+</div></div>
+<ul class="post-nav group">
+
+<li class="previous"> <a href="/ixfcix.html"><i class="fas fa-chevron-left"></i><strong>上一則</strong> <span>重新評估網際網路巨頭：究竟是中國崛起的奠基石 還是埋藏危機的落井石？</span></a>
+</li>
+ <li class="next"><a href="/ixfeqp.html"><i class="fas fa-chevron-right"></i><strong>下一則</strong> <span>摩拜第一，4家企業退出或整改，北京如何給共享單車打分？</span> </a></li>
+ 
+</ul>
+ <div id="alxtabs-2" class="widget widget_hu_tabs">
+ 
+<ul class="alx-tabs-nav group tab-count-3"><li class="alx-tab tab-recent"><a href="#tab-recent-2" title="熱門文章"><i class="far fa-clock"></i></a></li><li class="alx-tab tab-tags"><a href="#tab-tags-2" title="標籤"><i class="fas fa-star"></i> </a></li></ul>
+<div class="alx-tabs-container">
+<ul id="tab-recent-2" class="alx-tab group"> 
+
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/南方都市報/1/" rel="category tag">南方都市報</a></p>
+<p class="tab-item-title"><a href="/ixfeyx.html" title="首款搭載華為鴻蒙作業系統產品釋出">首款搭載華為鴻蒙作業系統產品釋出</a></p>
+<p class="tab-item-date">2019-08-11 07:04:50</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/有道熱點/1/" rel="category tag">有道熱點</a></p>
+<p class="tab-item-title"><a href="/ixfeqp.html" title="摩拜第一，4家企業退出或整改，北京如何給共享單車打分？">摩拜第一，4家企業退出或整改，北京如何給共享單車打分？</a></p>
+<p class="tab-item-date">2019-08-11 07:04:03</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/有道熱點/1/" rel="category tag">有道熱點</a></p>
+<p class="tab-item-title"><a href="/ixfeqhk.html" title="事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了">事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了</a></p>
+<p class="tab-item-date">2019-08-11 07:03:59</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/真相君/1/" rel="category tag">真相君</a></p>
+<p class="tab-item-title"><a href="/ixfeqc.html" title="董明珠不服輸，贏雷軍10億賭約，還不放棄做手機正研發5G手機">董明珠不服輸，贏雷軍10億賭約，還不放棄做手機正研發5G手機</a></p>
+<p class="tab-item-date">2019-08-11 07:02:45</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/真相君/1/" rel="category tag">真相君</a></p>
+<p class="tab-item-title"><a href="/ixfeqe.html" title="失望於美國？華為或將放棄等待安卓，“鴻蒙”手機將於這時問世？">失望於美國？華為或將放棄等待安卓，“鴻蒙”手機將於這時問世？</a></p>
+<p class="tab-item-date">2019-08-11 07:02:31</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/每日經濟新聞/1/" rel="category tag">每日經濟新聞</a></p>
+<p class="tab-item-title"><a href="/ixfcix.html" title="重新評估網際網路巨頭：究竟是中國崛起的奠基石 還是埋藏危機的落井石？">重新評估網際網路巨頭：究竟是中國崛起的奠基石 還是埋藏危機的落井石？</a></p>
+<p class="tab-item-date">2019-08-11 06:15:59</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/千龍網/1/" rel="category tag">千龍網</a></p>
+<p class="tab-item-title"><a href="/ixeycx.html" title="首款搭載鴻蒙產品“榮耀智慧屏”釋出">首款搭載鴻蒙產品“榮耀智慧屏”釋出</a></p>
+<p class="tab-item-date">2019-08-11 01:12:27</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/參考訊息/1/" rel="category tag">參考訊息</a></p>
+<p class="tab-item-title"><a href="/ixeypx.html" title="華為告訴你，六年後我們的世界會變成什麼樣——">華為告訴你，六年後我們的世界會變成什麼樣——</a></p>
+<p class="tab-item-date">2019-08-11 00:37:23</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/搜狐焦點廣州站/1/" rel="category tag">搜狐焦點廣州站</a></p>
+<p class="tab-item-title"><a href="/ixelfx.html" title="傳郭臺銘610億增城專案將易主 當地宣傳部迴應:專案正常推進">傳郭臺銘610億增城專案將易主 當地宣傳部迴應:專案正常推進</a></p>
+<p class="tab-item-date">2019-08-11 00:03:44</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/新京報/1/" rel="category tag">新京報</a></p>
+<p class="tab-item-title"><a href="/ixpyix.html" title="鴻蒙系統面世 華為：並非做另一個安卓">鴻蒙系統面世 華為：並非做另一個安卓</a></p>
+<p class="tab-item-date">2019-08-10 00:33:30</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/新京報/1/" rel="category tag">新京報</a></p>
+<p class="tab-item-title"><a href="/ixpyxp.html" title="“鴻蒙”面世">“鴻蒙”面世</a></p>
+<p class="tab-item-date">2019-08-10 00:32:27</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/環球網/1/" rel="category tag">環球網</a></p>
+<p class="tab-item-title"><a href="/ixpyxhk.html" title="社評：鴻蒙，中國高科技突圍的英勇帶動點">社評：鴻蒙，中國高科技突圍的英勇帶動點</a></p>
+<p class="tab-item-date">2019-08-10 00:17:12</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/環球網/1/" rel="category tag">環球網</a></p>
+<p class="tab-item-title"><a href="/ixpyfx.html" title="華為開發者大會開幕：鴻蒙OS、EMUI 10.0等悉數亮相">華為開發者大會開幕：鴻蒙OS、EMUI 10.0等悉數亮相</a></p>
+<p class="tab-item-date">2019-08-10 00:10:55</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/央視財經/1/" rel="category tag">央視財經</a></p>
+<p class="tab-item-title"><a href="/ixpylp.html" title="App收集隱私將有“國標”！個人資訊有望不再“裸奔”！">App收集隱私將有“國標”！個人資訊有望不再“裸奔”！</a></p>
+<p class="tab-item-date">2019-08-10 00:10:32</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/新策展資訊圈/1/" rel="category tag">新策展資訊圈</a></p>
+<p class="tab-item-title"><a href="/ixpylhk.html" title="能源需求側綜合管理">能源需求側綜合管理</a></p>
+<p class="tab-item-date">2019-08-10 00:03:28</p>
+</div>
+</li>
+
+</ul><!--/.alx-tab-->
+<ul id="tab-tags-2" class="alx-tab group">
+<li>
+<a href="https://www.itread01.com/tags/android/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;">Android</a> 
+
+<a href="https://www.itread01.com/infolist/Web%E9%96%8B%E7%99%BC/1/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;">WEB開發</a> 
+<a href="https://www.itread01.com/infolist/%E5%85%B6%E4%BB%96/1/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;">其它</a> 
+
+</li>
+</ul><!--/.alx-tab-->
+</div>
+</div>
+</div><!--/.sidebar-content-->
+</div><!--/.sidebar-->
+</div><!--/.main-inner-->
+</div><!--/.main-->
+</div><!--/.container-inner-->
+</div><!--/.container-->
+<script type="text/javascript" src="/click.php?id=5366244"></script>
+<footer id="footer">
+<nav class="nav-container group" id="nav-footer" data-menu-id="footer-4" data-menu-scrollable="false">
+<!-- <div class="ham__navbar-toggler collapsed" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="ham-toggler-menu__span"></span>
+</div>
+</div> -->
+<div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
+</div>
+</div>
+<div class="nav-text"></div>
+<div class="nav-wrap">
+<ul id="menu-top-2" class="nav container group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/" rel="nofollow">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/study/python-tutorial.html" >Python教學</a></li>
+ 
+</ul></div>
+</nav><!--/#nav-footer-->
+
+<section class="container" id="footer-bottom">
+<div class="container-inner">
+
+<a id="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+
+<div class="pad group">
+
+<div class="grid one-half">
+
+<div id="copyright">
+<p>ITREAD01.COM &copy; 2018. 版權所有。 </p>
+</div><!--/#copyright-->
+</div>
+</div><!--/.pad-->
+
+</div><!--/.container-inner-->
+</section><!--/.container-->
+
+</footer><!--/#footer-->
+
+</div><!--/#wrapper-->
+
+<!-- Powered by WPtouch: 4.3.27 --><script type='text/javascript' src='/img/css/js/jQuerySharrre.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/img/css/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"1","extLinksTargetExt":"1","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".container .content",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":true,"mobile":false},"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"isDevMode":"","ajaxUrl":"https:\/\/www.itread01.com\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"d9125fec3b"},"userStarted":{"with":"with|3.3.27","on":{"date":"2018-03-27 03:41:18.000000","timezone_type":3,"timezone":"UTC"}},"isWelcomeNoteOn":"","welcomeContent":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/scripts.min.js?ver=3.3.27'></script>
+<script type='text/javascript' src='/img/css/js/wp-embed.min.js?ver=4.8.2'></script>
+
+<!--[if lt IE 9]>
+<script src="/img/css/js/respond.js"></script>
+<![endif]-->
+<div style="display:none"><script type='text/javascript' src='/js/c.js'></script>0.0012040138244629</div>
+</body>
+</html>

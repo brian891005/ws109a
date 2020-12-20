@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-TW" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>摩拜第一，4家企業退出或整改，北京如何給共享單車打分？ - IT閱讀</title>
+<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta name="referrer" content="never">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="摩拜第一，4家企業退出或整改，北京如何給共享單車打分？" />
+<meta property="og:site_name" content="IT閱讀|ITREAD01" />
+<meta property="og:image" content="https://5b0988e595225.cdn.sohucs.com/images/20190810/e9d3c4b266184dd0ac2c1441dceaa701.jpeg" />
+<meta property="og:description" content="原標題：摩拜第一，4家企業退出或整改，北京如何給共享單車打分？ 在車輛整齊碼放、規範停放和車輛淤積及時排程等指標上普遍得分不高。 2019年上半年全北京日均騎行量為160.4萬次，週轉率為1.1次/輛，其中小藍單車日週轉率最高，平均達2.8" />
+<meta property="og:url" content="https://www.itread01.com/ixfeqp.html" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='hueman-main-style-css'href='/img/css/main.min.css' type='text/css' media='all' />
+<link href="https://www.itread01.com/img/prettify.css" type="text/css" rel="stylesheet"/>
+<script src="https://www.itread01.com/img/run_prettify.js"></script>
+<style id='hueman-main-style-inline-css' type='text/css'>
+body { font-family:'Source Sans Pro', Arial, sans-serif;font-size:1.00rem }@media only screen and (min-width: 720px) {
+.nav > li { font-size:1.00rem; }
+}::selection { background-color: #fca61b; }
+::-moz-selection { background-color: #fca61b; }a,.themeform label .required,#flexslider-featured .flex-direction-nav .flex-next:hover,#flexslider-featured .flex-direction-nav .flex-prev:hover,.post-hover:hover .post-title a,.post-title a:hover,.sidebar.s1 .post-nav li a:hover i,.content .post-nav li a:hover i,.post-related a:hover,.sidebar.s1 .widget_rss ul li a,#footer .widget_rss ul li a,.sidebar.s1 .widget_calendar a,#footer .widget_calendar a,.sidebar.s1 .alx-tab .tab-item-category a,.sidebar.s1 .alx-posts .post-item-category a,.sidebar.s1 .alx-tab li:hover .tab-item-title a,.sidebar.s1 .alx-tab li:hover .tab-item-comment a,.sidebar.s1 .alx-posts li:hover .post-item-title a,#footer .alx-tab .tab-item-category a,#footer .alx-posts .post-item-category a,#footer .alx-tab li:hover .tab-item-title a,#footer .alx-tab li:hover .tab-item-comment a,#footer .alx-posts li:hover .post-item-title a,.comment-tabs li.active a,.comment-awaiting-moderation,.child-menu a:hover,.child-menu .current_page_item > a,.wp-pagenavi a{ color: #fca61b; }.themeform input[type="submit"],.themeform button[type="submit"],.sidebar.s1 .sidebar-top,.sidebar.s1 .sidebar-toggle,#flexslider-featured .flex-control-nav li a.flex-active,.post-tags a:hover,.sidebar.s1 .widget_calendar caption,#footer .widget_calendar caption,.author-bio .bio-avatar:after,.commentlist li.bypostauthor > .comment-body:after,.commentlist li.comment-author-admin > .comment-body:after{ background-color: #fca61b; }.post-format .format-container { border-color: #fca61b; }.sidebar.s1 .alx-tabs-nav li.active a,#footer .alx-tabs-nav li.active a,.comment-tabs li.active a,.wp-pagenavi a:hover,.wp-pagenavi a:active,.wp-pagenavi span.current{ border-bottom-color: #fca61b!important; }.sidebar.s2 .post-nav li a:hover i,
+.sidebar.s2 .widget_rss ul li a,
+.sidebar.s2 .widget_calendar a,
+.sidebar.s2 .alx-tab .tab-item-category a,
+.sidebar.s2 .alx-posts .post-item-category a,
+.sidebar.s2 .alx-tab li:hover .tab-item-title a,
+.sidebar.s2 .alx-tab li:hover .tab-item-comment a,
+.sidebar.s2 .alx-posts li:hover .post-item-title a { color: #3bcfe2; }
+.sidebar.s2 .sidebar-top,.sidebar.s2 .sidebar-toggle,.post-comments,.jp-play-bar,.jp-volume-bar-value,.sidebar.s2 .widget_calendar caption{ background-color: #3bcfe2; }.sidebar.s2 .alx-tabs-nav li.active a { border-bottom-color: #3bcfe2; }
+.post-comments span:before { border-right-color: #3bcfe2; }
+.search-expand,
+#nav-topbar.nav-container { background-color: #303030}@media only screen and (min-width: 720px) {
+#nav-topbar .nav ul { background-color: #303030; }
+}.is-scrolled #header .nav-container.desktop-sticky,
+.is-scrolled #header .search-expand { background-color: #303030; background-color: rgba(48,48,48,0.90) }.is-scrolled .topbar-transparent #nav-topbar.desktop-sticky .nav ul { background-color: #303030; background-color: rgba(48,48,48,0.95) }#header { background-color: #363944; }
+.entry-inner p{ text-indent:2em; }
+@media only screen and (min-width: 720px) {
+#nav-header .nav ul { background-color: #363944; }
+}
+.is-scrolled #header #nav-mobile { background-color: #454e5c; background-color: rgba(69,78,92,0.90) }body { background-color: #eaeaea; }
+.entry-inner h2, .entry-inner h3 ,.entry-inner h4{ font-size:22px; font-weight:bold;}
+ 
+</style>
+ 
+<link rel='stylesheet' id='hueman-font-awesome-css'href='/img/css/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"","inbound_paths":"","home_url":"https:\/\/www.itread01.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/frontend.min.js'></script>
+<script type='text/javascript' src='/img/css/js/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/img/css/jsjquery-migrate.min.js?ver=1.4.1'></script>
+<meta name="generator" content="WordPress 4.8.2" />
+<style data-context="foundation-flickity-css">/*! Flickity v2.0.2
+http://flickity.metafizzy.co
+---------------------------------------------- */.flickity-enabled{position:relative}.flickity-enabled:focus{outline:0}.flickity-viewport{overflow:hidden;position:relative;height:100%}.flickity-slider{position:absolute;width:100%;height:100%}.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.flickity-enabled.is-draggable .flickity-viewport{cursor:move;cursor:-webkit-grab;cursor:grab}.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down{cursor:-webkit-grabbing;cursor:grabbing}.flickity-prev-next-button{position:absolute;top:50%;width:44px;height:44px;border:none;border-radius:50%;background:#fff;background:hsla(0,0%,100%,.75);cursor:pointer;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.flickity-prev-next-button:hover{background:#fff}.flickity-prev-next-button:focus{outline:0;box-shadow:0 0 0 5px #09F}.flickity-prev-next-button:active{opacity:.6}.flickity-prev-next-button.previous{left:10px}.flickity-prev-next-button.next{right:10px}.flickity-rtl .flickity-prev-next-button.previous{left:auto;right:10px}.flickity-rtl .flickity-prev-next-button.next{right:auto;left:10px}.flickity-prev-next-button:disabled{opacity:.3;cursor:auto}.flickity-prev-next-button svg{position:absolute;left:20%;top:20%;width:60%;height:60%}.flickity-prev-next-button .arrow{fill:#333}.flickity-page-dots{position:absolute;width:100%;bottom:-25px;padding:0;margin:0;list-style:none;text-align:center;line-height:1}.flickity-rtl .flickity-page-dots{direction:rtl}.flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}.flickity-page-dots .dot.is-selected{opacity:1}</style><style data-context="foundation-slideout-css">.slideout-menu{position:fixed;left:0;top:0;bottom:0;right:auto;z-index:0;width:256px;overflow-y:auto;-webkit-overflow-scrolling:touch;display:none}.slideout-menu.pushit-right{left:auto;right:0}.slideout-panel{position:relative;z-index:1;will-change:transform}.slideout-open,.slideout-open .slideout-panel,.slideout-open body{overflow:hidden}.slideout-open .slideout-menu{display:block}.pushit{display:none} code {
+padding: 2px 4px;
+color: #d14;
+background-color: #fbfbfb;
+border: 1px solid #e1e1e8;
+white-space: nowrap;
+font-family:Monaco,Menlo,Consolas,"Courier New",monospace;
+font-size: 10px;
+border-radius: 3px;
+}</style><!--[if lt IE 9]>
+<script src="/img/css/js/html5shiv-printshiv.min.js"></script>
+<script src="/img/css/js/selectivizr.js"></script>
+<![endif]-->
+<style>.ios7.web-app-mode.has-fixed header{ background-color: rgba(45,53,63,.88);}</style></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-43193 single-format-standard wp-custom-logo col-2cl full-width topbar-enabled header-desktop-sticky header-mobile-sticky chrome">
+<div id="wrapper">
+<header id="header" class="specific-mobile-menu-on one-mobile-menu mobile_menu header-ads-desktop header-ads-mobile topbar-transparent no-header-img">
+<nav class="nav-container group mobile-menu mobile-sticky " id="nav-mobile" data-menu-id="header-1">
+<div class="mobile-title-logo-in-header"><p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" title="首頁"><img src="https://www.itread01.com/logo.png"></a></p>
+</div>
+<div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
+</div>
+</div>
+
+<div class="nav-text"></div>
+<div class="nav-wrap container">
+<ul class="nav container-inner group mobile-search">
+<li>
+<form class="searchform themeform" onSubmit="return searchKw(this)">
+<div>
+<input type="text" name="kw" class="search" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+</div>
+</form>
+<script>function searchKw(c){var b=c.getElementsByTagName("input")[0],a=b.value.replace(/^\s+|\s+$/g,"");a=a.replace(/['"]/g,"");location.href="https://www.itread01.com/search/"+encodeURIComponent(a)+"";return false};</script></li>
+</ul>
+<ul id="menu-top" class="nav container-inner group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+ 
+</ul></div>
+</nav><!--/#nav-topbar-->
+<nav class="nav-container group desktop-menu desktop-sticky " id="nav-topbar" data-menu-id="header-2">
+<div class="nav-text"></div>
+<div class="topbar-toggle-down">
+<i class="fas fa-angle-double-down" aria-hidden="true" data-toggle="down" title="展開功能表清單"></i>
+<i class="fas fa-angle-double-up" aria-hidden="true" data-toggle="up" title="折疊功能表清單"></i>
+</div>
+<div class="nav-wrap container">
+<ul id="menu-footer" class="nav container-inner group"> 
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.itread01.com/" rel="nofollow">首頁</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/study/mysql-tutorial.html">MySQL教學</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網站技巧/1/">網站技巧</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網路程式設計/1/">網路程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/軟體程式設計/1/">軟體程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/資料庫/1/">資料庫</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/作業系統/1/">作業系統</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/指令碼專欄/1/">其它</a></li>
+ 
+</ul></div>
+<div id="topbar-header-search" class="container">
+<div class="container-inner">
+<div class="toggle-search"><i class="fas fa-search"></i></div>
+<div class="search-expand">
+<div class="search-expand-inner"><form class="searchform themeform" onSubmit="return searchKw(this)">
+<div>
+<input type="text" class="search" name="kw" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+</div>
+</form></div>
+</div>
+</div><!--/.container-inner-->
+</div><!--/.container-->
+
+</nav><!--/#nav-topbar-->
+<div class="container group">
+<div class="container-inner">
+
+<div class="group pad central-header-zone">
+<div class="logo-tagline-group">
+<p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" ><img src="https://www.itread01.com/logo.png"></a></p>
+</div>
+
+<div id="header-widgets">
+<div id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- /109765683/728_Banner -->
+ </div></div></div><!--/#header-ads-->
+</div>
+<nav class="nav-container group desktop-menu " id="nav-header" data-menu-id="header-3">
+<div class="nav-text"><!-- put your mobile menu text here --></div>
+<div class="nav-wrap container">
+<ul id="menu-top-1" class="nav container-inner group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+</ul></div>
+</nav><!--/#nav-header-->
+</div><!--/.container-inner-->
+</div><!--/.container-->
+</header><!--/#header-->
+<div class="container" id="page">
+<div class="container-inner">
+<div class="main">
+<div class="main-inner group">
+
+<section class="content">
+<div class="page-title pad group">
+<ul class="meta-single group">
+<li class="category"><a href="">科技</a></li>
+</ul>
+</div><!--/.page-title-->
+<div class="pad group">
+<article class="post-43193 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-stripe tag-32305 tag-32306 tag-4550 tag-5237 tag-31545 tag-6260">
+<div class="post-inner group">
+
+<h1 class="post-title entry-title">摩拜第一，4家企業退出或整改，北京如何給共享單車打分？</h1>
+<p class="post-byline"><span class="vcard author">
+<span class="post-tags"><a href=/科技/>科技</a> </span>&middot;
+發表 <time class="published" >2019-08-11 07:04:03</time>
+
+</p>
+
+<div class="clear"></div>
+<div class="entry themeform share">
+<div class="entry-inner">
+<div style="font-size:14px; color:#666; margin-bottom:20px;">摘要：原標題：摩拜第一，4家企業退出或整改，北京如何給共享單車打分？ 在車輛整齊碼放、規範停放和車輛淤積及時排程等指標上普遍得分不高。 2019年上半年全北京日均騎行量為160.4萬次，週轉率為1.1次/輛，其中小藍單車日週轉率最高，平均達2.8次/輛 ；便利蜂單車最低，僅為0.3次/輛。 共享單車亂停亂...</div>
+
+ <p data-role="original-title" style="display:none">原標題：摩拜第一，4家企業退出或整改，北京如何給共享單車打分？</p> <p>在車輛整齊碼放、規範停放和車輛淤積及時排程等指標上普遍得分不高。</p> <p>2019年上半年全北京日均騎行量為160.4萬次，週轉率為1.1次/輛，其中小藍單車日週轉率最高，平均達2.8次/輛 ；便利蜂單車最低，僅為0.3次/輛。</p> <p>共享單車亂停亂放、運營效率低，不僅影響市容，也讓城市管理者頭疼。</p> <p>2019年7月31日，北京市交通委員會晒出上半年監管共享單車的“成績單”——《關於網際網路租賃自行車行業2019年上半年運營管理監督情況的公示》（以下簡稱“公示”），有4家單車企業將退出北京市場或整改，而通過考核、可在北京繼續運營的，暫時只有摩拜、便利蜂、哈囉、小藍、ofo等5家單車。</p> <p>車輛碼放、停放和排程仍是難題</p> <p>《公示》顯示，2019年上半年北京市交委已經對5家單車企業進行過兩個季度的考評，摩拜單車都位列第一，其他企業名次有變動。</p> <p>《公示》介紹，考評主要依據目前企業接入上述監管平臺的車輛動靜態資料資訊和各區現場核查情況。一名共享單車企業人士向南方週末記者介紹，考評內容主要可分為三類：</p> <p>——政府監管指標：如資料接入、車輛投放、活躍車輛比例、車輛週轉率、使用者資金安全；</p> <p>——企業運營服務考核指標：如車輛完好率、規範停放率、禁停區停放、入欄結算管理、車輛停放堆積處理、應急響應、待清理車輛處置；</p> <p>——第三方機構考核指標：如投訴處理及時率、使用者滿意度、信用體系、保險理賠。</p> <p>《公示》主要列舉了5家企業在車輛執行效率和停放秩序兩方面的情況，這也是共享單車主管部門的兩個著眼點。</p> <p>根據北京市共享單車監管服務平臺監測，2019年上半年全北京日均騎行量為160.4萬次，週轉率為1.1次/輛，其中小藍單車日週轉率最高，平均達2.8次/輛 ；便利蜂單車最低，僅為0.3次/輛。</p> <p>雖然摩拜單車和小藍單車在核心區和重點區域，基本能夠做到半小時內就車輛停放問題做出響應，但各企業在車輛整齊碼放、規範停放和車輛淤積及時排程等指標上普遍得分不高。儘管各運營企業已建立使用者信用積分制度，並通過其客戶端、公眾號等渠道向用戶推送文明停放的提示，但相關懲戒措施仍未落實到位。</p> <p><img src="//5b0988e595225.cdn.sohucs.com/images/20190810/e9d3c4b266184dd0ac2c1441dceaa701.jpeg" max-width="600">北京國貿附近，呂師傅剛剛忙完他的第二趟排程，一個晚上，他要這樣往返8趟。 （南方週末記者 楊凱奇/圖）</p> <div class="lookall-box"><div class="lookall-shadow"></div><section class="lookall"><a href="javascript:;" class="show-all" id="showMore"> <em>展開全文</em> </a></section> </div> <div class="hidden-content control-hide"><p>此前，哈囉和青桔單車曾分別以違規超出備案量投放和不具備運營資質而吃了罰單，它們承諾，將分別於8月31日前和9月15日前整改到位，並接受核驗。哈囉單車公關總監王帆向南方週末記者坦言，哈囉在兩次考評中排名不高，均列第四位，主要還是因為超量投放問題。</p><p>《公示》 稱，核驗結果將作為兩家企業車輛配額的重要依據。配額，也即企業被允許在北京投放多少輛車，將直接影響企業的市場佔有率，是企業必須保證的“生命線”。北京目前已備案共享單車191萬輛，其中摩拜、ofo分別擁有69.9萬輛和90.7萬輛，也即剩餘3家企業需瓜分剩下的約30萬輛配額。北京交通委人士曾表示，由於現有車輛執行效率並不高，191萬輛的總量還可能進一步壓減。</p><p>4家企業因技術不合格而出局</p><p>《公示》顯示，北京目前有9家運營網際網路租賃自行車的企業。有4家企業的車輛因不滿足北京市交委釋出的《網際網路租賃自行車系統技術與服務規範》技術要求，而接受北京市交委的約談。</p><p>約談後，智享出行、赳赳單車主動退出北京網際網路租賃自行車市場運營；潮牌單車只在昌平區東小口森林公園、懷柔區鵝和鴨農莊內作為遊藝設施使用，不作為網際網路租賃自行車上路運營；智享單車承諾於2019年8月15日前完成整改達到技術要求。</p><p>一名北京市交委人士告訴南方週末記者，退出的3家企業主要是因為“技術不合格，政府約談後覺得不好整改”。</p><p>《規範》對共享單車提出的要求，包括車輛衛星定位精度誤差應≤15m、智慧終端要具備採集車輛資訊並上傳至企業運營平臺的功能、投入運營的共享自行車完好率應不低於95%等。北京市交委人士曾告訴南方週末記者，北京市交委建立了共享單車監管與服務平臺，目前只接入5家車輛存量大的企業的動態資料，上述4家企業尚未接入。一部分原因即是小企業自身不具備提供動態資料的技術水平。</p><p>截至發稿，智享單車尚未迴應南方週末記者的採訪要求。</p><p>北京最多曾有16家共享單車企業，包括上述4家企業在內的9家企業是已經在北京市交委備案過的，剩下7家企業連車輛備案這道門檻都沒邁過，就率先被淘汰，在北京街頭的這些品牌車輛全部屬於違規車輛。6月的專項治理行動中，南方週末記者見到一輛“1步單車”被清理。</p><p>以線上執行資料與停放區域監管為抓手</p><p>《公示》顯示，北京市交委下一步對共享單車的管理措施可劃分為三塊：強化運營車輛動態資料接入、加強車輛停放秩序管控及加強企業服務質量信用考核。</p><p>南方週末記者瞭解到，由於企業對完全上交資料存在顧慮，北京市交委仍在與各企業進行談判。《公示》稱，截至6月30日，各運營企業車輛動態資料接入質量普遍不高。按照要求，各企業應於12月31日前完成整改，實時、完整、準確將車輛動態資料接入平臺，屆時未按要求接入資料的車輛，將被視為違規投放。</p><p>而在規範停放秩序上，北京已有新的嘗試。在王府井和金融街，共享單車“電子圍欄”已經上線，騎行者如果不將車輛停放在電子圍欄裡，將面臨企業平臺的罰款。除了這兩個重點地區，北京市交委在嚴重影響市容環境和交通秩序的區域劃分了禁停區，實行目錄管理並通過平臺向企業推送。停放在禁停區，也將面臨罰款或扣除“使用者信用積分”。</p><p>《公示》顯示，以線上的車輛執行資料與停放區域監管為抓手，北京市交委正在組織相關部門和各區政府，修訂完善共享單車行業企業服務質量信用考核管理辦法。考核的重點將圍繞車輛動態資訊不按要求接入、違規投放車輛、破損車輛清理不及時等突出問題。根據考核結果，將建立企業違法違規行為信用記錄，並建立考核結果與企業車輛配額相掛鉤的管理與退出機制。</p></div><nav class="pagination group">
+</nav><!--/.pagination-->
+</div>
+
+
+<div class="clear"></div>
+</div><!--/.entry-->
+
+</div><!--/.post-inner-->
+</article><!--/.post-->
+
+<div class="clear"></div>
+
+<p class="post-tags"><span>來源：</span><a href="/author/%E6%9C%89%E9%81%93%E7%86%B1%E9%BB%9E/1/">有道熱點</a></p>
+
+<h4 class="heading">
+<i class="far fa-hand-point-right"></i>您可能也會喜歡…</h4>
+ <ul class="lrelated-posts group">
+<li><a href="/xhkpxe.html">僅摩拜一家及格！深圳第三季度共享單車企業運營服務考核結果出爐</a></li>
+<li><a href="/llhkxhk.html">廣州三季度共享單車企業考核結果：摩拜ofo首獲加分</a></li>
+<li><a href="/yyhkce.html">三隻松鼠CEO章燎原：第一代的企業是紅利成長，走到第二代只能靠產品</a></li>
+<li><a href="/hkcqiyl.html">華勝低調融資！還有這4家企業也在悄悄拿錢</a></li>
+<li><a href="/hkeflpy.html">4家企業公開宣稱轉板，新三板有多少家科創板潛在標的？</a></li>
+<li><a href="/yexpl.html">360金融IPO：金融相關企業上市後股價現在如何（一）</a></li>
+<li><a href="/ixxiy.html">慧科聯合阿里、百度等六家企業推出訓練營，目的提高產教融合效率</a></li>
+<li><a href="/xiycx.html">共享單車危局 ofo資金“扼喉” 摩拜商業模式終結</a></li>
+<li><a href="/cpixxq.html">共享單車行業危機：OFO和摩拜兩大單車巨頭深陷困境</a></li>
+<li><a href="/chkceyl.html">共享單車危局ofo資金“扼喉”摩拜商業模式終結</a></li>
+
+</ul><!--/.post-related-->
+ 
+</div><!--/.pad-->
+</section><!--/.content-->
+<div class="sidebar s1 collapsed" data-position="right" data-layout="col-2cl" data-sb-id="s1">
+
+<a class="sidebar-toggle" title="延伸側邊欄位"><i class="fas icon-sidebar-toggle"></i></a>
+
+<div class="sidebar-content">
+<div class="sidebar-top group">
+<p>贊助商廣告</p>
+
+</div>
+<div id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"> 
+</div></div>
+<ul class="post-nav group">
+
+<li class="previous"> <a href="/ixfeyx.html"><i class="fas fa-chevron-left"></i><strong>上一則</strong> <span>首款搭載華為鴻蒙作業系統產品釋出</span></a>
+</li>
+ <li class="next"><a href="/ixfeqhk.html"><i class="fas fa-chevron-right"></i><strong>下一則</strong> <span>事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了</span> </a></li>
+ 
+</ul>
+ <div id="alxtabs-2" class="widget widget_hu_tabs">
+ 
+<ul class="alx-tabs-nav group tab-count-3"><li class="alx-tab tab-recent"><a href="#tab-recent-2" title="熱門文章"><i class="far fa-clock"></i></a></li><li class="alx-tab tab-tags"><a href="#tab-tags-2" title="標籤"><i class="fas fa-star"></i> </a></li></ul>
+<div class="alx-tabs-container">
+<ul id="tab-recent-2" class="alx-tab group"> 
+
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/南方都市報/1/" rel="category tag">南方都市報</a></p>
+<p class="tab-item-title"><a href="/ixfeyx.html" title="首款搭載華為鴻蒙作業系統產品釋出">首款搭載華為鴻蒙作業系統產品釋出</a></p>
+<p class="tab-item-date">2019-08-11 07:04:50</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/有道熱點/1/" rel="category tag">有道熱點</a></p>
+<p class="tab-item-title"><a href="/ixfeqp.html" title="摩拜第一，4家企業退出或整改，北京如何給共享單車打分？">摩拜第一，4家企業退出或整改，北京如何給共享單車打分？</a></p>
+<p class="tab-item-date">2019-08-11 07:04:03</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/有道熱點/1/" rel="category tag">有道熱點</a></p>
+<p class="tab-item-title"><a href="/ixfeqhk.html" title="事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了">事關8000萬人！馬雲的相互寶分攤費為何增長到1.48元？最新迴應來了</a></p>
+<p class="tab-item-date">2019-08-11 07:03:59</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/真相君/1/" rel="category tag">真相君</a></p>
+<p class="tab-item-title"><a href="/ixfeqc.html" title="董明珠不服輸，贏雷軍10億賭約，還不放棄做手機正研發5G手機">董明珠不服輸，贏雷軍10億賭約，還不放棄做手機正研發5G手機</a></p>
+<p class="tab-item-date">2019-08-11 07:02:45</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/真相君/1/" rel="category tag">真相君</a></p>
+<p class="tab-item-title"><a href="/ixfeqe.html" title="失望於美國？華為或將放棄等待安卓，“鴻蒙”手機將於這時問世？">失望於美國？華為或將放棄等待安卓，“鴻蒙”手機將於這時問世？</a></p>
+<p class="tab-item-date">2019-08-11 07:02:31</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/每日經濟新聞/1/" rel="category tag">每日經濟新聞</a></p>
+<p class="tab-item-title"><a href="/ixfcix.html" title="重新評估網際網路巨頭：究竟是中國崛起的奠基石 還是埋藏危機的落井石？">重新評估網際網路巨頭：究竟是中國崛起的奠基石 還是埋藏危機的落井石？</a></p>
+<p class="tab-item-date">2019-08-11 06:15:59</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/千龍網/1/" rel="category tag">千龍網</a></p>
+<p class="tab-item-title"><a href="/ixeycx.html" title="首款搭載鴻蒙產品“榮耀智慧屏”釋出">首款搭載鴻蒙產品“榮耀智慧屏”釋出</a></p>
+<p class="tab-item-date">2019-08-11 01:12:27</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/參考訊息/1/" rel="category tag">參考訊息</a></p>
+<p class="tab-item-title"><a href="/ixeypx.html" title="華為告訴你，六年後我們的世界會變成什麼樣——">華為告訴你，六年後我們的世界會變成什麼樣——</a></p>
+<p class="tab-item-date">2019-08-11 00:37:23</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/搜狐焦點廣州站/1/" rel="category tag">搜狐焦點廣州站</a></p>
+<p class="tab-item-title"><a href="/ixelfx.html" title="傳郭臺銘610億增城專案將易主 當地宣傳部迴應:專案正常推進">傳郭臺銘610億增城專案將易主 當地宣傳部迴應:專案正常推進</a></p>
+<p class="tab-item-date">2019-08-11 00:03:44</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/新京報/1/" rel="category tag">新京報</a></p>
+<p class="tab-item-title"><a href="/ixpyix.html" title="鴻蒙系統面世 華為：並非做另一個安卓">鴻蒙系統面世 華為：並非做另一個安卓</a></p>
+<p class="tab-item-date">2019-08-10 00:33:30</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/新京報/1/" rel="category tag">新京報</a></p>
+<p class="tab-item-title"><a href="/ixpyxp.html" title="“鴻蒙”面世">“鴻蒙”面世</a></p>
+<p class="tab-item-date">2019-08-10 00:32:27</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/環球網/1/" rel="category tag">環球網</a></p>
+<p class="tab-item-title"><a href="/ixpyxhk.html" title="社評：鴻蒙，中國高科技突圍的英勇帶動點">社評：鴻蒙，中國高科技突圍的英勇帶動點</a></p>
+<p class="tab-item-date">2019-08-10 00:17:12</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/環球網/1/" rel="category tag">環球網</a></p>
+<p class="tab-item-title"><a href="/ixpyfx.html" title="華為開發者大會開幕：鴻蒙OS、EMUI 10.0等悉數亮相">華為開發者大會開幕：鴻蒙OS、EMUI 10.0等悉數亮相</a></p>
+<p class="tab-item-date">2019-08-10 00:10:55</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/央視財經/1/" rel="category tag">央視財經</a></p>
+<p class="tab-item-title"><a href="/ixpylp.html" title="App收集隱私將有“國標”！個人資訊有望不再“裸奔”！">App收集隱私將有“國標”！個人資訊有望不再“裸奔”！</a></p>
+<p class="tab-item-date">2019-08-10 00:10:32</p>
+</div>
+</li>
+ 
+ 
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-category"><a href="/author/新策展資訊圈/1/" rel="category tag">新策展資訊圈</a></p>
+<p class="tab-item-title"><a href="/ixpylhk.html" title="能源需求側綜合管理">能源需求側綜合管理</a></p>
+<p class="tab-item-date">2019-08-10 00:03:28</p>
+</div>
+</li>
+
+</ul><!--/.alx-tab-->
+<ul id="tab-tags-2" class="alx-tab group">
+<li>
+<a href="https://www.itread01.com/tags/android/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;">Android</a> 
+
+<a href="https://www.itread01.com/infolist/Web%E9%96%8B%E7%99%BC/1/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;">WEB開發</a> 
+<a href="https://www.itread01.com/infolist/%E5%85%B6%E4%BB%96/1/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;">其它</a> 
+
+</li>
+</ul><!--/.alx-tab-->
+</div>
+</div>
+</div><!--/.sidebar-content-->
+</div><!--/.sidebar-->
+</div><!--/.main-inner-->
+</div><!--/.main-->
+</div><!--/.container-inner-->
+</div><!--/.container-->
+<script type="text/javascript" src="/click.php?id=5366250"></script>
+<footer id="footer">
+<nav class="nav-container group" id="nav-footer" data-menu-id="footer-4" data-menu-scrollable="false">
+<!-- <div class="ham__navbar-toggler collapsed" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="ham-toggler-menu__span"></span>
+</div>
+</div> -->
+<div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
+</div>
+</div>
+<div class="nav-text"></div>
+<div class="nav-wrap">
+<ul id="menu-top-2" class="nav container group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/" rel="nofollow">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/study/python-tutorial.html" >Python教學</a></li>
+ 
+</ul></div>
+</nav><!--/#nav-footer-->
+
+<section class="container" id="footer-bottom">
+<div class="container-inner">
+
+<a id="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+
+<div class="pad group">
+
+<div class="grid one-half">
+
+<div id="copyright">
+<p>ITREAD01.COM &copy; 2018. 版權所有。 </p>
+</div><!--/#copyright-->
+</div>
+</div><!--/.pad-->
+
+</div><!--/.container-inner-->
+</section><!--/.container-->
+
+</footer><!--/#footer-->
+
+</div><!--/#wrapper-->
+
+<!-- Powered by WPtouch: 4.3.27 --><script type='text/javascript' src='/img/css/js/jQuerySharrre.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/img/css/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"1","extLinksTargetExt":"1","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".container .content",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":true,"mobile":false},"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"isDevMode":"","ajaxUrl":"https:\/\/www.itread01.com\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"d9125fec3b"},"userStarted":{"with":"with|3.3.27","on":{"date":"2018-03-27 03:41:18.000000","timezone_type":3,"timezone":"UTC"}},"isWelcomeNoteOn":"","welcomeContent":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/scripts.min.js?ver=3.3.27'></script>
+<script type='text/javascript' src='/img/css/js/wp-embed.min.js?ver=4.8.2'></script>
+
+<!--[if lt IE 9]>
+<script src="/img/css/js/respond.js"></script>
+<![endif]-->
+<div style="display:none"><script type='text/javascript' src='/js/c.js'></script>0.0017199516296387</div>
+</body>
+</html>

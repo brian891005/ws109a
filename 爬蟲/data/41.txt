@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-TW" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <title>頻道管理 - IT閱讀</title>
+<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" rel="stylesheet">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta name="referrer" content="never">
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='hueman-main-style-css'  href='/img/css/main.info.css' type='text/css' media='all' />
+<link href="https://www.itread01.com/img/prettify.css" type="text/css" rel="stylesheet"/>
+<script src="https://www.itread01.com/img/run_prettify.js"></script>
+<style id='hueman-main-style-inline-css' type='text/css'>
+body { font-family:'Source Sans Pro', Arial, sans-serif;font-size:1.00rem }@media only screen and (min-width: 720px) {
+        .nav > li { font-size:1.00rem; }
+      }::selection { background-color: #fca61b; }
+::-moz-selection { background-color: #fca61b; }a,.themeform label .required,#flexslider-featured .flex-direction-nav .flex-next:hover,#flexslider-featured .flex-direction-nav .flex-prev:hover,.post-hover:hover .post-title a,.post-title a:hover,.sidebar.s1 .post-nav li a:hover i,.content .post-nav li a:hover i,.post-related a:hover,.sidebar.s1 .widget_rss ul li a,#footer .widget_rss ul li a,.sidebar.s1 .widget_calendar a,#footer .widget_calendar a,.sidebar.s1 .alx-tab .tab-item-category a,.sidebar.s1 .alx-posts .post-item-category a,.sidebar.s1 .alx-tab li:hover .tab-item-title a,.sidebar.s1 .alx-tab li:hover .tab-item-comment a,.sidebar.s1 .alx-posts li:hover .post-item-title a,#footer .alx-tab .tab-item-category a,#footer .alx-posts .post-item-category a,#footer .alx-tab li:hover .tab-item-title a,#footer .alx-tab li:hover .tab-item-comment a,#footer .alx-posts li:hover .post-item-title a,.comment-tabs li.active a,.comment-awaiting-moderation,.child-menu a:hover,.child-menu .current_page_item > a,.wp-pagenavi a{ color: #fca61b; }.themeform input[type="submit"],.themeform button[type="submit"],.sidebar.s1 .sidebar-top,.sidebar.s1 .sidebar-toggle,#flexslider-featured .flex-control-nav li a.flex-active,.post-tags a:hover,.sidebar.s1 .widget_calendar caption,#footer .widget_calendar caption,.author-bio .bio-avatar:after,.commentlist li.bypostauthor > .comment-body:after,.commentlist li.comment-author-admin > .comment-body:after{ background-color: #fca61b; }.post-format .format-container { border-color: #fca61b; }.sidebar.s1 .alx-tabs-nav li.active a,#footer .alx-tabs-nav li.active a,.comment-tabs li.active a,.wp-pagenavi a:hover,.wp-pagenavi a:active,.wp-pagenavi span.current{ border-bottom-color: #fca61b!important; }.sidebar.s2 .post-nav li a:hover i,
+.sidebar.s2 .widget_rss ul li a,
+.sidebar.s2 .widget_calendar a,
+.sidebar.s2 .alx-tab .tab-item-category a,
+.sidebar.s2 .alx-posts .post-item-category a,
+.sidebar.s2 .alx-tab li:hover .tab-item-title a,
+.sidebar.s2 .alx-tab li:hover .tab-item-comment a,
+.sidebar.s2 .alx-posts li:hover .post-item-title a { color: #3bcfe2; }
+.sidebar.s2 .sidebar-top,.sidebar.s2 .sidebar-toggle,.post-comments,.jp-play-bar,.jp-volume-bar-value,.sidebar.s2 .widget_calendar caption{ background-color: #3bcfe2; }.sidebar.s2 .alx-tabs-nav li.active a { border-bottom-color: #3bcfe2; }
+.post-comments span:before { border-right-color: #3bcfe2; }
+      .search-expand,
+              #nav-topbar.nav-container { background-color: #303030}@media only screen and (min-width: 720px) {
+                #nav-topbar .nav ul { background-color: #303030; }
+              }.is-scrolled #header .nav-container.desktop-sticky,
+              .is-scrolled #header .search-expand { background-color: #303030; background-color: rgba(48,48,48,0.90) }.is-scrolled .topbar-transparent #nav-topbar.desktop-sticky .nav ul { background-color: #303030; background-color: rgba(48,48,48,0.95) }#header { background-color: #363944; }
+@media only screen and (min-width: 720px) {
+  #nav-header .nav ul { background-color: #363944; }
+}
+        .is-scrolled #header #nav-mobile { background-color: #454e5c; background-color: rgba(69,78,92,0.90) }body { background-color: #eaeaea; }
+		.entry-inner h1{ font-size:20px; font-weight:bold;}
+		.entry-inner h2,h3,h4{ font-size:18px; font-weight:bold;}
+</style>
+ 
+
+<link rel='stylesheet' id='hueman-font-awesome-css'  href='/img/css/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"","inbound_paths":"","home_url":"https:\/\/www.itread01.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/frontend.min.js'></script>
+<script type='text/javascript' src='/img/css/js/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/img/css/jsjquery-migrate.min.js?ver=1.4.1'></script>
+<script src="/styles/highlight.js"></script>
+<link rel="stylesheet" type="text/css" href="/styles/default.css"/>
+<meta name="generator" content="WordPress 4.8.2" />
+<!--[if lt IE 9]>
+<script src="/img/css/js/html5shiv-printshiv.min.js"></script>
+<script src="/img/css/js/selectivizr.js"></script>
+<![endif]-->
+<style>.ios7.web-app-mode.has-fixed header{ background-color: rgba(45,53,63,.88);}</style></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-43193 single-format-standard wp-custom-logo col-2cl full-width topbar-enabled header-desktop-sticky header-mobile-sticky chrome">
+    <div id="wrapper">
+        <header id="header" class="specific-mobile-menu-on one-mobile-menu mobile_menu header-ads-desktop header-ads-mobile topbar-transparent no-header-img">
+        <nav class="nav-container group mobile-menu mobile-sticky " id="nav-mobile" data-menu-id="header-1">
+  <div class="mobile-title-logo-in-header"><p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" title="首頁"><img src="https://www.itread01.com/logo.png"></a></p>
+                </div>
+        <div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </div>
+        </div>
+            
+      <div class="nav-text"></div>
+      <div class="nav-wrap container">
+                  <ul class="nav container-inner group mobile-search">
+                            <li>
+                  <form class="searchform themeform" onSubmit="return searchKw(this)">
+	<div>
+		<input type="text" name="kw" class="search" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+	</div>
+</form>    
+<script>function searchKw(c){var b=c.getElementsByTagName("input")[0],a=b.value.replace(/^\s+|\s+$/g,"");a=a.replace(/['"]/g,"");location.href="https://www.itread01.com/search/"+encodeURIComponent(a)+"";return false};</script>            </li>
+                      </ul>
+                <ul id="menu-top" class="nav container-inner group">
+                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+				<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+						  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+ 
+</ul>      </div>
+</nav><!--/#nav-topbar-->  
+        <nav class="nav-container group desktop-menu desktop-sticky " id="nav-topbar" data-menu-id="header-2">
+    <div class="nav-text"></div>
+  <div class="topbar-toggle-down">
+    <i class="fas fa-angle-double-down" aria-hidden="true" data-toggle="down" title="展開功能表清單"></i>
+    <i class="fas fa-angle-double-up" aria-hidden="true" data-toggle="up" title="折疊功能表清單"></i>
+  </div>
+  <div class="nav-wrap container">
+    <ul id="menu-footer" class="nav container-inner group"> 
+    <li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.itread01.com/" rel="nofollow">首頁</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/study/mysql-tutorial.html">MySQL教學</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網站技巧/1/">網站技巧</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/網路程式設計/1/">網路程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/軟體程式設計/1/">軟體程式設計</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/資料庫/1/">資料庫</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/作業系統/1/">作業系統</a></li>
+<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="/t/指令碼專欄/1/">其它</a></li>
+ 
+</ul>  </div>
+      <div id="topbar-header-search" class="container">
+      <div class="container-inner">
+        <div class="toggle-search"><i class="fas fa-search"></i></div>
+        <div class="search-expand">
+          <div class="search-expand-inner"><form class="searchform themeform" onSubmit="return searchKw(this)">
+	<div>
+		<input type="text" class="search" name="kw" onBlur="if(this.value=='')this.value='輸入關鍵字後搜尋';" onFocus="if(this.value=='輸入關鍵字後搜尋')this.value='';" value="輸入關鍵字後搜尋" />
+	</div>
+</form></div>
+        </div>
+      </div><!--/.container-inner-->
+    </div><!--/.container-->
+  
+</nav><!--/#nav-topbar-->  
+  <div class="container group">
+        <div class="container-inner">
+
+                    <div class="group pad central-header-zone">
+                  <div class="logo-tagline-group">
+                                        <p class="site-title"><a class="custom-logo-link" href="https://www.itread01.com/" rel="home" ><img src="https://www.itread01.com/logo.png"  ></a></p>
+                                                        </div>
+
+                                        <div id="header-widgets">
+                          <div id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- /109765683/728_Banner -->
+ </div></div>                      </div><!--/#header-ads-->
+                                </div>
+                <nav class="nav-container group desktop-menu " id="nav-header" data-menu-id="header-3">
+    <div class="nav-text"><!-- put your mobile menu text here --></div>
+  <div class="nav-wrap container">
+        <ul id="menu-top-1" class="nav container-inner group">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/">首頁</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/%E7%A7%91%E6%8A%80/">科技</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="https://www.itread01.com/info/">程式語言</a></li>
+</ul>  </div>
+</nav><!--/#nav-header-->      
+    </div><!--/.container-inner-->
+      </div><!--/.container-->
+</header><!--/#header-->        
+        <div class="container" id="page">
+            <div class="container-inner">
+
+                                <div class="main">
+                    <div class="main-inner group">
+                        
+              <section class="content">
+              <div class="page-title pad group">
+          	    		<ul class="meta-single group">
+    			<li class="category"><a href="/infolist/其他/1/">其他</a></li>
+    			    		</ul>
+
+    	
+    </div><!--/.page-title-->
+          <div class="pad group">
+              <article class="post-43193 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-stripe tag-32305 tag-32306 tag-4550 tag-5237 tag-31545 tag-6260">
+    <div class="post-inner group">
+
+      <h1 class="post-title entry-title">頻道管理</h1>
+<p class="post-byline"><span class="vcard author">
+     <span class="fn"><a href="/infolist/其他/1/">其他</a></span>
+   </span> &middot;
+                            發表 <time class="published" datetime="2019-02-03">2019-02-03</time>
+             
+               </p>
+               <ins id="scupio-sc-4995-17811-847678" class="scupioadslot" style="display:none;width:100%;height:100px;"
+    data-sca-pub="lRIJBAgyQA=="
+    data-sca-web="4995"
+    data-sca-category="17"
+    data-sca-cid="17811"
+    data-sca-slot-type="PRA"></ins>
+<script async src="https://img.scupio.com/js/ad.js"></script>
+<script>
+(function(s, c, u, p, i, o, a, d) {
+    'use strict';
+    var z=function(t,e,r){var a,n=document.createElement('ins'),s=n.style;for(a in n.className='scupioadslot',r&&(n.id=r),t)t.hasOwnProperty(a)&&(s[a]=t[a]);for(a in e)e.hasOwnProperty(a)&&n.setAttribute('data-sca-'+a,e[a]);return n};
+    (d = s.Scupioads = s.Scupioads || []).push({
+        id: u,
+        callback: function() {
+            p = c.getElementById(u);
+            i = p.style;
+            o = 'inline-block';
+            p.appendChild(z({
+                display: o,
+                width: '100%',
+                height: '100px',
+                margin: 'auto'
+            }, {
+                'pub': 'lRIJBAgyQA==',
+                'web': '4995',
+                'category': '17',
+                'cid': '17812',
+                'slot-type': 'STA'
+            }));
+            i.width = '100%';
+            i.height = '100px';
+            i.display = o;
+        }
+    });
+    setTimeout(function(){if(!s.Scupioads.init)for(i=d.length-1;0<=i;i--)if(d[i].id===u){d[i].callback(),d[i].callback=function(){};break}},1e3);
+})(window, document, 'scupio-sc-4995-17811-847678');
+</script>
+      
+      <div class="clear"></div>
+ 
+      <div class="entry themeform share">
+        <div class="entry-inner">
+		<div class="htmledit_views" id="content_views">
+                
+<h1><span style="color:#FF0000;">注意：</span></h1>
+<p><span style="font-size:18px;color:#FF0000;">    1. 在app的gradle裡面<br>
+    com.github.andyoom:draggrid:v1.0.1<br>
+    <br>
+    2.在專案的build.gradle中新增<br>
+        maven {url "https://jitpack.io"}<br><br><br>
+    3.許可權<br>
+    &lt;!-- 在SDCard中建立與刪除檔案許可權 --&gt;<br>
+    &lt;uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /&gt;<br>
+    &lt;!-- 往SDCard寫入資料許可權 --&gt;<br>
+    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;<br>
+    &lt;!-- 震動許可權 --&gt;<br>
+    &lt;uses-permission android:name="android.permission.VIBRATE"/&gt;<br><br>
+    4.在功能清單中配置ChannelActivity</span></p>
+<br><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:Consolas;font-size:15pt;"> 這個是  minSdkVersion <span style="color:#6897bb;">15</span></pre>
+
+<h2><span style="color:#FF0000;">效果圖：</span></h2>
+<p><img src="https://img-blog.csdn.net/20170819093816689?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGl4aW5iYg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="" referrerPolicy="no-referrer" class="img-fluid"><img src="https://img-blog.csdn.net/20170819093828966?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGl4aW5iYg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="" referrerPolicy="no-referrer" class="img-fluid"></p>
+
+<p><span style="font-size:18px;color:#FF0000;">下面開始貼程式碼</span></p>
+<h2><span style="color:#FF0000;">MainActivity（主介面進行相關操作）</span></h2>
+
+<pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:Consolas;font-size:15pt;"><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.content.Intent</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.os.AsyncTask</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.support.design.widget.TabLayout</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.support.v4.app.Fragment</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.support.v4.app.FragmentManager</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.support.v4.app.FragmentTransaction</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.support.v4.view.ViewPager</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.support.v7.app.AppCompatActivity</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.os.Bundle</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.text.TextUtils</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.view.View</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.widget.Button</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.andy.library.ChannelActivity</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.andy.library.ChannelBean</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.example.lixin.xiangmu1zhoukao3.bean.ComicInfo</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.example.lixin.xiangmu1zhoukao3.database.DbUtils</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.example.lixin.xiangmu1zhoukao3.utils.StreamTools</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.google.gson.Gson</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.google.gson.reflect.TypeToken</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.nostra13.universalimageloader.core.DisplayImageOptions</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">java.io.InputStream</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">java.net.HttpURLConnection</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">java.net.MalformedURLException</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">java.net.URL</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">java.util.ArrayList</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#5ff2f6;">java.util.List</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">public class </span><span style="color:#1190c3;font-weight:bold;">MainActivity </span><span style="color:#dd2867;font-weight:bold;">extends </span><span style="color:#1190c3;font-weight:bold;">AppCompatActivity </span><span style="color:#dd2867;font-weight:bold;">implements </span><span style="color:#5ff2f6;">View.OnClickListener </span><span style="color:#ffffff;">{
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">TabLayout </span><span style="color:#79abff;">tabLayout</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">ViewPager </span><span style="color:#79abff;">viewPager</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">String</span><span style="color:#ffffff;">[] </span><span style="color:#79abff;">titles </span><span style="color:#ffffff;">= {</span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">推薦</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">, </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">熱點</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">, </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">北京</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">, </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">時尚</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">, </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">科技</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">, </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">體育</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">, </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">娛樂</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">, </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">汽車</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">, </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">房產</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">, </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">漫畫</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">};
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">DbUtils </span><span style="color:#79abff;">dbUtils</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">ArrayList</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">ChannelBean</span><span style="color:#ffffff;">&gt; </span><span style="color:#79abff;">allList</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">ArrayList</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">ChannelBean</span><span style="color:#ffffff;">&gt; </span><span style="color:#79abff;">userList</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">MyPageAdapter </span><span style="color:#79abff;">adapter</span><span style="color:#ffffff;">;
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">protected void </span><span style="color:#a7ec21;">onCreate</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">Bundle </span><span style="color:#79abff;">savedInstanceState</span><span style="color:#ffffff;">) {
+</span><span style="color:#dd2867;font-weight:bold;">super</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">onCreate</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">savedInstanceState</span><span style="color:#ffffff;">);
+</span><span style="color:#a7ec21;">setContentView</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">R.layout</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">activity_main</span><span style="color:#ffffff;">);
+</span><span style="color:#a7ec21;">initView</span><span style="color:#ffffff;">();
+</span><span style="color:#a7ec21;">initData</span><span style="color:#ffffff;">();
+</span><span style="color:#79abff;">tabLayout</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">setupWithViewPager</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">viewPager</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#ffffff;">    給tablayout賦值
+</span><span style="color:#dd2867;font-weight:bold;">private void </span><span style="color:#a7ec21;">initData</span><span style="color:#ffffff;">() {
+</span><span style="color:#79abff;">allList </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">ArrayList</span><span style="color:#ffffff;">&lt;&gt;();
+</span><span style="color:#79abff;">userList </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">ArrayList</span><span style="color:#ffffff;">&lt;&gt;();
+</span><span style="color:#79abff;">dbUtils </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">DbUtils</span><span style="color:#ffffff;">(</span><span style="color:#dd2867;font-weight:bold;">this</span><span style="color:#ffffff;">);
+</span><span style="color:#5ff2f6;">List</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">ChannelBean</span><span style="color:#ffffff;">&gt; </span><span style="color:#79abff;">allChannels </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">dbUtils</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">getAllChannels</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">if </span><span style="color:#ffffff;">(</span><span style="color:#79abff;">allChannels </span><span style="color:#ffffff;">== </span><span style="color:#dd2867;font-weight:bold;">null</span><span style="color:#ffffff;">||</span><span style="color:#79abff;">allChannels</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">size</span><span style="color:#ffffff;">()&lt;</span><span style="color:#6897bb;">1</span><span style="color:#ffffff;">){
+</span><span style="color:#1190c3;font-weight:bold;">ChannelBean </span><span style="color:#79abff;">channelBean</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">for </span><span style="color:#ffffff;">(</span><span style="color:#dd2867;font-weight:bold;">int </span><span style="color:#79abff;">i </span><span style="color:#ffffff;">= </span><span style="color:#6897bb;">0</span><span style="color:#ffffff;">;</span><span style="color:#79abff;">i</span><span style="color:#ffffff;">&lt;</span><span style="color:#6897bb;">10</span><span style="color:#ffffff;">;</span><span style="color:#79abff;">i</span><span style="color:#ffffff;">++){
+</span><span style="color:#dd2867;font-weight:bold;">if </span><span style="color:#ffffff;">(</span><span style="color:#79abff;">i</span><span style="color:#ffffff;">&lt;</span><span style="color:#6897bb;">5</span><span style="color:#ffffff;">){
+</span><span style="color:#79abff;">channelBean </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">ChannelBean</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">titles</span><span style="color:#ffffff;">[</span><span style="color:#79abff;">i</span><span style="color:#ffffff;">],</span><span style="color:#dd2867;font-weight:bold;">true</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">userList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">add</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">channelBean</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">                }</span><span style="color:#dd2867;font-weight:bold;">else </span><span style="color:#ffffff;">{
+</span><span style="color:#79abff;">channelBean </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">ChannelBean</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">titles</span><span style="color:#ffffff;">[</span><span style="color:#79abff;">i</span><span style="color:#ffffff;">],</span><span style="color:#dd2867;font-weight:bold;">false</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">                }
+</span><span style="color:#79abff;">allList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">add</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">channelBean</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">            }
+</span><span style="color:#79abff;">dbUtils</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">saveChnnels</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">allList</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">        }</span><span style="color:#dd2867;font-weight:bold;">else </span><span style="color:#ffffff;">{
+</span><span style="color:#79abff;">allList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">addAll</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">allChannels</span><span style="color:#ffffff;">);
+</span><span style="color:#5ff2f6;">List</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">ChannelBean</span><span style="color:#ffffff;">&gt; </span><span style="color:#79abff;">userChannels </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">dbUtils</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">getUserChannels</span><span style="color:#ffffff;">();
+</span><span style="color:#79abff;">userList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">addAll</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">userChannels</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">        }
+</span><span style="color:#79abff;">adapter </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">MyPageAdapter</span><span style="color:#ffffff;">(</span><span style="color:#a7ec21;">getSupportFragmentManager</span><span style="color:#ffffff;">(),</span><span style="color:#79abff;">userList</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">viewPager</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">setAdapter</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">adapter</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#dd2867;font-weight:bold;">private void </span><span style="color:#a7ec21;">initView</span><span style="color:#ffffff;">() {
+</span><span style="color:#79abff;">tabLayout </span><span style="color:#ffffff;">= (</span><span style="color:#1190c3;font-weight:bold;">TabLayout</span><span style="color:#ffffff;">) </span><span style="color:#a7ec21;">findViewById</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">R.id</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">tablayout</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">viewPager </span><span style="color:#ffffff;">= (</span><span style="color:#1190c3;font-weight:bold;">ViewPager</span><span style="color:#ffffff;">) </span><span style="color:#a7ec21;">findViewById</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">R.id</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">viewpager</span><span style="color:#ffffff;">);
+</span><span style="color:#1190c3;font-weight:bold;">Button </span><span style="color:#79abff;">btn_pindao </span><span style="color:#ffffff;">= (</span><span style="color:#1190c3;font-weight:bold;">Button</span><span style="color:#ffffff;">) </span><span style="color:#a7ec21;">findViewById</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">R.id</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">btn_pindao</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">btn_pindao</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">setOnClickListener</span><span style="color:#ffffff;">(</span><span style="color:#dd2867;font-weight:bold;">this</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">public void </span><span style="color:#a7ec21;">onClick</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">View </span><span style="color:#79abff;">v</span><span style="color:#ffffff;">) {
+</span><span style="color:#dd2867;font-weight:bold;">switch </span><span style="color:#ffffff;">(</span><span style="color:#79abff;">v</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">getId</span><span style="color:#ffffff;">()){
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1190c3;font-weight:bold;">R.id</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">btn_pindao</span><span style="color:#ffffff;">:
+</span><span style="color:#1190c3;font-weight:bold;">ChannelActivity</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;font-style:italic;">startChannelActivity</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">MainActivity</span><span style="color:#ffffff;">.</span><span style="color:#dd2867;font-weight:bold;">this</span><span style="color:#ffffff;">, </span><span style="color:#79abff;">allList</span><span style="color:#ffffff;">);
+</span><span style="color:#dd2867;font-weight:bold;">break</span><span style="color:#ffffff;">;
+</span><span style="color:#ffffff;">        }
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">protected void </span><span style="color:#a7ec21;">onActivityResult</span><span style="color:#ffffff;">(</span><span style="color:#dd2867;font-weight:bold;">int </span><span style="color:#79abff;">requestCode</span><span style="color:#ffffff;">, </span><span style="color:#dd2867;font-weight:bold;">int </span><span style="color:#79abff;">resultCode</span><span style="color:#ffffff;">, </span><span style="color:#1190c3;font-weight:bold;">Intent </span><span style="color:#79abff;">data</span><span style="color:#ffffff;">) {
+</span><span style="color:#dd2867;font-weight:bold;">super</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">onActivityResult</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">requestCode</span><span style="color:#ffffff;">, </span><span style="color:#79abff;">resultCode</span><span style="color:#ffffff;">, </span><span style="color:#79abff;">data</span><span style="color:#ffffff;">);
+</span><span style="color:#dd2867;font-weight:bold;">if </span><span style="color:#ffffff;">(</span><span style="color:#79abff;">requestCode </span><span style="color:#ffffff;">== </span><span style="color:#1190c3;font-weight:bold;">ChannelActivity</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">REQUEST_CODE</span><span style="color:#ffffff;">&amp;&amp;</span><span style="color:#79abff;">resultCode </span><span style="color:#ffffff;">== </span><span style="color:#1190c3;font-weight:bold;">ChannelActivity</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">RESULT_CODE</span><span style="color:#ffffff;">){
+</span><span style="color:#1190c3;font-weight:bold;">String </span><span style="color:#79abff;">stringExtra </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">data</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">getStringExtra</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">ChannelActivity</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">RESULT_JSON_KEY</span><span style="color:#ffffff;">);
+</span><span style="color:#dd2867;font-weight:bold;">if </span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">TextUtils</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;font-style:italic;">isEmpty</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">stringExtra</span><span style="color:#ffffff;">)){
+</span><span style="color:#dd2867;font-weight:bold;">return</span><span style="color:#ffffff;">;
+</span><span style="color:#ffffff;">            }</span><span style="color:#dd2867;font-weight:bold;">else </span><span style="color:#ffffff;">{
+</span><span style="color:#5ff2f6;">List</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">ChannelBean</span><span style="color:#ffffff;">&gt; </span><span style="background-color:#40332b;">list</span> <span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">Gson</span><span style="color:#ffffff;">().</span><span style="color:#a7ec21;">fromJson</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">stringExtra</span><span style="color:#ffffff;">,</span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#1190c3;font-weight:bold;">TypeToken</span><span style="color:#ffffff;">&lt;</span><span style="color:#5ff2f6;">List</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">ChannelBean</span><span style="color:#ffffff;">&gt;&gt;(){}.</span><span style="color:#a7ec21;">getType</span><span style="color:#ffffff;">());
+</span><span style="color:#dd2867;font-weight:bold;">if </span><span style="color:#ffffff;">(</span><span style="background-color:#344134;">list</span><span style="color:#ffffff;">==</span><span style="color:#dd2867;font-weight:bold;">null</span><span style="color:#ffffff;">||</span><span style="background-color:#344134;">list</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">size</span><span style="color:#ffffff;">()&lt;</span><span style="color:#6897bb;">1</span><span style="color:#ffffff;">){
+</span><span style="color:#dd2867;font-weight:bold;">return</span><span style="color:#ffffff;">;
+</span><span style="color:#ffffff;">                }
+</span><span style="color:#79abff;">allList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">clear</span><span style="color:#ffffff;">();
+</span><span style="color:#79abff;">userList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">clear</span><span style="color:#ffffff;">();
+</span><span style="color:#79abff;">allList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">addAll</span><span style="color:#ffffff;">(</span><span style="background-color:#344134;">list</span><span style="color:#ffffff;">);
+</span><span style="color:#dd2867;font-weight:bold;">for </span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">ChannelBean </span><span style="color:#79abff;">channelBean </span><span style="color:#ffffff;">: </span><span style="background-color:#344134;">list</span><span style="color:#ffffff;">){
+</span><span style="color:#dd2867;font-weight:bold;">boolean </span><span style="color:#79abff;">select </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">channelBean</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">isSelect</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">if </span><span style="color:#ffffff;">(</span><span style="color:#79abff;">select</span><span style="color:#ffffff;">){
+</span><span style="color:#79abff;">userList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">add</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">channelBean</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">                    }
+</span><span style="color:#ffffff;">                }
+</span><span style="color:#79abff;">adapter</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">notifyDataSetChanged</span><span style="color:#ffffff;">();
+</span><span style="color:#79abff;">dbUtils</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">clearChannels</span><span style="color:#ffffff;">();
+</span><span style="color:#79abff;">dbUtils</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">saveChnnels</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">allList</span><span style="color:#ffffff;">);
+</span><span style="color:#1190c3;font-weight:bold;">FragmentManager </span><span style="color:#79abff;">supportFragmentManager </span><span style="color:#ffffff;">= </span><span style="color:#a7ec21;">getSupportFragmentManager</span><span style="color:#ffffff;">();
+</span><span style="color:#5ff2f6;">List</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">Fragment</span><span style="color:#ffffff;">&gt; </span><span style="color:#79abff;">fragments </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">supportFragmentManager</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">getFragments</span><span style="color:#ffffff;">();
+</span><span style="color:#1190c3;font-weight:bold;">FragmentTransaction </span><span style="color:#79abff;">fragmentTransaction </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">supportFragmentManager</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">beginTransaction</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">for </span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">Fragment </span><span style="color:#79abff;">fragment</span><span style="color:#ffffff;">:</span><span style="color:#79abff;">fragments</span><span style="color:#ffffff;">) {
+</span><span style="color:#79abff;">fragmentTransaction</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">remove</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">fragment</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">                }
+</span><span style="color:#79abff;">fragmentTransaction</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">commitAllowingStateLoss</span><span style="color:#ffffff;">();
+</span><span style="color:#a7ec21;">recreate</span><span style="color:#ffffff;">();
+</span><span style="color:#ffffff;">            }
+</span><span style="color:#ffffff;">        }
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#ffffff;">}
+</span></pre>
+<br>
+<h2><span style="color:#FF0000;">MyApplication（載入圖片 並在配置檔案中配置）</span></h2>
+<pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:Consolas;font-size:15pt;"><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.app.Application</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.nostra13.universalimageloader.core.ImageLoader</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.nostra13.universalimageloader.core.ImageLoaderConfiguration</span><span style="color:#ffffff;">;
+</span><span style="color:#ffff00;font-style:italic;">/**
+</span><span style="color:#ffff00;font-style:italic;"> * Created by hua on 2017/8/18.
+</span><span style="color:#ffff00;font-style:italic;"> */
+</span><span style="color:#dd2867;font-weight:bold;">public class </span><span style="color:#1190c3;font-weight:bold;">MyApplication </span><span style="color:#dd2867;font-weight:bold;">extends </span><span style="color:#1190c3;font-weight:bold;">Application </span><span style="color:#ffffff;">{
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">public void </span><span style="color:#a7ec21;">onCreate</span><span style="color:#ffffff;">() {
+</span><span style="color:#dd2867;font-weight:bold;">super</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">onCreate</span><span style="color:#ffffff;">();
+</span><span style="color:#1190c3;font-weight:bold;">ImageLoaderConfiguration </span><span style="color:#79abff;">config </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">ImageLoaderConfiguration.Builder</span><span style="color:#ffffff;">(</span><span style="color:#dd2867;font-weight:bold;">this</span><span style="color:#ffffff;">)
+</span><span style="color:#ffffff;">                .</span><span style="color:#a7ec21;">memoryCacheExtraOptions</span><span style="color:#ffffff;">(</span><span style="color:#6897bb;">480</span><span style="color:#ffffff;">,</span><span style="color:#6897bb;">800</span><span style="color:#ffffff;">)</span><span style="color:#14ec0f;">//</span><span style="font-family:'宋體';color:#14ec0f;">配置記憶體快取圖片的尺寸
+</span><span style="color:#14ec0f;">//.diskCacheExtraOptions() bug </span><span style="font-family:'宋體';color:#14ec0f;">不推介你手動去配置
+</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">memoryCacheSize</span><span style="color:#ffffff;">(</span><span style="color:#6897bb;">2 </span><span style="color:#ffffff;">* </span><span style="color:#6897bb;">1024 </span><span style="color:#ffffff;">* </span><span style="color:#6897bb;">1024</span><span style="color:#ffffff;">)</span><span style="color:#14ec0f;">//</span><span style="font-family:'宋體';color:#14ec0f;">配置記憶體快取的大小  例如</span><span style="color:#14ec0f;"> : 2* 1024 * 1024 = 2MB
+</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">threadPoolSize</span><span style="color:#ffffff;">(</span><span style="color:#6897bb;">3</span><span style="color:#ffffff;">)</span><span style="color:#14ec0f;">//</span><span style="font-family:'宋體';color:#14ec0f;">配置載入圖片的執行緒數
+</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">threadPriority</span><span style="color:#ffffff;">(</span><span style="color:#6897bb;">100</span><span style="color:#ffffff;">)</span><span style="color:#14ec0f;">//</span><span style="font-family:'宋體';color:#14ec0f;">配置執行緒的優先順序
+</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">build</span><span style="color:#ffffff;">();</span><span style="color:#14ec0f;">//</span><span style="font-family:'宋體';color:#14ec0f;">配置構建完成
+</span><span style="color:#1190c3;font-weight:bold;">ImageLoader</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;font-style:italic;">getInstance</span><span style="color:#ffffff;">().</span><span style="color:#a7ec21;">init</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">config</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#FF0000;">}
+</span></pre>
+<span style="color:#FF0000;">MyPageAdapter（得到值並返回對應的fragment 防止fragment和tablayout 錯亂）</span>
+
+<pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:Consolas;font-size:15pt;"><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.support.v4.app.Fragment</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.support.v4.app.FragmentManager</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.support.v4.app.FragmentPagerAdapter</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.andy.library.ChannelBean</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">java.util.ArrayList</span><span style="color:#ffffff;">;
+</span><span style="color:#ffff00;font-style:italic;">/**
+</span><span style="color:#ffff00;font-style:italic;"> * Created by hua on 2017/8/18.
+</span><span style="color:#ffff00;font-style:italic;"> */
+</span><span style="color:#dd2867;font-weight:bold;">public class </span><span style="color:#1190c3;font-weight:bold;">MyPageAdapter </span><span style="color:#dd2867;font-weight:bold;">extends </span><span style="color:#1190c3;font-weight:bold;">FragmentPagerAdapter </span><span style="color:#ffffff;">{
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">FragmentManager </span><span style="color:#79abff;">mFragmentManager</span><span style="color:#ffffff;">;
+</span><span style="color:#1190c3;font-weight:bold;">ArrayList</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">ChannelBean</span><span style="color:#ffffff;">&gt; </span><span style="color:#79abff;">mUserList</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">public </span><span style="color:#1eb540;font-weight:bold;">MyPageAdapter</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">FragmentManager </span><span style="color:#79abff;">fm</span><span style="color:#ffffff;">, </span><span style="color:#1190c3;font-weight:bold;">ArrayList</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">ChannelBean</span><span style="color:#ffffff;">&gt; </span><span style="color:#79abff;">userList</span><span style="color:#ffffff;">) {
+</span><span style="color:#dd2867;font-weight:bold;">super</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">fm</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">mFragmentManager </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">fm</span><span style="color:#ffffff;">;
+</span><span style="color:#79abff;">mUserList </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">userList</span><span style="color:#ffffff;">;
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">public </span><span style="color:#1190c3;font-weight:bold;">Fragment </span><span style="color:#a7ec21;">getItem</span><span style="color:#ffffff;">(</span><span style="color:#dd2867;font-weight:bold;">int </span><span style="color:#79abff;">position</span><span style="color:#ffffff;">) {
+</span><span style="color:#1190c3;font-weight:bold;">String </span><span style="color:#79abff;">name </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">mUserList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">get</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">position</span><span style="color:#ffffff;">).</span><span style="color:#a7ec21;">getName</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">switch </span><span style="color:#ffffff;">(</span><span style="color:#79abff;">name</span><span style="color:#ffffff;">) {
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">推薦</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">:
+</span><span style="color:#dd2867;font-weight:bold;">return new </span><span style="color:#a7ec21;">ComicFragment</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">熱點</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">:
+</span><span style="color:#dd2867;font-weight:bold;">return new </span><span style="color:#a7ec21;">ComicFragment</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">北京</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">:
+</span><span style="color:#dd2867;font-weight:bold;">return new </span><span style="color:#a7ec21;">ComicFragment</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">時尚</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">:
+</span><span style="color:#dd2867;font-weight:bold;">return new </span><span style="color:#a7ec21;">ComicFragment</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">科技</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">:
+</span><span style="color:#dd2867;font-weight:bold;">return new </span><span style="color:#a7ec21;">ComicFragment</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">體育</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">:
+</span><span style="color:#dd2867;font-weight:bold;">return new </span><span style="color:#a7ec21;">ComicFragment</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">娛樂</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">:
+</span><span style="color:#dd2867;font-weight:bold;">return new </span><span style="color:#a7ec21;">ComicFragment</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">汽車</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">:
+</span><span style="color:#dd2867;font-weight:bold;">return new </span><span style="color:#a7ec21;">ComicFragment</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">房產</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">:
+</span><span style="color:#dd2867;font-weight:bold;">return new </span><span style="color:#a7ec21;">ComicFragment</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">case </span><span style="color:#1eb540;">"</span><span style="font-family:'宋體';color:#1eb540;">漫畫</span><span style="color:#1eb540;">"</span><span style="color:#ffffff;">:
+</span><span style="color:#dd2867;font-weight:bold;">return new </span><span style="color:#a7ec21;">ComicFragment</span><span style="color:#ffffff;">();
+</span><span style="color:#ffffff;">        }
+</span><span style="color:#dd2867;font-weight:bold;">return null</span><span style="color:#ffffff;">;
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">public int </span><span style="color:#a7ec21;">getCount</span><span style="color:#ffffff;">() {
+</span><span style="color:#dd2867;font-weight:bold;">return </span><span style="color:#79abff;">mUserList </span><span style="color:#ffffff;">== </span><span style="color:#dd2867;font-weight:bold;">null </span><span style="color:#ffffff;">? </span><span style="color:#6897bb;">0 </span><span style="color:#ffffff;">: </span><span style="color:#79abff;">mUserList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">size</span><span style="color:#ffffff;">();
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#14ec0f;">//ViewPager</span><span style="font-family:'宋體';color:#14ec0f;">與</span><span style="color:#14ec0f;">TabLayout</span><span style="font-family:'宋體';color:#14ec0f;">繫結後，這裡獲取到</span><span style="color:#14ec0f;">PageTitle</span><span style="font-family:'宋體';color:#14ec0f;">就是</span><span style="color:#14ec0f;">Tab</span><span style="font-family:'宋體';color:#14ec0f;">的</span><span style="color:#14ec0f;">Text
+</span><span style="color:#14ec0f;">    //</span><span style="font-family:'宋體';color:#14ec0f;">設定</span><span style="color:#14ec0f;">tablayout</span><span style="font-family:'宋體';color:#14ec0f;">的每個</span><span style="color:#14ec0f;">tab</span><span style="font-family:'宋體';color:#14ec0f;">的標題
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">public </span><span style="color:#5ff2f6;">CharSequence </span><span style="color:#a7ec21;">getPageTitle</span><span style="color:#ffffff;">(</span><span style="color:#dd2867;font-weight:bold;">int </span><span style="color:#79abff;">position</span><span style="color:#ffffff;">) {
+</span><span style="color:#dd2867;font-weight:bold;">return </span><span style="color:#79abff;">mUserList</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">get</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">position</span><span style="color:#ffffff;">).</span><span style="color:#a7ec21;">getName</span><span style="color:#ffffff;">();
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#ffffff;">}
+</span></pre>
+
+<h2><span style="color:#FF0000;">Fragment（fragment中請求資料）</span></h2>
+
+<pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:Consolas;font-size:15pt;"><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.content.Intent</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.os.AsyncTask</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.os.Bundle</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#ff9393;font-weight:bold;">android.support.annotation.Nullable</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.support.v4.app.Fragment</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.view.LayoutInflater</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.view.View</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.view.ViewGroup</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.widget.AdapterView</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.widget.BaseAdapter</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.widget.ImageView</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.widget.ListView</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">android.widget.TextView</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.example.lixin.xiangmu1zhoukao3.bean.ComicInfo</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.example.lixin.xiangmu1zhoukao3.utils.StreamTools</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.google.gson.Gson</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.nostra13.universalimageloader.core.DisplayImageOptions</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">com.nostra13.universalimageloader.core.ImageLoader</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">java.io.InputStream</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">java.net.HttpURLConnection</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#1190c3;font-weight:bold;">java.net.URL</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">import </span><span style="color:#5ff2f6;">java.util.List</span><span style="color:#ffffff;">;
+</span><span style="color:#ffff00;font-style:italic;">/**
+</span><span style="color:#ffff00;font-style:italic;"> * Created by hua on 2017/8/18.
+</span><span style="color:#ffff00;font-style:italic;"> */
+</span><span style="color:#dd2867;font-weight:bold;">public class </span><span style="color:#1190c3;font-weight:bold;">ComicFragment </span><span style="color:#dd2867;font-weight:bold;">extends </span><span style="color:#1190c3;font-weight:bold;">Fragment </span><span style="color:#ffffff;">{
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">View </span><span style="color:#79abff;">view</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">ListView </span><span style="color:#79abff;">listView</span><span style="color:#ffffff;">;
+</span><span style="color:#dd2867;font-weight:bold;">private </span><span style="color:#1190c3;font-weight:bold;">DisplayImageOptions </span><span style="color:#79abff;">options</span><span style="color:#ffffff;">;
+</span><span style="color:#ff9393;font-weight:bold;">@Nullable
+</span><span style="color:#ff9393;font-weight:bold;">    @Override
+</span><span style="color:#dd2867;font-weight:bold;">public </span><span style="color:#1190c3;font-weight:bold;">View </span><span style="color:#a7ec21;">onCreateView</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">LayoutInflater </span><span style="color:#79abff;">inflater</span><span style="color:#ffffff;">, </span><span style="color:#ff9393;font-weight:bold;">@Nullable </span><span style="color:#1190c3;font-weight:bold;">ViewGroup </span><span style="color:#79abff;">container</span><span style="color:#ffffff;">, </span><span style="color:#ff9393;font-weight:bold;">@Nullable </span><span style="color:#1190c3;font-weight:bold;">Bundle </span><span style="color:#79abff;">savedInstanceState</span><span style="color:#ffffff;">) {
+</span><span style="color:#79abff;">view </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">inflater</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">inflate</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">R.layout</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">comic_fragment</span><span style="color:#ffffff;">,</span><span style="color:#79abff;">container</span><span style="color:#ffffff;">,</span><span style="color:#dd2867;font-weight:bold;">false</span><span style="color:#ffffff;">);
+</span><span style="color:#dd2867;font-weight:bold;">return </span><span style="color:#79abff;">view</span><span style="color:#ffffff;">;
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">public void </span><span style="color:#a7ec21;">onActivityCreated</span><span style="color:#ffffff;">( </span><span style="color:#1190c3;font-weight:bold;">Bundle </span><span style="color:#79abff;">savedInstanceState</span><span style="color:#ffffff;">) {
+</span><span style="color:#dd2867;font-weight:bold;">super</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">onActivityCreated</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">savedInstanceState</span><span style="color:#ffffff;">);
+</span><span style="color:#a7ec21;">initData</span><span style="color:#ffffff;">();
+</span><span style="color:#79abff;">listView </span><span style="color:#ffffff;">= (</span><span style="color:#1190c3;font-weight:bold;">ListView</span><span style="color:#ffffff;">) </span><span style="color:#79abff;">view</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">findViewById</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">R.id</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">listview</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">options </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">DisplayImageOptions.Builder</span><span style="color:#ffffff;">()
+</span><span style="color:#ffffff;">                .</span><span style="color:#a7ec21;">cacheInMemory</span><span style="color:#ffffff;">(</span><span style="color:#dd2867;font-weight:bold;">true</span><span style="color:#ffffff;">)
+</span><span style="color:#ffffff;">                .</span><span style="color:#a7ec21;">cacheOnDisk</span><span style="color:#ffffff;">(</span><span style="color:#dd2867;font-weight:bold;">true</span><span style="color:#ffffff;">)
+</span><span style="color:#ffffff;">                .</span><span style="color:#a7ec21;">showImageOnLoading</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">R.mipmap</span><span style="color:#ffffff;">.</span><span style="color:#79abff;font-style:italic;">ic_launcher</span><span style="color:#ffffff;">)
+</span><span style="color:#ffffff;">                .</span><span style="color:#a7ec21;">build</span><span style="color:#ffffff;">();
+</span><span style="color:#ffffff;">    }
+</span><span style="color:#dd2867;font-weight:bold;">private void </span><span style="color:#a7ec21;">initData</span><span style="color:#ffffff;">() {
+</span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#1190c3;font-weight:bold;">AsyncTask</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">String</span><span style="color:#ffffff;">, </span><span style="color:#1190c3;font-weight:bold;">Void</span><span style="color:#ffffff;">, </span><span style="color:#1190c3;font-weight:bold;">String</span><span style="color:#ffffff;">&gt;() {
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">protected void </span><span style="color:#a7ec21;">onPostExecute</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">String </span><span style="color:#79abff;">s</span><span style="color:#ffffff;">) {
+</span><span style="color:#dd2867;font-weight:bold;">super</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">onPostExecute</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">s</span><span style="color:#ffffff;">);
+</span><span style="color:#dd2867;font-weight:bold;">if </span><span style="color:#ffffff;">(</span><span style="color:#79abff;">s</span><span style="color:#ffffff;">!=</span><span style="color:#dd2867;font-weight:bold;">null</span><span style="color:#ffffff;">){
+</span><span style="color:#1190c3;font-weight:bold;">Gson </span><span style="color:#79abff;">gson </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">Gson</span><span style="color:#ffffff;">();
+</span><span style="color:#1190c3;font-weight:bold;">ComicInfo </span><span style="color:#79abff;">comicInfo </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">gson</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">fromJson</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">s</span><span style="color:#ffffff;">, </span><span style="color:#1190c3;font-weight:bold;">ComicInfo</span><span style="color:#ffffff;">.</span><span style="color:#dd2867;font-weight:bold;">class</span><span style="color:#ffffff;">);
+</span><span style="color:#dd2867;font-weight:bold;">final </span><span style="color:#5ff2f6;">List</span><span style="color:#ffffff;">&lt;</span><span style="color:#1190c3;font-weight:bold;">ComicInfo.DataBean.ComicsBean</span><span style="color:#ffffff;">&gt; </span><span style="color:#79abff;">data </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">comicInfo</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">getData</span><span style="color:#ffffff;">().</span><span style="color:#a7ec21;">getComics</span><span style="color:#ffffff;">();
+</span><span style="color:#1190c3;font-weight:bold;">MyBaseAdapter </span><span style="color:#79abff;">adapter </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">MyBaseAdapter</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">data</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">listView</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">setAdapter</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">adapter</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">listView</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">setOnItemClickListener</span><span style="color:#ffffff;">(</span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#1190c3;font-weight:bold;">AdapterView.OnItemClickListener</span><span style="color:#ffffff;">() {
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">public void </span><span style="color:#a7ec21;">onItemClick</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">AdapterView</span><span style="color:#ffffff;">&lt;?&gt; </span><span style="color:#79abff;">parent</span><span style="color:#ffffff;">, </span><span style="color:#1190c3;font-weight:bold;">View </span><span style="color:#79abff;">view</span><span style="color:#ffffff;">, </span><span style="color:#dd2867;font-weight:bold;">int </span><span style="color:#79abff;">position</span><span style="color:#ffffff;">, </span><span style="color:#dd2867;font-weight:bold;">long </span><span style="color:#79abff;">id</span><span style="color:#ffffff;">) {
+</span><span style="color:#1190c3;font-weight:bold;">Intent </span><span style="color:#79abff;">intent </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">Intent</span><span style="color:#ffffff;">(</span><span style="color:#a7ec21;">getActivity</span><span style="color:#ffffff;">(),</span><span style="color:#1190c3;font-weight:bold;">LastActivity</span><span style="color:#ffffff;">.</span><span style="color:#dd2867;font-weight:bold;">class</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">intent</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">putExtra</span><span style="color:#ffffff;">(</span><span style="color:#1eb540;">"label_text"</span><span style="color:#ffffff;">,</span><span style="color:#79abff;">data</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">get</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">position</span><span style="color:#ffffff;">).</span><span style="color:#a7ec21;">getLabel_text</span><span style="color:#ffffff;">());
+</span><span style="color:#a7ec21;">startActivity</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">intent</span><span style="color:#ffffff;">);
+</span><span style="color:#ffffff;">                        }
+</span><span style="color:#ffffff;">                    });
+</span><span style="color:#ffffff;">                }
+</span><span style="color:#ffffff;">            }
+</span><span style="color:#ff9393;font-weight:bold;">@Override
+</span><span style="color:#dd2867;font-weight:bold;">protected </span><span style="color:#1190c3;font-weight:bold;">String </span><span style="color:#a7ec21;">doInBackground</span><span style="color:#ffffff;">(</span><span style="color:#1190c3;font-weight:bold;">String</span>... <span style="color:#79abff;">params</span><span style="color:#ffffff;">) {
+</span><span style="color:#dd2867;font-weight:bold;">try </span><span style="color:#ffffff;">{
+</span><span style="color:#1190c3;font-weight:bold;">String </span><span style="color:#79abff;">path </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">params</span><span style="color:#ffffff;">[</span><span style="color:#6897bb;">0</span><span style="color:#ffffff;">];
+</span><span style="color:#1190c3;font-weight:bold;">URL </span><span style="color:#79abff;">url </span><span style="color:#ffffff;">= </span><span style="color:#dd2867;font-weight:bold;">new </span><span style="color:#a7ec21;">URL</span><span style="color:#ffffff;">(</span><span style="color:#79abff;">path</span><span style="color:#ffffff;">);
+</span><span style="color:#1190c3;font-weight:bold;">HttpURLConnection </span><span style="color:#79abff;">connection </span><span style="color:#ffffff;">= (</span><span style="color:#1190c3;font-weight:bold;">HttpURLConnection</span><span style="color:#ffffff;">) </span><span style="color:#79abff;">url</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">openConnection</span><span style="color:#ffffff;">();
+</span><span style="color:#79abff;">connection</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">setRequestMethod</span><span style="color:#ffffff;">(</span><span style="color:#1eb540;">"GET"</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">connection</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">setConnectTimeout</span><span style="color:#ffffff;">(</span><span style="color:#6897bb;">5000</span><span style="color:#ffffff;">);
+</span><span style="color:#79abff;">connection</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">setReadTimeout</span><span style="color:#ffffff;">(</span><span style="color:#6897bb;">5000</span><span style="color:#ffffff;">);
+</span><span style="color:#dd2867;font-weight:bold;">int </span><span style="color:#79abff;">code </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">connection</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">getResponseCode</span><span style="color:#ffffff;">();
+</span><span style="color:#dd2867;font-weight:bold;">if </span><span style="color:#ffffff;">(</span><span style="color:#79abff;">code </span><span style="color:#ffffff;">== </span><span style="color:#6897bb;">200</span><span style="color:#ffffff;">){
+</span><span style="color:#1190c3;font-weight:bold;">InputStream </span><span style="color:#79abff;">is </span><span style="color:#ffffff;">= </span><span style="color:#79abff;">connection</span><span style="color:#ffffff;">.</span><span style="color:#a7ec21;">getInputStream</span><span style="color:#ffffff;">();
+</span><span style="color:#1190c3;font-weight:bold;">String </span><span style="color:#79abff;">json </span><span style="color:#ffffff;">= </span><span style="color:#1190c3;font-weight:bold;">StreamTools</span><span style="color:#ffffff;">.</span><span
+	 <center><ins id="scupio-sc-4995-17522-26274" class="scupioadslot" style="display:inline-block;width:300px;height:250px;"
+    data-sca-pub="lRIJBAgyQA=="
+    data-sca-web="4995"
+    data-sca-category="17"
+    data-sca-cid="17522"
+    data-sca-slot-type="PRA"></ins>
+<script async src="https://img.scupio.com/js/ad.js"></script>
+<script>
+(function(s, c, u, p, i, o, a, d) {
+    'use strict';
+    var z=function(t,e,r){var a,n=document.createElement('ins'),s=n.style;for(a in n.className='scupioadslot',r&&(n.id=r),t)t.hasOwnProperty(a)&&(s[a]=t[a]);for(a in e)e.hasOwnProperty(a)&&n.setAttribute('data-sca-'+a,e[a]);return n};
+    (d = s.Scupioads = s.Scupioads || []).push({
+        id: u,
+        callback: function() {
+            p = c.getElementById(u);
+            i = p.style;
+            o = 'inline-block';
+            p.appendChild(z({
+                display: o,
+                width: '300px',
+                height: '250px',
+                margin: 'auto'
+            }, {
+                'pub': 'lRIJBAgyQA==',
+                'web': '4995',
+                'category': '17',
+                'cid': '17523',
+                'slot-type': 'STA'
+            }));
+            i.width = '300px';
+            i.height = '250px';
+            i.display = o;
+        }
+    });
+    setTimeout(function(){if(!s.Scupioads.init)for(i=d.length-1;0<=i;i--)if(d[i].id===u){d[i].callback(),d[i].callback=function(){};break}},1e3);
+})(window, document, 'scupio-sc-4995-17522-26274');
+</script></center>
+          <nav class="pagination group">
+                      </nav><!--/.pagination-->
+        </div>
+
+    
+        <div class="clear"></div>
+      </div><!--/.entry-->
+
+    </div><!--/.post-inner-->
+  </article><!--/.post-->
+
+<div class="clear"></div>
+
+<p class="post-tags"><span>標籤：</span>  </p>
+
+<center>
+</center>
+
+
+<h4 class="heading">
+	<i class="far fa-hand-point-right"></i>您可能也會喜歡…</h4>
+
+ <ul class="lrelated-posts group">
+		 	<li><a href="/content/1550519469.html" target="_blank">draggrid簡單用法——實現頻道管理</a> </li>
+    	<li><a href="/content/1550248766.html" target="_blank">DEDECMS後臺頻道管理員許可權三級子欄目許可權新增分配問題解決</a> </li>
+    	<li><a href="/content/1550057229.html" target="_blank">Android 自定義GridLayout實現頻道管理</a> </li>
+    	<li><a href="/content/1549286127.html" target="_blank">頻道管理(tablayout)</a> </li>
+    	<li><a href="/content/1549251195.html" target="_blank">仿今日頭條頻道管理</a> </li>
+    	<li><a href="/content/1549203309.html" target="_blank">Android 高仿 頻道管理----網易、今日頭條、騰訊視訊  （可以拖動的GridView）附原始碼DEMO</a> </li>
+    	<li><a href="/content/1549194306.html" target="_blank">頻道管理</a> </li>
+    	<li><a href="/content/1549134206.html" target="_blank">模仿今日頭條中的頻道管理</a> </li>
+    	<li><a href="/content/1548785544.html" target="_blank">仿網易新聞欄目管理（頻道管理）功能</a> </li>
+    	<li><a href="/content/1547879256.html" target="_blank">Android 仿今日頭條頻道管理（上）（GridView之間Item的移動和拖拽）</a> </li>
+    	<li><a href="/content/1547622217.html" target="_blank">使用 draggrid 實現 仿今日頭條頻道管理(詳細步驟）</a> </li>
+    	<li><a href="/content/1546996935.html" target="_blank">頻道管理頁面（高仿頭條等新聞app，騰訊視訊）</a> </li>
+    	<li><a href="/content/1546365963.html" target="_blank">在fragment中用頻道管理遇到的問題(解決)</a> </li>
+    	<li><a href="/content/1546047242.html" target="_blank">頻道管理（第三方）</a> </li>
+    	<li><a href="/content/1545366423.html" target="_blank">頻道管理簡單實現</a> </li>
+     
+</ul><!--/.post-related-->
+
+
+
+        </div><!--/.pad-->
+        </section><!--/.content-->
+          
+
+	<div class="sidebar s1 collapsed" data-position="right" data-layout="col-2cl" data-sb-id="s1">
+
+		<a class="sidebar-toggle" title="延伸側邊欄位"><i class="fas icon-sidebar-toggle"></i></a>
+
+		<div class="sidebar-content">
+
+			  			<div class="sidebar-top group">
+                        <p>贊助商廣告</p>
+             
+           			</div>
+		 
+				<ul class="post-nav group">
+      
+ 
+		<li class="previous"> </li>
+  
+  
+		 <li class="next">  </li>
+ 
+	</ul>
+
+<div id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- /109765683/300x250 -->
+<ins id="scupio-sc-4995-17521-400386" class="scupioadslot" style="display:inline-block;width:300px;height:250px;"
+    data-sca-pub="lRIJBAgyQA=="
+    data-sca-web="4995"
+    data-sca-category="17"
+    data-sca-cid="17521"
+    data-sca-slot-type="PRA"></ins>
+<script async src="https://img.scupio.com/js/ad.js"></script>
+<script>
+(function(s, c, u, p, i, o, a, d) {
+    'use strict';
+    var z=function(t,e,r){var a,n=document.createElement('ins'),s=n.style;for(a in n.className='scupioadslot',r&&(n.id=r),t)t.hasOwnProperty(a)&&(s[a]=t[a]);for(a in e)e.hasOwnProperty(a)&&n.setAttribute('data-sca-'+a,e[a]);return n};
+    (d = s.Scupioads = s.Scupioads || []).push({
+        id: u,
+        callback: function() {
+            p = c.getElementById(u);
+            i = p.style;
+            o = 'inline-block';
+            p.appendChild(z({
+                display: o,
+                width: '300px',
+                height: '250px',
+                margin: 'auto'
+            }, {
+                'pub': 'lRIJBAgyQA==',
+                'web': '4995',
+                'category': '17',
+                'cid': '17518',
+                'slot-type': 'STA'
+            }));
+            i.width = '300px';
+            i.height = '250px';
+            i.display = o;
+        }
+    });
+    setTimeout(function(){if(!s.Scupioads.init)for(i=d.length-1;0<=i;i--)if(d[i].id===u){d[i].callback(),d[i].callback=function(){};break}},1e3);
+})(window, document, 'scupio-sc-4995-17521-400386');
+</script>
+</div></div><div id="text-7" class="widget widget_text">			 
+		</div>
+        
+        <div id="alxtabs-2" class="widget widget_hu_tabs">
+<h3 class="widget-title"></h3>
+<ul class="alx-tabs-nav group tab-count-3"><li class="alx-tab tab-recent"><a href="#tab-recent-2" title="熱門文章"><i class="far fa-clock"></i></a></li><li class="alx-tab tab-tags"><a href="#tab-tags-2" title="標籤"><i class="fas fa-star"></i> </a></li></ul>
+	<div class="alx-tabs-container">						
+			<ul id="tab-recent-2" class="alx-tab group">
+								 
+					      
+                  <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194308.html">C# DevExpress 自定義列印(設定橫向列印為例)。 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194309.html">shell指令碼下檢視日誌檔案 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194310.html">Ubuntu Linux中使用快捷鍵截圖 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194312.html">[洛谷P1550] [USACO08OCT]打井Watering Hole [最小生成樹] </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194313.html">Linux下system與popen函式 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194314.html">python中*和**的用法 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194316.html">馬斯洛需求層次——教會我們因人而異，推銷產品 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194317.html">mysql查詢一個表自增主鍵的下一個主鍵值: </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194318.html">騰訊雲伺服器安裝wampserver,,電腦出現缺少vcruntime140.dll檔案問題 </a></p>
+										</div>
+				</li>
+                
+                
+                 <li>
+					<div class="tab-item-inner group">
+						 						
+                        <p class="tab-item-title"> <a href="/content/1549194319.html">GD32F130FXP6學習筆記三：ARM的GPIO初識 </a></p>
+										</div>
+				</li>
+                
+                
+  	 
+				</ul><!--/.alx-tab-->
+
+			<ul id="tab-tags-2" class="alx-tab group">
+				<li>
+					<a href="https://www.itread01.com/android/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >Android</a> 	
+					<a href="https://www.itread01.com/study/itools_download.html" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >iTools</a> 
+					<a href="https://www.itread01.com/mysql/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >Mysql</a> 
+					<a href="https://www.itread01.com/windows/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >Windows</a> 
+					<a href="https://www.3du.tw/" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12.15625pt;"  >三度辭典</a> 
+					 
+                   </li>
+			</ul><!--/.alx-tab-->
+
+			</div>
+</div>
+		</div><!--/.sidebar-content-->
+
+	</div><!--/.sidebar-->
+
+	
+
+        </div><!--/.main-inner-->
+      </div><!--/.main-->
+    </div><!--/.container-inner-->
+  </div><!--/.container-->
+    <footer id="footer">
+          <nav class="nav-container group" id="nav-footer" data-menu-id="footer-4" data-menu-scrollable="false">
+                      <!-- <div class="ham__navbar-toggler collapsed" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="ham-toggler-menu__span"></span>
+          </div>
+        </div> -->
+        <div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </div>
+        </div>
+                    <div class="nav-text"></div>
+        <div class="nav-wrap">
+          <ul id="menu-top-2" class="nav container group">
+           <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/" rel="nofollow">首頁</a></li>
+		   <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-290"><a href="/study/python-tutorial.html" >Python教學</a></li>
+ 
+</ul>        </div>
+      </nav><!--/#nav-footer-->
+    
+    <section class="container" id="footer-bottom">
+      <div class="container-inner">
+
+        <a id="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+
+        <div class="pad group">
+
+          <div class="grid one-half">
+                        
+            <div id="copyright">
+                              <p>ITREAD01.COM &copy; 2018. 版權所有。 </p>
+                          </div><!--/#copyright-->
+          </div>
+        </div><!--/.pad-->
+
+      </div><!--/.container-inner-->
+    </section><!--/.container-->
+
+  </footer><!--/#footer-->
+
+</div><!--/#wrapper-->
+
+<!-- Powered by WPtouch: 4.3.27 --><script type='text/javascript' src='/img/css/js/jQuerySharrre.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/img/css/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"1","extLinksTargetExt":"1","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".container .content",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":true,"mobile":false},"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"isDevMode":"","ajaxUrl":"https:\/\/www.itread01.com\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"d9125fec3b"},"userStarted":{"with":"with|3.3.27","on":{"date":"2018-03-27 03:41:18.000000","timezone_type":3,"timezone":"UTC"}},"isWelcomeNoteOn":"","welcomeContent":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/img/css/js/scripts.min.js?ver=3.3.27'></script>
+<script type='text/javascript' src='/img/css/js/wp-embed.min.js?ver=4.8.2'></script>
+
+<!--[if lt IE 9]>
+<script src="/img/css/js/respond.js"></script>
+<![endif]-->
+<div style="display:none"><script type='text/javascript' src='/js/c.js'></script>0.040932893753052</div>
+</body>
+</html>    <!-- Bootstrap core JavaScript ================================================== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+function joinUrl(url, concat) {
+  var url1 = url.split('/');
+  var url2 = concat.split('/');
+  var url3 = [ ];
+  for (var i = 0, l = url1.length; i < l; i ++) {
+    if (url1[i] == '..') {
+      url3.pop();
+    } else if (url1[i] == '.') {
+      continue;
+    } else {
+      url3.push(url1[i]);
+    }
+  }
+  for (var i = 0, l = url2.length; i < l; i ++) {
+    if (url2[i] == '..') {
+      url3.pop();
+    } else if (url2[i] == '.') {
+      continue;
+    } else {
+      url3.push(url2[i]);
+    }
+  }
+  return url3.join('/');
+}
+$(document).ready(function() {
+    $('pre').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
+	var source = $('#source-url').html();
+	if(source.indexOf('segmentfault.com') > 0) {
+		var imgs = $('#main-content').find('img');
+		$.each(imgs, function(index, img) {
+			var data_src = $(img).attr('data-src');
+			data_src = 'https://segmentfault.com' + data_src;
+			console.log(data_src);
+			$(img).attr('src', data_src);
+			// $(img).attr('src', '');
+		});
+	}
+});
+</script>
