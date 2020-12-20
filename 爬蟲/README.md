@@ -1,3 +1,8 @@
+# HOMEWORK WEEK13
+
+## Computer
+* CODE
+<pre><code>
 async function getPage(url) {
     const res = await fetch(url);
     return await res.text();
@@ -75,3 +80,9 @@ async function getPage(url) {
   
   await craw(urlList)
   
+</code></pre>
+* 需進行多個TEST
+
+* PICTURE
+
+![PICTURE1](https://github.com/brian891005/co109a/blob/master/HW/%E5%9C%96%E7%89%87/35.jpg)

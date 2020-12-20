@@ -1,19 +1,18 @@
 
-var urlList = [
-    'https://example.com', 
-    'https://jsonplaceholder.typicode.com/todos/1', 
-    'https://jsonplaceholder.typicode.com/todos/2', 
-    'https://jsonplaceholder.typicode.com/todos/3',
-    'https://jsonplaceholder.typicode.com/todos/4',
-    'https://jsonplaceholder.typicode.com/todos/5',
-    'https://jsonplaceholder.typicode.com/todos/6',
-    'https://jsonplaceholder.typicode.com/todos/7',
-    'https://jsonplaceholder.typicode.com/todos/8',
-    'https://jsonplaceholder.typicode.com/todos/9',
-    'https://jsonplaceholder.typicode.com/todos/10',
-    'https://jsonplaceholder.typicode.com/todos/11',
+  var r = /[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}) \.?/g
+
+var urls = html.match(r)
+console.log('urls=', urls)
+
+while (true) {
+  let m = r.exec(html)
+  if (m == null) break
+  console.log(m)
+}
+  var urlList = [
+    'https://www.itread01.com/content/1549194305.html', 
+    'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" rel="stylesheet',
+    'https://www.itread01.com/" rel="nofollow',
+    'https://www.itread01.com/" rel="home" ><img src="https://www.itread01.com/logo.png'  
   ]
-const url = new URL(urlList[1]);
-var s='gfgjhjk'
-console.log('https://'+url.host+s); 
-console.log(typeof url.hostname)
+  isURL(urlList)  
