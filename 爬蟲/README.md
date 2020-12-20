@@ -86,5 +86,18 @@ async function getPage(url) {
 先對html有初步了解，爬蟲是一種程式用來爬取所想要的資料並將其存於電腦中
 
 * 使用正規表達式
+  * fetch
+  * match
+  * exec
 
+* 了解網址各位置所代表的含意
+  * port
+  * pathname
+  * protocol
+
+* 使用URL函式庫:
+找出相對路徑和絕對路徑的差別，再將其組合成一個完整路徑
+
+## 參考程式碼
+<https://gitlab.com/ccc109/ws>
 ![PICTURE1](https://github.com/brian891005/co109a/blob/master/HW/%E5%9C%96%E7%89%87/35.jpg)
