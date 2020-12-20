@@ -25,7 +25,7 @@ async function getPage(url) {
     var m=0 //第幾個子網頁的網址
     var root1=[]
     var j=0
-    for (let i=0; i<urlList.length; i++) {
+    for (let i=0; i<=urlList.length; i++) {
       var url = urlList[i]
       var x=0 //flag是否抓到重複網址
       console.log('第'+(m+1)+'子網頁')
@@ -40,7 +40,7 @@ async function getPage(url) {
           m=m+1
           k=0
       }
-      for(let l=0;l<i-1;l++) //查詢是否有一樣網址在urlList內
+      for(let l=0;l<=i-1;l++) //查詢是否有一樣網址在urlList內
       {
           if(url==urlList[l])
           {
@@ -56,7 +56,7 @@ async function getPage(url) {
 
         await Deno.writeTextFile(`data/${i}.txt`, page)
         var urls = html2urls(page)
-        if(urls.length>1){
+        if(urls.length>){
             root1[m]=url
         }
         for (url of urls) {
