@@ -94,7 +94,7 @@ async function getPage(url) {
   * port
   * pathname
   * protocol
-  * 示意圖:<https://github.com/brian891005/ws109a/tree/master/%E7%88%AC%E8%9F%B2/04.jpg>
+  * 示意圖:<https://github.com/brian891005/ws109a/blob/master/%E7%88%AC%E8%9F%B2/%E5%9C%96%E7%89%87/04.jpg>
 
 * 使用URL函式庫:
 找出相對路徑和絕對路徑的差別，再將其組合成一個完整路徑
@@ -104,4 +104,4 @@ async function getPage(url) {
 
 ## 概念圖
 
-![PICTURE1](https://github.com/brian891005/ws109a/tree/master/%E7%88%AC%E8%9F%B2/RD.jpg)
+![PICTURE1](https://github.com/brian891005/ws109a/blob/master/%E7%88%AC%E8%9F%B2/%E5%9C%96%E7%89%87/RD.jpg)
