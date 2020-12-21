@@ -94,10 +94,10 @@ async function getPage(url) {
   * port
   * pathname
   * protocol
+  * ![PICTURE1](https://github.com/brian891005/ws109a/tree/master/%E7%88%AC%E8%9F%B2/04.jpg)
 
 * 使用URL函式庫:
 找出相對路徑和絕對路徑的差別，再將其組合成一個完整路徑
 
 ## 參考程式碼
-<https://gitlab.com/ccc109/ws>
-![PICTURE1](https://github.com/brian891005/co109a/blob/master/HW/%E5%9C%96%E7%89%87/35.jpg)
+<https://gitlab.com/ccc109/ws/-/blob/master/deno/02-http/07-crawler2/crawler.js>
