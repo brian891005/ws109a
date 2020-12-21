@@ -34,7 +34,7 @@ async function getPage(url) {
           const urlhost=new URL(root1[m])
           url='https://'+urlhost.hostname+url
         }
-      number[m]=number[m]-1 //如果抓到子網頁網址不是https開頭，則子網頁網址數量減一
+      number[m]=number[m]-1 //如果抓到子網頁，則子網頁網址數量減一
       if(number[m]==0) //如果網頁抓到的子網頁已歸零則換主網頁所抓到的下一個子網頁
       {
           m=m+1
@@ -94,10 +94,14 @@ async function getPage(url) {
   * port
   * pathname
   * protocol
-  * ![示意圖](https://github.com/brian891005/ws109a/tree/master/%E7%88%AC%E8%9F%B2/04.jpg)
+  * 示意圖:<https://github.com/brian891005/ws109a/tree/master/%E7%88%AC%E8%9F%B2/04.jpg>
 
 * 使用URL函式庫:
 找出相對路徑和絕對路徑的差別，再將其組合成一個完整路徑
 
 ## 參考程式碼
 <https://gitlab.com/ccc109/ws/-/blob/master/deno/02-http/07-crawler2/crawler.js>
+
+## 概念圖
+
+![PICTURE1](https://github.com/brian891005/ws109a/tree/master/%E7%88%AC%E8%9F%B2/RD.jpg)
