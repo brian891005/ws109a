@@ -1,0 +1,190 @@
+style>
+</head>
+
+<body class="homepage hp orange">
+ 
+
+
+<div class="head">
+<div>
+<div id="topnav">
+ <ul class="verticalsnav">
+ <li >
+<a href="/zh-tw">首頁</a>
+</li>
+ <li >
+<a href="/zh-tw/weather">天氣</a>
+</li>
+ <li >
+<a href="/zh-tw/news">新聞</a>
+</li>
+ <li >
+<a href="/zh-tw/entertainment">娛樂</a>
+</li>
+ <li >
+<a href="/zh-tw/lifestyle">生活</a>
+</li>
+ <li >
+<a href="/zh-tw/sports">運動</a>
+</li>
+
+ <li class="more">
+<a href="#nav">其他 ></a>
+<ul>
+ <li >
+<a href="/zh-tw/money">財經</a>
+</li>
+ <li  class="current">
+<a href="/zh-tw/health">健康</a>
+</li>
+ <li >
+<a href="/zh-tw/foodanddrink">美食</a>
+</li>
+ <li >
+<a href="/zh-tw/travel">旅遊</a>
+</li>
+ <li >
+<a href="/zh-tw/autos">汽車</a>
+</li>
+ <li >
+<a href="/zh-tw/video">影音</a>
+</li>
+ </ul>
+</li>
+ </ul>
+</div>
+  <div id="header-common">
+<div class="header">
+<div class="header-logo">
+  <a class="logo" href="/zh-tw" tabindex="2">
+ 
+
+<img alt="" height="20" width="20" src="//static-entertainment-eas-s-msn-com.akamaized.net/sc/82/c22c7d.gif" />
+</a>
+ <a class="vertical" href="/zh-tw/health" tabindex="2">生活</a>
+
+
+
+</div>
+<div id="header-links">
+
+<a class="navigation" href="#nav">
+<img  alt="移至巡覽區域" width="27" height="20" src="//static-entertainment-eas-s-msn-com.akamaized.net/sc/57/a49b8d.gif" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+ 
+<div id="header-search">
+<form action="http://www.bing.com/search?scope=web" method="get" id="srchfrm">
+<div class="searchbox">
+<input type="text" id="q" name="q" value="" />
+<input type="hidden" name="form" value="PRHFSR" />
+ <input type="hidden" name="mkt" value="zh-tw" />
+  <input type="hidden" name="httpsmsn" value="1">
+    <input type="hidden" name="msnews" value="1">
+ <input type="hidden" name="refig" value="8e884a282bf84d2ab80e78d29252412a">
+<input type="submit" class="text" value="搜尋網路" title="搜尋網路" />
+ </div>
+</form>
+</div>
+
+</div>
+ 
+ 
+<div class="upgradebrowser">
+ 您使用的是較舊的瀏覽器版本。若要獲得最佳 MSN 體驗，請使用<a href="http://support2.microsoft.com/kb/2999871/zh-tw">支援的版本</a>。
+</div>
+
+
+
+</div>
+<div id="maincontent">
+ 
+<div id="main"  data-region="main">
+ 
+
+ <div class="unsupportedinformationsection">
+<div class="unsupported-text">很抱歉，這項體驗必須使用較新一代的瀏覽器。請將您的瀏覽器升級為最新版本。以下是可供您開始使用的連結</div>
+<a href="http://www.microsoft.com/zh-tw/windows/microsoft-edge">升級到 Microsoft Edge</a><br />
+<a href="http://www.microsoft.com/zh-tw/windows/features">取得 Windows 10</a><br />
+<a href="/zh-tw/health">返回 MSN</a>
+</div>
+
+ 
+</div>
+<div id="aside"  data-region="aside">
+ 
+</div>
+<div id="nav">
+ <ul class="verticalsnav">
+ <li >
+<a href="/zh-tw">首頁</a>
+</li>
+ <li >
+<a href="/zh-tw/weather">天氣</a>
+</li>
+ <li >
+<a href="/zh-tw/news">新聞</a>
+</li>
+ <li >
+<a href="/zh-tw/entertainment">娛樂</a>
+</li>
+ <li >
+<a href="/zh-tw/lifestyle">生活</a>
+</li>
+ <li >
+<a href="/zh-tw/sports">運動</a>
+</li>
+ <li >
+<a href="/zh-tw/money">財經</a>
+</li>
+ <li  class="current">
+<a href="/zh-tw/health">健康</a>
+</li>
+ <li >
+<a href="/zh-tw/foodanddrink">美食</a>
+</li>
+ <li >
+<a href="/zh-tw/travel">旅遊</a>
+</li>
+ <li >
+<a href="/zh-tw/autos">汽車</a>
+</li>
+ <li >
+<a href="/zh-tw/video">影音</a>
+</li>
+ </ul>
+</div>
+ </div>
+<div id="foot">
+<div></div>
+</div>
+  <div>
+ <img src="//c.msn.com/c.gif?udc=true&amp;rid=8e884a282bf84d2ab80e78d29252412a&amp;rnd=637464475994691225&amp;rf=&amp;tp=http%253A%252F%252Fwww.msn.com%252Fzh-tw%252Fhealth%252F&amp;di=12328&amp;lng=zh-tw&amp;activityId=8e884a282bf84d2ab80e78d29252412a&amp;d.dgk=downlevel.pc&amp;d.imd=0&amp;st.dpt=&amp;st.sdpt=&amp;subcvs=lifestyle&amp;pg.n=homepage&amp;pg.t=secfront&amp;pg.c=&amp;pg.p=prime&amp;anoncknm=&amp;issso=0&amp;aadState=0" alt="image beacon" width="1" height="1" /><img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=3000001&amp;cs_ucfr=1&amp;rn=637464475994691225&amp;c7=http%253A%252F%252Fwww.msn.com%252Fzh-tw%252Fhealth%252F&amp;c8=&amp;c9=" alt="image beacon" width="1" height="1" /><img src="https://web.vortex.data.msn.com/collect/v1/t.gif?name=%27Ms.Webi.PageView%27&amp;ver=%272.1%27&amp;appId=%27JS%3AMSN%27&amp;ext-app-env=%27prod%27&amp;ext-javascript-libver=%274.0.0-beta-10%27&amp;ext-user-localId=%27t%3A3DC82BB4230B643F1B13247622966519%27&amp;*baseType=%27Ms.Content.PageView%27&amp;*isJs=False&amp;*title=%27%27&amp;*isLoggedIn=False&amp;*isManual=True&amp;*serverImpressionGuid=%278e884a28-2bf8-4d2a-b80e-78d29252412a%27&amp;-ver=%271.0%27&amp;-impressionGuid=%278e884a28-2bf8-4d2a-b80e-78d29252412a%27&amp;-pageName=%27homepage%27&amp;-uri=%27http%253A%252F%252Fwww.msn.com%252Fzh-tw%252Fhealth%252F%27&amp;-referrerUri=%27%27&amp;-pageTags=%27{&quot;pg.t&quot;%3A&quot;secfront&quot;%2C&quot;pg.p&quot;%3A&quot;prime&quot;%2C&quot;pg.c&quot;%3A&quot;&quot;%2C&quot;ex&quot;%3A&quot;&quot;%2C&quot;rid&quot;%3A&quot;8e884a282bf84d2ab80e78d29252412a&quot;%2C&quot;clid&quot;%3A&quot;3DC82BB4230B643F1B13247622966519&quot;%2C&quot;clidType&quot;%3A&quot;muid&quot;%2C&quot;di&quot;%3A&quot;12328&quot;%2C&quot;partner&quot;%3A&quot;-&quot;%2C&quot;publcat&quot;%3A&quot;-&quot;%2C&quot;cvs&quot;%3A&quot;Browser&quot;%2C&quot;subcvs&quot;%3A&quot;lifestyle&quot;%2C&quot;entityId&quot;%3A&quot;&quot;%2C&quot;entitySrc&quot;%3A&quot;&quot;%2C&quot;provid&quot;%3A&quot;&quot;%2C&quot;dpt&quot;%3A&quot;&quot;%2C&quot;sdpt&quot;%3A&quot;&quot;%2C&quot;ar&quot;%3A&quot;0&quot;%2C&quot;dgk&quot;%3A&quot;downlevel.pc&quot;%2C&quot;imd&quot;%3A&quot;0&quot;%2C&quot;parentId&quot;%3A&quot;&quot;%2C&quot;pgIdx&quot;%3A&quot;&quot;%2C&quot;pgTot&quot;%3A&quot;&quot;%2C&quot;anoncknm&quot;%3A&quot;&quot;%2C&quot;afd&quot;%3A&quot;&quot;%2C&quot;issso&quot;%3A&quot;0&quot;%2C&quot;aadState&quot;%3A&quot;0&quot;}%27&amp;-behavior=0&amp;-market=%27zh-tw%27" alt="image beacon" width="1" height="1" />
+</div>
+
+ 
+     <script>
+        require(["headData", "pageInstance", "mediator", "c.deferred"], function (headData, pageInstance, mediator)
+        {
+        var url = '//www.bizographics.com/collect/?fmt=gif&pid=7850';
+        if (headData && headData.clientSettings && headData.clientSettings.static_page)
+        {
+            mediator.pub(pageInstance.eventName);
+            var rid = pageInstance.getActivityId();
+            url = url.replace(/([?&]rid=)[^&#]*/i, "$1" + rid);
+            }
+        new Image().src = url.replace(/&amp;/g, '&');
+    });
+    </script>
+    <noscript>
+        <div>
+            <img data-src="//www.bizographics.com/collect/?fmt=gif&amp;pid=7850&amp;ts=noscript" width="1" height="1" alt="" />
+        </div>
+    </noscript>
+
+ 
+</body>
+ <!--MSNAvailToken--></html>
